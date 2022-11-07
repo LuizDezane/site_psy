@@ -1,0 +1,48 @@
+/* ------------------------------ Fonts import ------------------------------ */
+// @import url("https://use.typekit.net/not0vla.css");
+
+/* ------------------------------ Variables ------------------------------ */
+$dark: #180A04;
+$grey: #5E5E5E;
+$orange: #EDB39B;
+$off-white: #FEFAF8;
+$white: #FFFFFF;
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+body {
+  background: $off-white;
+  color: $grey;
+
+  margin: auto;
+  overflow-x: hidden;
+}
+
+// ------------------------------ Fonts ------------------------------
+
+h1,
+h2,
+h3,
+h4 {
+
+  color: $dark;
+
+  margin: 0;
+}
+
+h1 {
+  font-size: 60px;
+}
+
+p {
+
+  color: $grey;
+}
