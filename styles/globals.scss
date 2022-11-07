@@ -81,11 +81,12 @@ button {
   border: solid 1px transparent;
   border-radius: 6px;
   padding: 10px 30px;
+  margin: 10px 0;
   box-shadow: $box-shadow;
   transition: all 0.3s ease-in-out;
 
   &:hover {
-    border: solid 1px $grey;
+    border: solid 1px $orange-faded;
     box-shadow: $box-shadow-hover;
     cursor: pointer;
   }
@@ -104,6 +105,17 @@ button {
 
   &:hover {
     background: $white-faded;
+  }
+}
+
+// ------------------------------ Sections ------------------------------
+
+section {
+  width: 100%;
+  margin-bottom: 80px;
+
+  .container {
+    padding: 0 40px;
   }
 }
 

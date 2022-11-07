@@ -1,7 +1,70 @@
 @import '/styles/globals';
 
 // ------------------------------ Desktop ------------------------------
-@media screen and (min-width: 1024px) {}
+@media screen and (min-width: 1024px) {
+
+    #navbar {
+        position: fixed;
+        top: 0;
+
+        .container {
+            padding: 0;
+
+            .upper_header {
+                padding: 0 40px;
+                display: grid;
+                grid-template-columns: repeat(3);
+                background: $white;
+                box-shadow: $box-shadow;
+
+                .div1 {
+                    grid-area: 1 / 1 / 2 / 2;
+                    display: flex;
+                    gap: 10px;
+                    justify-content: start;
+                    align-items: center;
+                }
+
+                .div2 {
+                    grid-area: 1 / 5 / 2 / 9;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+
+                .div3 {
+                    grid-area: 1 / 9 / 2 / 13;
+                    display: flex;
+                    gap: 10px;
+                    justify-content: end;
+                    align-items: center;
+                }
+            }
+
+            .lower_header {
+                padding: 0 40px;
+                display: grid;
+                grid-template-columns: repeat(2);
+                background: rgba(255, 255, 255, 0.5);
+                backdrop-filter: blur(15px);
+
+                .div4 {
+                    grid-area: 2 / 2 / 3 / 5;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                }
+
+                .div5 {
+                    grid-area: 2 / 10 / 3 / 12;
+                    display: flex;
+                    align-items: center;
+                }
+            }
+        }
+    }
+}
+
 
 // ------------------------------ Tablet ------------------------------
 @media screen and (min-width: 768) and (max-width: 1023px) {}
