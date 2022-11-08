@@ -6,9 +6,9 @@ const Hero = () => {
 return (
 <div>
     <div style={{backgroundImage: `url(${background_image.src})`,
-    width: '100%',
-    height: '80vh',
-    opacity: 0.75}}>
+        width: '100%',
+        height: '80vh',
+        opacity: 0.75}}>
     </div>
     <div>
         <h1>Gdy słucham co mówisz,
