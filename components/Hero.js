@@ -6,11 +6,6 @@ import background_image from '../public/background.jpg'
 const Hero = () => {
 return (
 <div className='hero'>
-    {/* <div className='background' style={{backgroundImage: `url(${background_image.src})`,
-        width: '100%',
-        height: '82.22vh',
-        opacity: 0.75}}> */}
-
         <div className='background'>
             <div className='slogan_top'>
                 <div className="area">
