@@ -1,5 +1,6 @@
 import '../styles/globals.scss'
 import '../styles/navbar.scss'
+import '../styles/hero.scss'
 
 import Layout from '../components/Layout'
 
