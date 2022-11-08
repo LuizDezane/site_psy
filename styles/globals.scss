@@ -95,10 +95,11 @@ button {
 
 .orange {
   background: $orange;
-  color: $white;
+  color: $dark;
 
   &:hover {
     background: $orange-faded;
+    color: $white;
   }
 }
 
@@ -125,6 +126,15 @@ section {
 // ------------------------------ Desktop ------------------------------
 
 @media screen and (min-width: 1024px) {
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    line-height: 1.0;
+    margin: 0;
+  }
+
   h1 {
     font-size: 60px;
   }

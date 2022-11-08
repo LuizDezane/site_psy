@@ -2,8 +2,87 @@
 
 // ------------------------------ Desktop ------------------------------
 @media screen and (min-width: 1024px) {
-    .container {
+    .hero {
         padding-top: 160px;
+
+        .background {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            padding: 40px 0;
+            row-gap: 40px;
+            border-radius: 16px;
+            background-image: url("../public/background.jpg");
+
+            .slogan_top {
+                grid-area: 1 / 3 / 2 / 11;
+                background: rgba(255, 255, 255, 0.5);
+                backdrop-filter: blur(15px);
+                padding: 40px 0;
+                border-radius: 16px;
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                .area {
+                    display: grid;
+                    grid-template-columns: repeat(8, 1fr);
+
+                    h1 {
+                        grid-area: 1 / 2 / 2 / 8;
+                    }
+
+                    h4 {
+                        grid-area: 2 / 3 / 3 / 8;
+                        text-align: right;
+                        padding-top: 10px;
+                    }
+                }
+            }
+
+            .slogan_bottom {
+                grid-area: 2 / 3 / 3 / 11;
+                background: rgba(255, 255, 255, 0.5);
+                backdrop-filter: blur(15px);
+                padding: 40px 0;
+                border-radius: 16px;
+                justify-content: center;
+                align-items: center;
+
+                .area {
+                    display: grid;
+                    grid-template-columns: repeat(8, 1fr);
+                    justify-content: center;
+                    align-items: center;
+
+                    .image {
+                        display: grid;
+                        background-image: url("../public/paulina.jpg");
+                        background-position: top;
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                        grid-area: 1 / 1 / 4 / 4;
+                        margin-left:80px;
+                        height: 350px;
+                        border-radius: 12px;
+                    }
+
+                    h4 {
+                        grid-area: 1 / 5 / 2 / 8;
+                    }
+
+                    p {
+                        grid-area: 2 / 5 / 3 / 8;
+                    }
+
+                    .button {
+                        grid-area: 3 / 5 / 4 / 8;
+                        justify-content: flex-end;
+                    }
+                }
+            }
+        }
     }
 }
 

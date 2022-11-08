@@ -15,12 +15,12 @@
             .upper_header {
                 padding: 0 40px;
                 display: grid;
-                grid-template-columns: repeat(3);
+                grid-template-columns: repeat(12, 1fr);
                 background: $white;
                 box-shadow: $box-shadow;
 
                 .div1 {
-                    grid-area: 1 / 1 / 2 / 2;
+                    grid-area: 1 / 1 / 2 / 5;
                     display: flex;
                     gap: 10px;
                     justify-content: flex-start;
@@ -46,12 +46,12 @@
             .lower_header {
                 padding: 0 40px;
                 display: grid;
-                grid-template-columns: repeat(2);
+                grid-template-columns: repeat(12, 1fr);
                 background: rgba(255, 255, 255, 0.5);
                 backdrop-filter: blur(15px);
 
                 .div4 {
-                    grid-area: 2 / 2 / 3 / 5;
+                    grid-area: 2 / 2 / 3 / 8;
                     display: flex;
                     align-items: center;
                     justify-content: space-between;
@@ -60,6 +60,7 @@
                 .div5 {
                     grid-area: 2 / 10 / 3 / 12;
                     display: flex;
+                    justify-content: flex-end;
                     align-items: center;
                 }
             }
