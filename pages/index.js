@@ -1,6 +1,8 @@
 import Head from 'next/head'
 import Image from 'next/image'
 
+import Hero from '../components/Hero'
+
 export default function Home() {
 return (
 <div>
@@ -14,17 +16,7 @@ return (
   <main>
     <section>
       <div className="container">
-        <h1>Header.</h1>
-        <p>Paragraph.</p>
-
-        <h1>Header.</h1>
-        <p>Paragraph.</p>
-        <h1>Header.</h1>
-        <p>Paragraph.</p>
-        <h1>Header.</h1>
-        <p>Paragraph.</p>
-        <h1>Header.</h1>
-        <p>Paragraph.</p>
+        <Hero />
       </div>
     </section>
   </main>
