@@ -2,7 +2,7 @@
 
 // ------------------------------ Desktop ------------------------------
 @media screen and (min-width: 1024px) {
-    .section_2 {
+    .section_3 {
         margin: 40px 0;
         display: grid;
         grid-template-columns: repeat(12, 1fr);
@@ -13,28 +13,40 @@
             text-align: center;
         }
 
-        .background {
-            grid-area: 2 / 3 / 3 / 11;
-            background: $off-orange;
-            border-radius: 16px;
+        .kolumny {
+            grid-area: 2 / 2 / 3 / 12;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 40px;
 
-            .upper {
-                padding: 40px;
-                text-align: center;
+            .kolumna {
+                background: $white;
+                border-radius: 16px;
+                border: solid 1px transparent;
+                box-shadow: $box-shadow;
+                width: 30%;
+                padding:40px;
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
-            }
-
-            .lower {
-                padding: 40px;
                 text-align: center;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
+
+                transition: all 0.3s ease-in-out;
+
+                &:hover {
+                    border: solid 1px $orange;
+                    box-shadow: $box-shadow-hover;
+                }
             }
+        }
+
+        .button {
+            padding: 40px 0;
+            grid-area: 3 / 3 / 4 / 11;
+            text-align: center;
         }
     }
 }

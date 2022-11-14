@@ -1,9 +1,9 @@
 import Link from 'next/link'
 
-const KomuPomagam = () => {
+const Konsultacje = () => {
     return (
         <div className='parent section_2'>
-            <div className="konsultacje">
+            <div className="header">
                 <h2>Konsultacje</h2>
             </div>
             <div className="background">
@@ -23,4 +23,4 @@ const KomuPomagam = () => {
     )
 }
 
-export default KomuPomagam
+export default Konsultacje
