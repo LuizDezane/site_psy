@@ -2,7 +2,7 @@ import Head from 'next/head'
 import Link from 'next/link'
 
 import Hero from '../components/Hero'
-import KomuPomagam from '../components/KomuPomagam'
+import Konsultacje from '../components/Konsultacje'
 
 export default function Home() {
 return (
@@ -18,7 +18,7 @@ return (
     <section>
       <div className="container">
         <Hero />
-        <KomuPomagam />
+        <Konsultacje />
       </div>
     </section>
 

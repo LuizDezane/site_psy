@@ -2,7 +2,10 @@ import Link from 'next/link'
 
 const KomuPomagam = () => {
     return (
-        <div className='section_B'>
+        <div className='parent section_2'>
+            <div className="konsultacje">
+                <h2>Konsultacje</h2>
+            </div>
             <div className="background">
                 <div className="upper">
                     <h4>Konsultacje psychologiczne</h4>

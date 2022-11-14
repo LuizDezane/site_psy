@@ -48,7 +48,7 @@
                 grid-template-columns: repeat(12, 1fr);
                 background: rgba(255, 255, 255, 0.5);
                 backdrop-filter: blur(15px);
-                box-shadow: $box-shadow-hover;
+                box-shadow: $box-shadow;
 
                 .div4 {
                     grid-area: 2 / 2 / 3 / 8;

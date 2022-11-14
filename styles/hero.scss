@@ -2,59 +2,47 @@
 
 // ------------------------------ Desktop ------------------------------
 @media screen and (min-width: 1024px) {
-    .section_A {
-        padding-top: 160px;
+    .section_1 {
+        margin-top: 170px;
+        background-image: url("../public/background.jpg");
 
-        .background {
-            display: grid;
-            grid-template-columns: repeat(12, 1fr);
-            padding: 40px 0;
-            row-gap: 40px;
+        .upper {
+            grid-area: 1 / 3 / 2 / 11;
+            background: rgba(255, 255, 255, 0.5);
+            backdrop-filter: blur(15px);
             border-radius: 16px;
-            background-image: url("../public/background.jpg");
+            box-shadow: $box-shadow;
+            margin: 40px 0 0 0;
+            padding: 40px;
+            text-align: center;
 
-            .slogan_top {
-                grid-area: 1 / 3 / 2 / 11;
-                background: rgba(255, 255, 255, 0.5);
-                backdrop-filter: blur(15px);
-                padding: 40px 120px;
-                border-radius: 16px;
-                text-align: center;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
+            h1 {
+                padding-bottom: 20px;
+            }
+        }
 
-                    h4 {
-                        text-align: right;
-                        padding-top: 20px;
-                    }
+        .lower {
+            grid-area: 2 / 3 / 3 / 11;
+            background: rgba(255, 255, 255, 0.5);
+            backdrop-filter: blur(15px);
+            border-radius: 16px;
+            box-shadow: $box-shadow;
+            margin: 40px 0;
+            padding: 40px;
+            display: flex;
+
+            .image {
+                background-image: url("../public/paulina.jpg");
+                background-position: top;
+                background-size: cover;
+                background-repeat: no-repeat;
+                width: 100%;
+                height: 100%;
+                border-radius: 12px;
             }
 
-            .slogan_bottom {
-                grid-area: 2 / 3 / 3 / 11;
-                background: rgba(255, 255, 255, 0.5);
-                backdrop-filter: blur(15px);
-                padding: 40px 120px;
-                border-radius: 16px;
-
-                .area {
-                    justify-content: center;
-                    align-items: center;
-                    display: flex;
-                    flex-direction: row;
-
-                    .image {
-                        background-image: url("../public/paulina.jpg");
-                        background-position: top;
-                        background-size: cover;
-                        background-repeat: no-repeat;
-                        width: 100%;
-                        height: 350px;
-                        margin-right: 80px;
-                        border-radius: 12px;
-                    }
-                }
+            .text {
+                padding: 40px;
             }
         }
     }
