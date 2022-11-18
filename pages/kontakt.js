@@ -2,14 +2,14 @@ import Head from 'next/head'
 
 import { motion as m } from 'framer-motion'
 
-export default function O_mnie() {
+export default function Kontakt() {
     return (
         <m.div
-        initial={{opacity: 0}}
-        animate={{opacity: 1}}
-        exit={{opacity: 0}}
-        transition={{duration: 0.75, ease: 'easeOut', delay: 0.25}}
-        >
+    initial={{opacity: 0}}
+    animate={{opacity:1}}
+    transition={{duration: 0.75, ease: 'easeOut', delay: 0.25}}
+    exit={{opacity:0}}
+    >
 
             <Head>
                 <title>Paulina Janik | Psycholog, Psychoterapeuta</title>
@@ -20,7 +20,7 @@ export default function O_mnie() {
             <main>
                 <section>
                     <div className="container_o_mnie">
-                        <h1>To jest zakladka O MNIE.</h1>
+                        <h1>To jest zakladka KONTAKT.</h1>
                     </div>
                 </section>
             </main>

@@ -1,5 +1,6 @@
 import Head from 'next/head'
-import Link from 'next/link'
+
+import { motion as m } from 'framer-motion'
 
 import Hero from '../components/Hero'
 import Konsultacje from '../components/Konsultacje'
@@ -7,7 +8,12 @@ import Pomagam from '../components/Pomagam'
 
 export default function Home() {
   return (
-    <div>
+    <m.div
+    initial={{opacity: 0}}
+    animate={{opacity: 1}}
+    exit={{opacity: 0}}
+    transition={{duration: 0.75, ease: 'easeOut', delay: 0.25}}
+    >
 
       <Head>
         <title>Paulina Janik | Psycholog, Psychoterapeuta</title>
@@ -27,6 +33,6 @@ export default function Home() {
 
       <footer>
       </footer>
-    </div>
+    </m.div>
   )
 }

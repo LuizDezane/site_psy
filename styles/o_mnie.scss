@@ -1,0 +1,23 @@
+@import '/styles/globals';
+
+// ------------------------------ Desktop ------------------------------
+@media screen and (min-width: 1024px) {
+    main {
+        section {
+            .container_o_mnie {
+                height: 100vh;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    }
+}
+
+
+// ------------------------------ Tablet ------------------------------
+@media screen and (min-width: 768) and (max-width: 1023px) {}
+
+// ------------------------------ Smartphone ------------------------------
+@media screen and (max-width: 767px) {}

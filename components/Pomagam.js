@@ -33,7 +33,7 @@ const Pomagam = () => {
                     <p>Wyzwania, zmiany, ważne decyzje w życiu prywatnym lub zawodowym.</p>
                 </div>                
             </div>
-            <Link href="/umow_wizyte" className='button'><button className='orange'>Dowiedź sie wiecej...</button></Link>
+            <Link href="/jak_pomagam" className='button'><button className='orange'>Dowiedź sie wiecej...</button></Link>
         </div>        
     )
 }
