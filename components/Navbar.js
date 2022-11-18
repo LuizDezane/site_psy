@@ -1,12 +1,10 @@
 import Image from 'next/image'
 import Link from 'next/link'
 
-import { motion as m } from 'framer-motion'
-import { Power3 } from 'gsap'
-
 import logo from '../public/logo.svg'
 
 const Navbar = () => {
+
 return (
 <div id='navbar'>
     <div className="container">
