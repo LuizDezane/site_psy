@@ -20,7 +20,20 @@ export default function Cennik() {
             <main>
                 <section>
                     <div className="container_o_mnie">
-                        <h1>To jest zakladka CENNIK.</h1>
+                        <div>
+                            <h1>Cennik</h1>
+
+                            <div className="columns">
+                                <ul className="price">
+                                    <p>Płatność możliwa gotówką lub kartą.</p>
+                                    <p>Proszę o odwoływanie konsultacji najpóźniej na 24 godziny przed umówionym terminem wizyty. </p>
+                                    <h3>Konsultacja psychologiczna</h3>
+                                    <h2>150zł / 50 minut</h2>
+                                    <h3>Psychoterapia  indywidualna </h3>
+                                    <h2>150zł / 50 minut</h2>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                 </section>
             </main>
