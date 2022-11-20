@@ -22,10 +22,10 @@
             gap: 40px;
 
             .kolumna {
-                background: $white;
+                background: $orange-light;
                 border-radius: 16px;
                 border: solid 1px transparent;
-                box-shadow: $box-shadow;
+                // box-shadow: $box-shadow;
                 width: 30%;
                 padding:40px;
                 display: flex;
@@ -33,12 +33,12 @@
                 justify-content: center;
                 align-items: center;
                 text-align: center;
-
                 transition: all 0.3s ease-in-out;
 
                 &:hover {
+                    background: $orange-lightest;
                     border: solid 1px $orange;
-                    box-shadow: $box-shadow-hover;
+                    box-shadow: $box-shadow;
                 }
             }
         }

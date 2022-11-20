@@ -2,19 +2,23 @@
 @import url("https://use.typekit.net/dzq8zmk.css");
 
 /* ------------------------------ Variables ------------------------------ */
-$dark: #180A04;
-$grey: #5E5E5E;
-$orange: #EDB39B;
-$off-orange: #FBEFEA;
-$orange-faded: rgba(237, 179, 155, 0.8);
+$dark: #0D0B18;
+$grey: rgba(13, 11, 24, 0.75);
+$grey-light: rgba(13, 11, 24, 0.035);
+// $orange: #8b5df3;
+// $orange-lighter: #9369F4;
+// $orange-light: #EEE8FD;
+// $orange-lightest: #F7F3FE;
+$orange: #F38A5E;
+$orange-lighter: #F49369;
+$orange-light: #FDEEE8;
+$orange-lightest: #FEF7F3;
 $white: #FFFFFF;
-$off-white: #FEFAF8;
-$white-faded: rgba(255, 255, 255, 0.8);
 
-$box-shadow: rgba(0, 0, 0, 0.12) 0 20px 60px;
-$box-shadow-hover: rgba(0, 0, 0, 0.24) 0 20px 60px;
-$button-shadow: rgba(0, 0, 0, 0.12) 0 2px 6px;
-$button-shadow-hover: rgba(0, 0, 0, 0.24) 0 6px 12px;
+$box-shadow: rgba(13, 11, 24, 0.1) 0 20px 60px;
+$box-shadow-hover: rgba(13, 11, 24, 0.2) 0 20px 60px;
+$button-shadow: rgba(13, 11, 24, 0.1) 0 2px 6px;
+$button-shadow-hover: rgba(13, 11, 24, 0.2) 0 6px 12px;
 
 * {
   box-sizing: border-box;
@@ -28,7 +32,7 @@ html {
 }
 
 body {
-  background: $off-white;
+  background: $white;
   color: $grey;
   font-family: basel-neue, sans-serif;
   font-weight: 400;
@@ -86,44 +90,38 @@ button {
   border-radius: 6px;
   padding: 10px 30px;
   margin: 10px 0;
-  box-shadow: $button-shadow;
+  // box-shadow: $button-shadow;
   transition: all 0.3s ease-in-out;
 
   &:hover {
-    box-shadow: $button-shadow-hover;
+    // box-shadow: $button-shadow-hover;
     cursor: pointer;
   }
 }
 
-.orange {
-  background: $orange;
-  color: $white;
+.white {
+  background: $orange-lightest;
+  color: $orange;
 
   &:hover {
-    background: $orange-faded;
-    border: solid 1px $orange;
+    background: $orange-light;
   }
 }
 
-.white {
-  background: $white;
+.orange {
+  background: $orange-lighter;
+  color: $white;
 
   &:hover {
-    background: $off-white;
-    border: solid 1px $white;
+    background: $orange;
   }
 }
 
 // ------------------------------ Sections ------------------------------
 
-section {
-  margin: auto 40px;
-
-  .parent {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    border-radius: 16px;
-  }
+.parent {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
 }
 
 // ------------------------------ Desktop ------------------------------
