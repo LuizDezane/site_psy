@@ -20,7 +20,7 @@ export default function Blog() {
             <main>
                 <section>
                     <div className="container_o_mnie">
-                        <h1>To jest zakladka BLOG.</h1>
+                        <h2>Blog</h2>
                     </div>
                 </section>
             </main>
