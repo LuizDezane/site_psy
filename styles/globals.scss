@@ -2,17 +2,17 @@
 @import url("https://use.typekit.net/dzq8zmk.css");
 
 /* ------------------------------ Variables ------------------------------ */
-$dark: #0D0B18;
+$dark: #22130D;
 $grey: rgba(13, 11, 24, 0.75);
 $grey-light: rgba(13, 11, 24, 0.035);
-// $orange: #8b5df3;
-// $orange-lighter: #9369F4;
-// $orange-light: #EEE8FD;
-// $orange-lightest: #F7F3FE;
-$orange: #F38A5E;
-$orange-lighter: #F49369;
-$orange-light: #FDEEE8;
-$orange-lightest: #FEF7F3;
+$orange: #A05A3C;
+$orange-lighter: #BA6C4A;
+$orange-light: #F4E6E1;
+$orange-lightest: #F9F3F0;
+// $orange: #F38A5E;
+// $orange-lighter: #F49369;
+// $orange-light: #FDEEE8;
+// $orange-lightest: #FEF7F3;
 $white: #FFFFFF;
 
 $box-shadow: rgba(13, 11, 24, 0.1) 0 20px 60px;
@@ -118,6 +118,10 @@ button {
 }
 
 // ------------------------------ Sections ------------------------------
+
+section {
+  margin: 160px 40px 0;
+}
 
 .parent {
   display: grid;

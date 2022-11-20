@@ -19,10 +19,13 @@ export default function O_mnie() {
 
             <main>
                 <section>
-                    <div className="container_o_mnie">
+                    <div className="container">
                         <div>
                             <h2>O mnie</h2>
-                            <p>Dzień dobry Państwu, nazywam się Paulina Janik - psycholog, socjoterapeuta, psychoterapeuta psychodynamiczny.
+                            <p>mgr Paulina Janik</p>                            
+                        </div>
+                        <div className="tresc">
+                        <p>Dzień dobry Państwu, nazywam się Paulina Janik - psycholog, socjoterapeuta, psychoterapeuta psychodynamiczny.
                             <br />
                             Jestem absolwentką Psychologii na Uniwersytecie Humanistycznospołecznym SWPS we Wrocławiu, o specjalności klinicznej.
                             <br />

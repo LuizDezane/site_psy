@@ -2,6 +2,8 @@ import Link from 'next/link'
 import React, { useEffect } from 'react'
 import { gsap } from 'gsap'
 
+import Element_1 from './webgl/Element_1'
+
 const Hero = () => {
 
     useEffect(() => {
@@ -13,7 +15,7 @@ const Hero = () => {
 
 return (
     <div className="parent section_1">
-
+        <Element_1 />
         <div className='upper'>
             <h1>Gdy słucham co mówisz,<br /> słyszę kim jesteś</h1>
             <h4><i>Ralph Waldo Emerson</i></h4>
