@@ -1,6 +1,7 @@
 import Head from 'next/head'
 
 import { motion as m } from 'framer-motion'
+import Element_2 from '../components/webgl/Element_2.js'
 
 export default function O_mnie() {
     return (
@@ -19,10 +20,13 @@ export default function O_mnie() {
 
             <main>
                 <section>
-                    <div className="container">
+                    <div className="section_3">
                         <div>
                             <h2>O mnie</h2>
                             <p>mgr Paulina Janik</p>                            
+                        </div>
+                        <div>
+                            <Element_2 />
                         </div>
                         <div className="tresc">
                         <p>Dzień dobry Państwu, nazywam się Paulina Janik - psycholog, socjoterapeuta, psychoterapeuta psychodynamiczny.
