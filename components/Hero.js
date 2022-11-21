@@ -14,7 +14,7 @@ const Hero = () => {
     })
 
 return (
-    <div className="parent section_1">
+    <div className="grid_container">
         <Element_1 />
         <div className='upper'>
             <h1>Gdy słucham co mówisz,<br /> słyszę kim jesteś</h1>

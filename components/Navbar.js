@@ -32,6 +32,7 @@ return (
                 <Link href="/cennik">Cennik</Link>
                 <Link href="/blog">Blog</Link>
                 <Link href="/kontakt">Kontakt</Link>
+                <Link href="/test">TEST</Link>
             </li>
             <Link href="/umow_wizyte" className='div5'><button className='orange'>Umów wizytę</button></Link>
             {/*

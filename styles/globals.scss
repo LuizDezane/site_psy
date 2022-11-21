@@ -21,24 +21,24 @@ $button-shadow: rgba(13, 11, 24, 0.1) 0 2px 6px;
 $button-shadow-hover: rgba(13, 11, 24, 0.2) 0 6px 12px;
 
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 html {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-  scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    scroll-behavior: smooth;
 }
 
 body {
-  background: $white;
-  color: $grey;
-  font-family: basel-neue, sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  margin: auto;
-  overflow-x: hidden;
+    background: $white;
+    color: $grey;
+    font-family: basel-neue, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: auto;
+    overflow-x: hidden;
 }
 
 // ------------------------------ Fonts ------------------------------
@@ -47,165 +47,248 @@ h1,
 h2,
 h3,
 h4 {
-  font-family: dashiell-fine, serif;
-  font-weight: 400;
-  font-style: normal;
-  color: $dark;
+    font-family: dashiell-fine, serif;
+    font-weight: 400;
+    font-style: normal;
+    color: $dark;
+    line-height: 1.1;
 }
 
 p {
-  color: $grey;
+    color: $grey;
+    line-height: 1.4;
 }
 
 button {
-  font-family: basel-neue, sans-serif;
-  font-weight: 400;
-  font-style: normal;
+    font-family: basel-neue, sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 a {
-  text-decoration: none;
-  color: $grey;
-  transition: all 0.3s ease-in-out;
+    text-decoration: none;
+    color: $grey;
+    transition: all 0.3s ease-in-out;
 
-  &:hover {
-    color: $orange;
-  }
+    &:hover {
+        color: $orange;
+    }
 
-  &:focus {
-    color: $dark;
-  }
-}
-
-body,
-p,
-button {
-  font-size: 20px;
+    &:focus {
+        color: $dark;
+    }
 }
 
 // ------------------------------ Buttons ------------------------------
 
 button {
-  border: solid 1px transparent;
-  border-radius: 6px;
-  padding: 10px 30px;
-  margin: 10px 0;
-  // box-shadow: $button-shadow;
-  transition: all 0.3s ease-in-out;
+    border-radius: 9px;
+    padding: 12px 24px;
+    margin: 6px 0;
+    transition: all 0.3s ease-in-out;
 
-  &:hover {
-    // box-shadow: $button-shadow-hover;
-    cursor: pointer;
-  }
+    &:hover {
+        cursor: pointer;
+    }
 }
 
 .white {
-  background: $orange-lightest;
-  color: $orange;
+    background: $orange-lightest;
+    color: $orange;
 
-  &:hover {
-    background: $orange-light;
-  }
+    &:hover {
+        background: $orange-light;
+    }
 }
 
 .orange {
-  background: $orange-lighter;
-  color: $white;
+    background: $orange-lighter;
+    color: $white;
 
-  &:hover {
-    background: $orange;
-  }
-}
-
-// ------------------------------ Sections ------------------------------
-
-section {
-  margin: 160px 40px 0;
-}
-
-.parent {
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-}
-
-// ------------------------------ Desktop ------------------------------
-
-@media screen and (min-width: 1024px) {
-
-  h1,
-  h2,
-  h3,
-  h4 {
-    line-height: 1.0;
-    margin: 0;
-  }
-
-  h1 {
-    font-size: 60px;
-  }
-
-  h2 {
-    font-size: 50px;
-  }
-
-  h3 {
-    font-size: 40px;
-  }
-
-  h4 {
-    font-size: 30px;
-  }
-
-}
-
-// ------------------------------ Tablet ------------------------------
-
-@media screen and (min-width: 768) and (max-width: 1023px) {
-
-  body,
-  p,
-  button {
-    font-size: 18px;
-  }
-
-  h1 {
-    font-size: 50px;
-  }
-
-  button {
-    padding: 8px 24px;
-  }
-}
-
-// ------------------------------ Smartphone ------------------------------
-
-@media screen and (max-width: 767px) {
-
-  body,
-  p,
-  button {
-    font-size: 16px;
-  }
-
-  h1 {
-    font-size: 40px;
-  }
-
-  button {
-    padding: 6px 18px;
-  }
+    &:hover {
+        background: $orange;
+    }
 }
 
 // ------------------------------ Icons ------------------------------
 
 .icon {
-  filter: drop-shadow($button-shadow);
-  opacity: 1;
-  transition: all 0.3s ease-in-out;
+    filter: drop-shadow($button-shadow);
+    opacity: 1;
+    transition: all 0.3s ease-in-out;
 
-  &:hover {
-    opacity: 0.8;
-    filter: drop-shadow($button-shadow-hover);
-    cursor: pointer;
-  }
+    &:hover {
+        opacity: 0.8;
+        filter: drop-shadow($button-shadow-hover);
+        cursor: pointer;
+    }
+}
+
+// ------------------------------ Grid ------------------------------
+
+.grid_container {
+    display: grid;
+
+    .grid {
+        background: rgba(0, 255, 255, 0.15);
+        border: 1px solid #00FFFF;
+        border-radius: 16px;
+        box-shadow: rgba(171, 190, 209, 0.12) 0 6px 12px;
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        text-align: center;
+        transition: all 0.3s ease-in-out;
+
+        &:hover {
+            box-shadow: rgba(171, 190, 209, 0.24) 0 12px 24px;
+        }
+    }
+
+    .grid_4,
+    .grid_3 {
+        display: flex;
+        justify-content: space-between;
+
+        div {
+            width: 100%;
+        }
+    }
+}
+
+// ------------------------------ Desktop ------------------------------
+
+@media screen and (min-width: 1024px) {
+    .grid_container {
+        grid-template-columns: repeat(12, 1fr);
+        grid-column-gap: 32px;
+        grid-row-gap: 32px;
+        margin: 144px 128px 64px;
+
+        .grid {
+            padding: 36px;
+        }
+
+        .grid_12 {
+            grid-area: 1 / 1 / 2 / 13;
+        }
+
+        .grid_10 {
+            grid-area: 2 / 2 / 3 / 12;
+        }
+
+        .grid_8 {
+            grid-area: 3 / 5 / 4 / 13;
+        }
+
+        .grid_4 {
+            grid-area: 4 / 2 / 5 / 10;
+        }
+
+        .grid_3 {
+            grid-area: 5 / 1 / 6 / 10;
+        }
+
+        .grid_4,
+        .grid_3 {
+            gap: 32px;
+        }
+    }
+
+    body,
+    p,
+    button {
+        font-size: 20px;
+    }
+
+    h1 {
+        font-size: 4.209rem;
+    }
+
+    h2 {
+        font-size: 3.157rem;
+    }
+
+    h3 {
+        font-size: 2.369rem;
+    }
+
+    h4 {
+        font-size: 1.777rem;
+    }
+}
+
+// ------------------------------ Tablet ------------------------------
+
+@media screen and (max-width: 1200px) {
+    .grid_container {
+        grid-template-columns: repeat(9, 1fr);
+        grid-column-gap: 24px;
+        grid-row-gap: 24px;
+        margin: 144px 48px 48px;
+
+        .grid {
+            padding: 24px;
+        }
+
+        .grid_12 {
+            grid-area: 1 / 1 / 2 / 10;
+        }
+
+        .grid_10 {
+            grid-area: 2 / 2 / 3 / 9;
+        }
+
+        .grid_8 {
+            grid-area: 3 / 4 / 4 / 10;
+        }
+
+        .grid_4 {
+            grid-area: 4 / 2 / 5 / 8;
+        }
+
+        .grid_3 {
+            grid-area: 5 / 1 / 6 / 8;
+        }
+
+        .grid_4,
+        .grid_3 {
+            gap: 24px;
+        }
+    }
+
+    body,
+    p,
+    button {
+        font-size: 16px;
+    }
+}
+
+// ------------------------------ Smartphone ------------------------------
+
+@media screen and (max-width: 767px) {
+    .grid_container {
+        grid-template-columns: repeat(6, 1fr);
+        grid-column-gap: 16px;
+        grid-row-gap: 16px;
+        margin: 144px 16px 24px;
+
+        .grid {
+            padding: 12px;
+        }
+
+
+        .grid_4,
+        .grid_3 {
+            gap: 16px;
+        }
+    }
+
+    body,
+    p,
+    button {
+        font-size: 12px;
+    }
 }
