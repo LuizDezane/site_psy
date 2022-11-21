@@ -16,6 +16,10 @@ const test = () => {
                 <div className="grid">8 columns <br />Column 1</div>
             </div>
 
+            <div className="grid_8_centered">
+                <div className="grid">8 columns <br />Column 1</div>
+            </div>
+
             <div className="grid_4">
                 <div className="grid">4 columns <br />Column 1</div>
                 <div className="grid">4 columns <br />Column 2</div>
