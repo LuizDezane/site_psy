@@ -22,7 +22,7 @@
             gap: 40px;
 
             .kolumna {
-                background: $orange-light;
+                background: $secondary;
                 border-radius: 16px;
                 border: solid 1px transparent;
                 // box-shadow: $box-shadow;
@@ -36,8 +36,8 @@
                 transition: all 0.3s ease-in-out;
 
                 &:hover {
-                    background: $orange-lightest;
-                    border: solid 1px $orange;
+                    background: $primary;
+                    border: solid 1px $secondary;
                     box-shadow: $box-shadow;
                 }
             }

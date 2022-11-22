@@ -2,14 +2,14 @@
 @import url("https://use.typekit.net/dzq8zmk.css");
 
 /* ------------------------------ Variables ------------------------------ */
-$dark: #22130D;
-$grey: rgba(13, 11, 24, 0.75);
+$header: #22130D;
+$text: rgba(13, 11, 24, 0.75);
 $shadow: rgba(13, 11, 24, 0.12);
 $shadow-hover: rgba(13, 11, 24, 0.24);
-$orange: #A05A3C;
-$orange-lighter: #BA6C4A;
-$orange-light: #F4E6E1;
-$orange-lightest: #F9F3F0;
+$primary: #FF878B;
+$secondary: #F2247F;
+$gradient: linear-gradient(145deg, rgba(255,135,139,1) 0%, rgba(242,36,127,1) 100%);
+$off-white: #FFF6F7;
 $white: #FFFFFF;
 
 $box-shadow: $shadow 0 12px 32px;
@@ -17,10 +17,8 @@ $box-shadow-hover: $shadow-hover 0 24px 64px;
 $button-shadow: rgba(13, 11, 24, 0.1) 0 2px 6px;
 $button-shadow-hover: rgba(13, 11, 24, 0.2) 0 6px 12px;
 
-$header_font: minion-pro-display,
-serif;
-$text_font: minion-pro,
-serif;
+$header_font: meno-display, serif;
+$text_font: meno-display, serif;
 
 * {
     box-sizing: border-box;
@@ -34,11 +32,11 @@ html {
 }
 
 body {
-    background: $orange-lightest;
-    color: $grey;
     font-family: $text_font;
-    font-weight: 400;
+    font-weight: 300;
     font-style: normal;
+    font-weight: 400;
+    font-style: italic;
     margin: auto;
     overflow-x: hidden;
 }
@@ -50,38 +48,42 @@ h2,
 h3,
 h4 {
     font-family: $header_font;
-    font-weight: 500;
-    font-style: italic;
-    color: $dark;
-    line-height: 1.1;
+    font-weight: 300;
+    font-style: normal;
+    color: $header;
+    line-height: 1;
     margin: 0;
-    padding: 0;
+    padding-bottom: 12px;
 }
 
 p {
-    font-weight: 400;
-    color: $grey;
-    line-height: 1.4;
+    font-family: $text_font;
+    font-weight: 200;
+    font-style: italic;
+    color: $text;
+    line-height: 1.2;
 }
 
 button {
     font-family: $text_font;
-    font-weight: 400;
+    font-weight: 200;
+    font-style: italic;
     text-transform: capitalize;
     border: none;
 }
 
 a {
     text-decoration: none;
-    color: $grey;
+    font-family: $text_font;
+    color: $text;
     transition: all 0.3s ease-in-out;
 
     &:hover {
-        color: $orange;
+        color: $secondary;
     }
 
     &:focus {
-        color: $dark;
+        color: $primary;
     }
 }
 
@@ -99,20 +101,20 @@ button {
 }
 
 .white {
-    background: $orange-lightest;
-    color: $orange;
+    background: $off-white;
+    color: $primary;
 
     &:hover {
-        background: $orange-light;
+        background: $white;
     }
 }
 
 .orange {
-    background: $orange-lighter;
+    background: $gradient;
     color: $white;
 
     &:hover {
-        background: $orange;
+        background: $primary;
     }
 }
 
@@ -257,19 +259,19 @@ button {
     }
 
     h1 {
-        font-size: 84.17px;
+        font-size: 61.04px;
     }
 
     h2 {
-        font-size: 63.15px;
+        font-size: 48.83px;
     }
 
     h3 {
-        font-size: 47.37px;
+        font-size: 39.06px;
     }
 
     h4 {
-        font-size: 35.54px;
+        font-size: 31.25px;
     }
 }
 
@@ -333,23 +335,23 @@ button {
     body,
     p,
     button {
-        font-size: 16px;
+        font-size: 18px;
     }
 
     h1 {
-        font-size: 75.76px;
+        font-size: 54.93px;
     }
 
     h2 {
-        font-size: 56.83px;
+        font-size: 43.95px;
     }
 
     h3 {
-        font-size: 42.63px;
+        font-size: 35.16px;
     }
 
     h4 {
-        font-size: 31.98px;
+        font-size: 28.13px;
     }
 }
 
@@ -381,22 +383,22 @@ button {
     body,
     p,
     button {
-        font-size: 12px;
+        font-size: 16px;
     }
 
     h1 {
-        font-size: 67.34px;
+        font-size: 48.83px;
     }
 
     h2 {
-        font-size: 50.52px;
+        font-size: 39.06px;
     }
 
     h3 {
-        font-size: 37.90px;
+        font-size: 31.25px;
     }
 
     h4 {
-        font-size: 28.43px;
+        font-size: 25.00px;
     }
 }
