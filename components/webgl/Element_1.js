@@ -34,11 +34,11 @@ const Wave = () => {
 const Element_1 = () => {
 return (
     <Canvas className='element_1' camera={{ fov: 15, position: [0, 0, 15] }}
-    style={{
-        position: "relative",
-        width: "100%",
-        height: "100%"
-    }}
+    // style={{
+    //     position: "relative",
+    //     width: "100%",
+    //     height: "100%"
+    // }}
     >
         <Suspense fallback={null}>
             <Wave />

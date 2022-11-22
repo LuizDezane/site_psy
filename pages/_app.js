@@ -7,8 +7,7 @@ import '../styles/hero.scss'
 import '../styles/konsultacje.scss'
 import '../styles/pomagam.scss'
 import '../styles/o_mnie.scss'
-
-import '../styles/test.scss'
+import '../styles/sizes.scss'
 
 import Layout from '../components/Layout'
 
