@@ -31,7 +31,7 @@ return (
                         Zależy mi na tym, byś czuł się bezpiecznie
                         i swobodnie, dzieląc się ze mną swoimi historiami i doświadczeniami.
                         Gwarantuję zachowanie poufności.</p>
-                    <Link href="/o_mnie" className='button'><button className='orange'>Więcej o mnie...</button></Link>
+                    <Link href="/o_mnie" className='button'><button className='dark'>Więcej o mnie...</button></Link>
                 </div>
             </div>
         </div>

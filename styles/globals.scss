@@ -2,15 +2,17 @@
 @import url("https://use.typekit.net/dzq8zmk.css");
 
 /* ------------------------------ Variables ------------------------------ */
-$header: #22130D;
-$text: rgba(13, 11, 24, 0.75);
-$shadow: rgba(13, 11, 24, 0.12);
-$shadow-hover: rgba(13, 11, 24, 0.24);
+$header: #1C0001;
+$text: rgba(28, 0, 1, 0.85);
+$shadow: rgba(28, 0, 1, 0.12);
+$shadow-hover: rgba(28, 0, 1, 0.24);
 $primary: #FF878B;
 $secondary: #F2247F;
-$gradient: linear-gradient(145deg, rgba(255,135,139,1) 0%, rgba(242,36,127,1) 100%);
 $off-white: #FFF6F7;
 $white: #FFFFFF;
+
+$gradient: linear-gradient(145deg, $primary 0%, $secondary 100%);
+$gradient-light: linear-gradient(145deg, $white 0%, $off-white 100%);
 
 $box-shadow: $shadow 0 12px 32px;
 $box-shadow-hover: $shadow-hover 0 24px 64px;
@@ -32,6 +34,8 @@ html {
 }
 
 body {
+    background: $white;
+    color: $text;
     font-family: $text_font;
     font-weight: 300;
     font-style: normal;
@@ -47,10 +51,10 @@ h1,
 h2,
 h3,
 h4 {
-    font-family: $header_font;
-    font-weight: 300;
-    font-style: normal;
     color: $header;
+    font-family: $header_font;
+    font-weight: 400;
+    font-style: italic;
     line-height: 1;
     margin: 0;
     padding-bottom: 12px;
@@ -58,8 +62,8 @@ h4 {
 
 p {
     font-family: $text_font;
-    font-weight: 200;
-    font-style: italic;
+    font-weight: 400;
+    font-style: normal;
     color: $text;
     line-height: 1.2;
 }
@@ -67,7 +71,7 @@ p {
 button {
     font-family: $text_font;
     font-weight: 200;
-    font-style: italic;
+    font-style: normal;
     text-transform: capitalize;
     border: none;
 }
@@ -76,6 +80,7 @@ a {
     text-decoration: none;
     font-family: $text_font;
     color: $text;
+    font-style: normal;
     transition: all 0.3s ease-in-out;
 
     &:hover {
@@ -90,9 +95,9 @@ a {
 // ------------------------------ Buttons ------------------------------
 
 button {
-    border-radius: 9px;
-    padding: 12px 24px;
-    margin: 6px 0;
+    border-radius: 6px;
+    padding: 8px 32px;
+    margin: 8px 0;
     transition: all 0.3s ease-in-out;
 
     &:hover {
@@ -100,21 +105,25 @@ button {
     }
 }
 
-.white {
-    background: $off-white;
+.light {
+    background: $gradient-light;
     color: $primary;
+    box-shadow: $button-shadow;
+    transition: all 0.3s ease-in-out;
 
     &:hover {
-        background: $white;
+        box-shadow: $button-shadow-hover;
     }
 }
 
-.orange {
+.dark {
     background: $gradient;
     color: $white;
+    box-shadow: $button-shadow;
+    transition: all 0.3s ease-in-out;
 
     &:hover {
-        background: $primary;
+        box-shadow: $button-shadow-hover;
     }
 }
 
@@ -167,12 +176,25 @@ button {
         box-shadow: $box-shadow;
     }
 
+    .light {
+        background: $gradient-light;
+        transition: all 0.3s ease-in-out;
+
+        &:hover {
+            background: $white;
+        }
+    }
+    .dark {
+        background: $gradient;
+        transition: all 0.3s ease-in-out;
+    }
+
     .hover {
         box-shadow: $box-shadow;
+        transition: all 0.3s ease-in-out;
 
         &:hover {
             box-shadow: $box-shadow-hover;
-            transform: translateY(-3px);
         }
     }
 

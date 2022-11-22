@@ -34,9 +34,7 @@ return (
                 <Link href="/kontakt">Kontakt</Link>
                 <Link href="/test">TEST</Link>
             </li>
-            <Link href="/umow_wizyte" className='div5'><button className='orange'>Umów wizytę</button></Link>
-            {/*
-            <Link href="/umow_wizyte"><button className='white'>Umów wizytę</button></Link> */}
+            <Link href="/umow_wizyte" className='div5'><button className='dark'>Umów wizytę</button></Link>
         </div>
     </div>
 </div>
