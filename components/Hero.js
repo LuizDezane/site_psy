@@ -16,7 +16,7 @@ useEffect(() => {
             <div className="hero"></div>
             <div className='blur upper'>
                 <h2>Gdy słucham co mówisz,<br /> słyszę kim jesteś</h2>
-                <h4><i>Ralph Waldo Emerson</i></h4>
+                <h4 className='ralph'><i>Ralph Waldo Emerson</i></h4>
             </div>
 
             <div className='blur lower'></div>

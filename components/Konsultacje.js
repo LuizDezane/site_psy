@@ -4,7 +4,7 @@ const Konsultacje = () => {
     return (
         <div className='grid_container'>
 
-            <h1 className="header">Konsultacje</h1>
+            <h1 className="header_konsultacje">Konsultacje</h1>
 
             <div className="kosnultacje_1">
                 <h4>Konsultacje psychologiczne</h4>
@@ -12,7 +12,7 @@ const Konsultacje = () => {
                 <Link href="/komu_pomagam" className='konsultacje_button'><button className='dark'>Dowiedz się więcej</button></Link>
             </div>
 
-            <div className="line"></div>
+            <div className="horizontal_line"></div>
 
             <div className="kosnultacje_2">
                 <h4>Psychoterapia indywidualna osób dorosłych</h4>

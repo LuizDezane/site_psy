@@ -7,7 +7,7 @@
         grid-template-columns: repeat(12, 1fr);
         gap: 24px;
 
-        .header {
+        .header_konsultacje {
             grid-area: 1 / 1 / 2 / 6;
             margin-top: 80px;
         }
@@ -17,7 +17,7 @@
             margin-top: 80px;
         }
 
-        .line{
+        .horizontal_line {
             grid-area: 3 / 6 / 4 / 13;
             border-bottom: 1px solid $header;
             margin: 48px 0;
