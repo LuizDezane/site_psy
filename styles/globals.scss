@@ -2,22 +2,19 @@
 @import url("https://use.typekit.net/dzq8zmk.css");
 
 /* ------------------------------ Variables ------------------------------ */
-$header: #1C0001;
-$text: rgba(28, 0, 1, 0.85);
-$shadow: rgba(28, 0, 1, 0.12);
-$shadow-hover: rgba(28, 0, 1, 0.24);
-$primary: #FF878B;
-$secondary: #F2247F;
-$off-white: #FFF6F7;
+$primary: #CDD8E1;
+$secondary: #E8E0DB;
+$gradient: linear-gradient(90deg, $primary 0%, $secondary 100%);
+$off-white: #FBFCFD;
 $white: #FFFFFF;
 
-$gradient: linear-gradient(145deg, $primary 0%, $secondary 100%);
-$gradient-light: linear-gradient(145deg, $white 0%, $off-white 100%);
+$header: #0B1013;
+$text: #2E3F4D;
 
-$box-shadow: $shadow 0 12px 32px;
-$box-shadow-hover: $shadow-hover 0 24px 64px;
-$button-shadow: rgba(13, 11, 24, 0.1) 0 2px 6px;
-$button-shadow-hover: rgba(13, 11, 24, 0.2) 0 6px 12px;
+$line: rgba(11, 16, 19, 0.6);
+$button: rgba(232, 224, 219, 0.5);
+$button_hover: rgba(232, 224, 219, 0.75);
+$button_shadow: rgba(11, 16, 19, 0.24) 0 2px 6px;
 
 $header_font: meno-display, serif;
 $text_font: meno-display, serif;
@@ -37,7 +34,6 @@ body {
     background: $white;
     color: $text;
     font-family: $text_font;
-    font-weight: 300;
     font-style: normal;
     font-weight: 400;
     font-style: italic;
@@ -68,14 +64,6 @@ p {
     line-height: 1.2;
 }
 
-button {
-    font-family: $text_font;
-    font-weight: 200;
-    font-style: normal;
-    text-transform: capitalize;
-    border: none;
-}
-
 a {
     text-decoration: none;
     font-family: $text_font;
@@ -95,35 +83,22 @@ a {
 // ------------------------------ Buttons ------------------------------
 
 button {
-    border-radius: 6px;
-    padding: 8px 32px;
-    margin: 8px 0;
+    font-family: $text_font;
+    color: $header;
+    background: $button;
+    font-weight: 400;
+    font-style: normal;
+    text-transform: uppercase;
+    border: 1px solid $line;
+    border-radius: 50px;
+    padding: 8px 18px;
+    margin: 0;
     transition: all 0.3s ease-in-out;
 
     &:hover {
+        background: $button_hover;
+        box-shadow: $button_shadow;
         cursor: pointer;
-    }
-}
-
-.light {
-    background: $gradient-light;
-    color: $primary;
-    box-shadow: $button-shadow;
-    transition: all 0.3s ease-in-out;
-
-    &:hover {
-        box-shadow: $button-shadow-hover;
-    }
-}
-
-.dark {
-    background: $gradient;
-    color: $white;
-    box-shadow: $button-shadow;
-    transition: all 0.3s ease-in-out;
-
-    &:hover {
-        box-shadow: $button-shadow-hover;
     }
 }
 
@@ -137,13 +112,11 @@ button {
 // ------------------------------ Icons ------------------------------
 
 .icon {
-    filter: drop-shadow($button-shadow);
     opacity: 1;
     transition: all 0.3s ease-in-out;
 
     &:hover {
         opacity: 0.8;
-        filter: drop-shadow($button-shadow-hover);
         cursor: pointer;
     }
 }
@@ -152,58 +125,4 @@ button {
 
 .grid_container {
     display: grid;
-    border-radius: 16px;
-
-    .header {
-        text-align: center;
-    }
-
-    .grid,
-    .grid_hero {
-        border-radius: 16px;
-        display: flex;
-        flex-direction: column;
-        align-content: center;
-        justify-content: center;
-        align-items: center;
-        align-content: center;
-        text-align: center;
-        transition: all 0.3s ease-in-out;
-    }
-
-    .grid {
-        background: $white;
-        box-shadow: $box-shadow;
-    }
-
-    .light {
-        background: $gradient-light;
-        transition: all 0.3s ease-in-out;
-
-        &:hover {
-            background: $white;
-        }
-    }
-    .dark {
-        background: $gradient;
-        transition: all 0.3s ease-in-out;
-    }
-
-    .hover {
-        box-shadow: $box-shadow;
-        transition: all 0.3s ease-in-out;
-
-        &:hover {
-            box-shadow: $box-shadow-hover;
-        }
-    }
-
-    .grid_4,
-    .grid_3.upper,
-    .grid_3.lower {
-
-        div {
-            width: 100%;
-        }
-    }
 }

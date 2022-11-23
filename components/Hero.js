@@ -13,29 +13,28 @@ const Hero = () => {
         {opacity: 1, y: 0, duration: 1, delay: 1, stagger: 0.15})
     })
 
-return (
-    <div className="grid_container">
-        <Element_1 />
-        <div className="grid_8_hero">
-            <div className='grid_hero blur upper'>
-                <h1>Gdy słucham co mówisz,<br /> słyszę kim jesteś</h1>
-                <h4><i>Ralph Waldo Emerson</i></h4>
-            </div>
+    return (
+        <div className="grid_container">
+            <div className="hero">
+                <div className='blur upper'>
+                    <h1>Gdy słucham co mówisz,<br /> słyszę kim jesteś</h1>
+                    <h4><i>Ralph Waldo Emerson</i></h4>
+                </div>
 
-            <div className='blur lower'>
-                <div className="image"></div>
-                <div className="text">
-                    <h2>Paulina Janik</h2>
-                    <h3>Psycholog, psychoterapeuta</h3>
-                    <p>W swojej pacy kieruje się przede wszystkim dobrem drugiej osoby.
-                        Zależy mi na tym, byś czuł się bezpiecznie
-                        i swobodnie, dzieląc się ze mną swoimi historiami i doświadczeniami.
-                        Gwarantuję zachowanie poufności.</p>
-                    <Link href="/o_mnie" className='button'><button className='dark'>Więcej o mnie...</button></Link>
+                <div className='blur lower'>
+                    <div className="image"></div>
+                    <div className="text">
+                        <h2>Paulina Janik</h2>
+                        <h3>Psycholog, psychoterapeuta</h3>
+                        <p>W swojej pacy kieruje się przede wszystkim dobrem drugiej osoby.
+                            Zależy mi na tym, byś czuł się bezpiecznie
+                            i swobodnie, dzieląc się ze mną swoimi historiami i doświadczeniami.
+                            Gwarantuję zachowanie poufności.</p>
+                        <Link href="/o_mnie" className='button'><button>Więcej o mnie...</button></Link>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
     )
 }
 
