@@ -9,7 +9,7 @@ $off-white: #FBFCFD;
 $white: #FFFFFF;
 
 $header: #0B1013;
-$text: #2E3F4D;
+$text: rgba(46, 63, 77, 0.8);
 
 $line: rgba(11, 16, 19, 0.6);
 $button: rgba(232, 224, 219, 0.5);
@@ -50,6 +50,7 @@ h4 {
     color: $header;
     font-family: $header_font;
     font-weight: 400;
+    text-transform: uppercase;
     font-style: italic;
     line-height: 1;
     margin: 0;
@@ -66,17 +67,19 @@ p {
 
 a {
     text-decoration: none;
+    text-transform: uppercase;
     font-family: $text_font;
     color: $text;
     font-style: normal;
     transition: all 0.3s ease-in-out;
 
     &:hover {
-        color: $secondary;
+        opacity: 0.8;
     }
 
     &:focus {
-        color: $primary;
+        color: rgba(11, 16, 19, 1);
+        opacity: 1;
     }
 }
 
@@ -86,6 +89,7 @@ button {
     font-family: $text_font;
     color: $header;
     background: $button;
+    font-size: 20px;
     font-weight: 400;
     font-style: normal;
     text-transform: uppercase;

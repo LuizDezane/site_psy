@@ -10,7 +10,6 @@
         z-index: 100;
 
         .container {
-
             .upper_header {
                 display: grid;
                 grid-template-columns: repeat(12, 1fr);
@@ -59,7 +58,7 @@
                 border-bottom: 1px solid $line;
 
                 .div4 {
-                    grid-area: 2 / 2 / 3 / 8;
+                    grid-area: 2 / 2 / 3 / 9;
                     display: flex;
                     align-items: center;
                     justify-content: space-between;

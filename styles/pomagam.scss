@@ -2,50 +2,47 @@
 
 // ------------------------------ Desktop ------------------------------
 @media screen and (min-width: 1024px) {
-    .section_3 {
-        margin: 40px 0;
+    .grid_container {
         display: grid;
         grid-template-columns: repeat(12, 1fr);
+        gap: 24px;
 
         .header {
-            padding: 40px 0;
-            grid-area: 1 / 3 / 2 / 11;
-            text-align: center;
+            grid-area: 1 / 1 / 2 / 6;
+            margin-top: 80px;
         }
 
-        .kolumny {
-            grid-area: 2 / 2 / 3 / 12;
+        .pomagam_background {
+            grid-area: 2 / 1 / 4 / 13;
+            background: $gradient;
+            border: 1px solid $header;
+            z-index: -1;
+        }
+
+        .pomagam_upper {
+            grid-area: 2 / 1 / 3 / 13;
             display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
             justify-content: space-between;
-            gap: 40px;
+            padding: 48px;
 
-            .kolumna {
-                background: $secondary;
-                border-radius: 16px;
-                border: solid 1px transparent;
-                // box-shadow: $box-shadow;
+            .pomagam {
                 width: 30%;
-                padding:40px;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                text-align: center;
-                transition: all 0.3s ease-in-out;
-
-                &:hover {
-                    background: $primary;
-                    border: solid 1px $secondary;
-                }
             }
         }
 
-        .button {
-            padding: 40px 0;
-            grid-area: 3 / 3 / 4 / 11;
-            text-align: center;
+        .pomagam_lower {
+            grid-area: 3 / 1 / 4 / 13;
+            display: flex;
+            justify-content: space-between;
+            padding: 0 48px 48px 48px;
+
+            .pomagam {
+                width: 30%;
+            }
+        }
+
+        .pomagam_button {
+            grid-area: 4 / 6 / 5 / 8;
         }
     }
 }

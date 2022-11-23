@@ -1,7 +1,57 @@
 @import '/styles/globals';
 
 // ------------------------------ Desktop ------------------------------
-@media screen and (min-width: 1024px) {}
+@media screen and (min-width: 1024px) {
+    .grid_container {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        gap: 24px;
+        margin: 120px;
+
+        .hero {
+            background-image: url(/background_adjusted.jpg);
+            grid-area: 1 / 1 / 4 / 13;
+            height: calc(100% + 24px);
+        }
+
+        .upper {
+            grid-area: 1 / 2 / 2 / 12;
+            margin: 24px 0;
+            padding: 24px 0;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+        }
+
+        .lower {
+            grid-area: 2 / 2 / 4 / 12;
+            display: flex;
+            flex-direction: row;
+            // height: calc(100% + 24px);
+        }
+
+        .image {
+            grid-area: 2 / 3 / 3 / 6;
+            background-image: url("../public/paulina.jpg");
+            background-position: top;
+            background-size: cover;
+            background-repeat: no-repeat;
+            margin: 24px 0;
+            height: calc(100% - 24px);
+            border: 1px solid $line;
+        }
+
+        .text {
+            grid-area: 2 / 7 / 3 / 11;
+            margin-top: 24px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+            // height: 100%;
+        }
+    }
+}
 
 
 // ------------------------------ Tablet ------------------------------

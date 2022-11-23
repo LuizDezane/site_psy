@@ -1,7 +1,33 @@
 @import '/styles/globals';
 
 // ------------------------------ Desktop ------------------------------
-@media screen and (min-width: 1024px) {}
+@media screen and (min-width: 1024px) {
+    .grid_container {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        gap: 24px;
+
+        .header {
+            grid-area: 1 / 1 / 2 / 6;
+            margin-top: 80px;
+        }
+
+        .kosnultacje_1 {
+            grid-area: 1 / 7 / 3 / 13;
+            margin-top: 80px;
+        }
+
+        .line{
+            grid-area: 3 / 6 / 4 / 13;
+            border-bottom: 1px solid $header;
+            margin: 48px 0;
+        }
+
+        .kosnultacje_2 {
+            grid-area: 4 / 7 / 6 / 13;
+        }
+    }
+}
 
 // ------------------------------ Tablet ------------------------------
 @media screen and (min-width: 768) and (max-width: 1023px) {}
