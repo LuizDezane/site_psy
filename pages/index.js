@@ -4,6 +4,7 @@ import { motion as m } from 'framer-motion'
 import Hero from '../components/Hero'
 import Konsultacje from '../components/Konsultacje'
 import Pomagam from '../components/Pomagam'
+import Kontakt_Form from '../components/Kontakt_Form'
 
 export default function Home() {
     return (
@@ -22,6 +23,7 @@ export default function Home() {
                         <Hero />
                         <Konsultacje />
                         <Pomagam />
+                        <Kontakt_Form />
                     </div>
                 </section>
             </main>

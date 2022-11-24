@@ -5,20 +5,18 @@
     .grid_container {
         display: grid;
         grid-template-columns: repeat(12, 1fr);
-        gap: 24px;
 
         .header_pomagam {
             grid-area: 1 / 1 / 2 / 6;
-            margin-top: 80px;
-            margin-bottom: 40px;
+            margin-bottom: $medium;
         }
 
         .pomagam_background {
             grid-area: 2 / 1 / 4 / 13;
             background: $gradient;
-            border: 1px solid $header;
-            padding: 48px 96px;
-            gap: 48px;
+            border: 1px solid $line_60;
+            padding: $small $medium;
+            gap: $xtra_small;
             display: flex;
             flex-wrap: wrap;
             justify-content: space-between;
@@ -28,34 +26,10 @@
             width: 30%;
         }
 
-        .horizontal_line_pomagam {
-            border-bottom: 1px solid $header;
-            margin-top: 24px;
-            width: 60%;
-            opacity: 0.5;
+        .line_pomagam {
+            border-bottom: 1px solid $line_60;
+            margin-top: $xtra_small;
         }
-
-        // .pomagam_upper {
-        //     grid-area: 2 / 1 / 3 / 13;
-        //     display: flex;
-        //     justify-content: space-between;
-        //     padding: 48px;
-
-        //     .pomagam {
-        //         width: 30%;
-        //     }
-        // }
-
-        // .pomagam_lower {
-        //     grid-area: 3 / 1 / 4 / 13;
-        //     display: flex;
-        //     justify-content: space-between;
-        //     padding: 0 48px 48px 48px;
-
-        //     .pomagam {
-        //         width: 30%;
-        //     }
-        // }
 
         .pomagam_button {
             grid-area: 4 / 6 / 5 / 8;

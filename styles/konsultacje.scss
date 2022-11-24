@@ -9,12 +9,20 @@
 
         .header_konsultacje {
             grid-area: 1 / 1 / 2 / 6;
-            margin-top: 80px;
+            margin-bottom: $medium;
+        }
+
+        .image_konsultacje {
+            grid-area: 2 / 3 / 7 x / 6;
+            background-image: url("../public/10.jpeg");
+            background-position: top;
+            background-size: cover;
+            background-repeat: no-repeat;
+            border: 1px solid $line_60;
         }
 
         .kosnultacje_1 {
             grid-area: 1 / 7 / 3 / 13;
-            margin-top: 80px;
         }
 
         .horizontal_line {
