@@ -1,0 +1,62 @@
+@import '/styles/globals';
+
+// ------------------------------ Desktop ------------------------------
+@media screen and (min-width: 1024px) {
+    .container_footer {
+        display: flex;
+        width: 100%;
+
+        .column_1 {
+            background: $gradient;
+            width: 50%;
+            height: 100%;
+            padding: 40px 120px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+            border: 1px solid $line;
+        }
+
+        .column_1 p {
+            margin: 0;
+        }
+
+        .column_2 {
+            width: 50%;
+            height: 100%;
+            padding: 40px 120px;
+            display: flex;
+            flex-direction: column;
+            gap: 60px;
+            border-top: 1px solid $line;
+
+            .footer_menu {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 6px;
+            }
+            
+            .footer_bottom {
+                height: 100%;
+                display: flex;
+                justify-content: space-between;
+                align-content: flex-end;
+                justify-items: flex-end;
+                align-items: flex-end;
+
+                .icon {
+                    margin-right: 6px;
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}
+
+// ------------------------------ Tablet ------------------------------
+@media screen and (min-width: 768) and (max-width: 1023px) {}
+
+// ------------------------------ Smartphone ------------------------------
+@media screen and (max-width: 767px) {}

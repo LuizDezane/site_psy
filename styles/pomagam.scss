@@ -18,8 +18,21 @@
             background: $gradient;
             border: 1px solid $header;
             padding: 48px 96px;
-            gap: 96px;
+            gap: 48px;
             display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .pomagam {
+            width: 30%;
+        }
+
+        .horizontal_line_pomagam {
+            border-bottom: 1px solid $header;
+            margin-top: 24px;
+            width: 60%;
+            opacity: 0.5;
         }
 
         // .pomagam_upper {
