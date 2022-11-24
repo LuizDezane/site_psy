@@ -30,10 +30,10 @@ const Footer = () => {
                 </li>
 
                 <div className="footer_bottom">
-                    <div>
+                    <div className='footer_bottom_left'>
                         <Image className='icon' src="/phone.svg" alt="phone" width={35} height={35} />
-                        <Image className='icon' src="/instagram.svg" alt="instagram" width={35} height={35} />
-                        <Image className='icon' src="/facebook.svg" alt="facebook" width={35} height={35} />
+                        <Link href="https://www.instagram.com/_pomiedzy__slowami_/" target="_blank"><Image className='icon' src="/instagram.svg" alt="instagram" width={35} height={35} /></Link>
+                        <Link href="https://www.facebook.com/profile.php?id=100087274075683&sk=services" target="_blank"><Image className='icon' src="/facebook.svg" alt="facebook" width={35} height={35} /></Link>
                     </div>
 
                     <div>

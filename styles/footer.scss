@@ -10,7 +10,7 @@
             background: $gradient;
             width: 50%;
             height: 100%;
-            padding: 40px 120px;
+            padding: $small $xtra_large;
             display: flex;
             flex-direction: column;
             align-items: flex-start;
@@ -24,31 +24,41 @@
 
         .column_2 {
             width: 50%;
-            height: 100%;
-            padding: 40px 120px;
+            padding: $small $xtra_large;
             display: flex;
             flex-direction: column;
-            gap: 60px;
+            gap: $none $xxtra_small;
             border-top: 1px solid $line_60;
+            display: flex;
+            justify-content: space-between;
 
             .footer_menu {
                 display: flex;
                 flex-direction: column;
                 align-items: flex-start;
-                gap: 6px;
+                gap: $xxtra_small $none;
             }
-            
+
             .footer_bottom {
-                height: 100%;
                 display: flex;
                 justify-content: space-between;
                 align-content: flex-end;
                 justify-items: flex-end;
                 align-items: flex-end;
 
+                .footer_bottom_left {
+                    display: flex;
+                }
+
                 .icon {
-                    margin-right: 6px;
-                    margin-bottom: 0;
+                    margin-right: $xxtra_small;
+                    display: flex;
+                    align-items: flex-end;
+                }
+
+                .logo {
+                    display: flex;
+                    align-items: flex-end;
                 }
             }
         }

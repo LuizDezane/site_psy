@@ -13,8 +13,9 @@
             .upper_header {
                 display: grid;
                 grid-template-columns: repeat(12, 1fr);
+                gap: $none $xxtra_small;
+                padding: $none $xtra_large;
                 height: 60px;
-                padding: 0 120px;
                 background: $gradient;
                 justify-content: center;
                 align-content: center;
@@ -22,8 +23,8 @@
 
                 .div1 {
                     grid-area: 1 / 1 / 2 / 5;
+                    gap: $xxtra_small;
                     display: flex;
-                    gap: 12px;
                     justify-content: flex-start;
                     align-items: center;
                 }
@@ -37,8 +38,8 @@
 
                 .div3 {
                     grid-area: 1 / 9 / 2 / 13;
+                    gap: $xxtra_small;
                     display: flex;
-                    gap: 12px;
                     justify-content: flex-end;
                     align-items: center;
                 }
@@ -47,9 +48,9 @@
             .lower_header {
                 display: grid;
                 grid-template-columns: repeat(12, 1fr);
-                column-gap: 24px;
+                gap: $none $xxtra_small;
+                padding: $none $xtra_large;
                 height: 60px;
-                padding: 0 120px;
                 background: rgba(255, 255, 255, 0.5);
                 backdrop-filter: blur(15px);
                 justify-content: center;

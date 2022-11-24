@@ -10,7 +10,7 @@ return (
         <div className="upper_header">
             <div className='div1'>
                 <Image className='icon' src="/phone.svg" alt="phone" width={35} height={35} />
-                <p>0212 123 45 67</p>
+                <a>0212 123 45 67</a>
             </div>
             <div className='div2'>
                 <Link href="/">
@@ -18,8 +18,8 @@ return (
                 </Link>
             </div>
             <div className='div3'>
-                <Image className='icon' src="/instagram.svg" alt="instagram" width={35} height={35} />
-                <Image className='icon' src="/facebook.svg" alt="facebook" width={35} height={35} />
+                <Link href="https://www.instagram.com/_pomiedzy__slowami_/" target="_blank"><Image className='icon' src="/instagram.svg" alt="instagram" width={35} height={35} /></Link>
+                <Link href="https://www.facebook.com/profile.php?id=100087274075683&sk=services" target="_blank"><Image className='icon' src="/facebook.svg" alt="facebook" width={35} height={35} /></Link>
             </div>
         </div>
         <div className="lower_header">

@@ -6,13 +6,13 @@ const Hero = () => {
 
 useEffect(() => {
     const t1 = gsap.timeline()
-    gsap.fromTo(".hero, .upper, h1, h4, .lower, .image, .text",
+    gsap.fromTo(".hero, .upper, h2, h4, .lower, .image, .text, h3, h4, .paragraph, .button",
     {opacity: 0, y: 25},
     {opacity: 1, y: 0, duration: 1, delay: 1, stagger: 0.15})
     })
 
     return (
-        <div className="grid_container">
+        <div className="grid_container hero_container">
             <div className="hero"></div>
             <div className='blur upper'>
                 <h2>Gdy słucham co mówisz,<br /> słyszę kim jesteś</h2>
@@ -24,7 +24,7 @@ useEffect(() => {
             <div className="text">
                 <h3>Paulina Janik</h3>
                 <h4>Psycholog, psychoterapeuta</h4>
-                <p>W swojej pacy kieruje się przede wszystkim dobrem drugiej osoby.
+                <p className='paragraph'>W swojej pacy kieruje się przede wszystkim dobrem drugiej osoby.
                     Zależy mi na tym, byś czuł się bezpiecznie
                     i swobodnie, dzieląc się ze mną swoimi historiami i doświadczeniami.
                     Gwarantuję zachowanie poufności.</p>

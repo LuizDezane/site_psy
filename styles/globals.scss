@@ -8,15 +8,18 @@ $primary_60: rgba(183, 74, 82, 0.6);
 
 $secondary: #DBA4A7;
 $secondary_light: #EFD8D9;
+$grey_light: #CAC8DA;
 
-$gradient: linear-gradient(90deg, $secondary 0%, $secondary_light 100%);
+$gradient: linear-gradient(90deg, $grey_light 0%, $secondary_light 100%);
 
 $header: #232232;
 $text: rgba(35, 34, 50, 0.6);
+$text_hover: rgba(35, 34, 50, 0.8);
 $white: #FFFFFF;
 
 $line_50: rgba(35, 34, 50, 0.5);
 $line_60: rgba(35, 34, 50, 0.6);
+
 $button_shadow: rgba(11, 16, 19, 0.24) 0 2px 6px;
 $button_shadow_hover: rgba(11, 16, 19, 0.36) 0 4px 12px;
 
@@ -115,11 +118,11 @@ a {
     transition: all 0.3s ease-in-out;
 
     &:hover {
-        opacity: 0.8;
+        color: $text_hover;
     }
 
     &:focus {
-        color: rgba(11, 16, 19, 1);
+        color: $header;
         opacity: 1;
     }
 }
@@ -129,7 +132,7 @@ a {
 button {
     font-family: $text_font;
     color: $white;
-    background: $secondary;
+    background: $primary_50;
     font-size: $links;
     font-weight: 400;
     font-style: normal;
@@ -141,7 +144,7 @@ button {
     transition: all 0.3s ease-in-out;
 
     &:hover {
-        background: $secondary_light;
+        background: $primary_60;
         color: $header;
         border: 1px solid $line_60;
         box-shadow: $button_shadow_hover;
@@ -163,7 +166,7 @@ button {
     transition: all 0.3s ease-in-out;
 
     &:hover {
-        opacity: 1;
+        opacity: 0.8;
         cursor: pointer;
     }
 }
@@ -171,5 +174,5 @@ button {
 // ------------------------------ Grid ------------------------------
 
 .grid_container {
-    display: grid;
+    margin: $none $xtra_large $xtra_large;
 }
