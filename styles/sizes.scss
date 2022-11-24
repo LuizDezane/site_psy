@@ -2,85 +2,12 @@
 
 // ------------------------------ Desktop ------------------------------
 
-@media screen and (min-width: 1024px) {
-
-    body,
-    p {
-        font-size: 26px;
-    }
-
-    h1 {
-        font-size: 79.35px;
-    }
-
-    h2 {
-        font-size: 63.48px;
-    }
-
-    h3 {
-        font-size: 50.78px;
-    }
-
-    h4 {
-        font-size: 40.63px;
-    }
-
-    a,
-    button {
-        font-size: 20px;
-    }
-}
+@media screen and (min-width: 1024px) {}
 
 // ------------------------------ Tablet ------------------------------
 
-@media screen and (max-width: 1200px) {
-
-    body,
-    p,
-    button {
-        font-size: 18px;
-    }
-
-    h1 {
-        font-size: 54.93px;
-    }
-
-    h2 {
-        font-size: 43.95px;
-    }
-
-    h3 {
-        font-size: 35.16px;
-    }
-
-    h4 {
-        font-size: 28.13px;
-    }
-}
+@media screen and (max-width: 1200px) {}
 
 // ------------------------------ Smartphone ------------------------------
 
-@media screen and (max-width: 767px) {
-
-    body,
-    p,
-    button {
-        font-size: 16px;
-    }
-
-    h1 {
-        font-size: 48.83px;
-    }
-
-    h2 {
-        font-size: 39.06px;
-    }
-
-    h3 {
-        font-size: 31.25px;
-    }
-
-    h4 {
-        font-size: 25.00px;
-    }
-}
+@media screen and (max-width: 767px) {}

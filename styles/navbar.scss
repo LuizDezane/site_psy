@@ -13,13 +13,12 @@
             .upper_header {
                 display: grid;
                 grid-template-columns: repeat(12, 1fr);
-                column-gap: 24px;
                 height: 60px;
                 padding: 0 120px;
                 background: $gradient;
                 justify-content: center;
                 align-content: center;
-                border-bottom: 1px solid $line;
+                border-bottom: 1px solid $line_50;
 
                 .div1 {
                     grid-area: 1 / 1 / 2 / 5;
@@ -55,7 +54,7 @@
                 backdrop-filter: blur(15px);
                 justify-content: center;
                 align-content: center;
-                border-bottom: 1px solid $line;
+                border-bottom: 1px solid $line_60;
 
                 .div4 {
                     grid-area: 2 / 2 / 3 / 9;
