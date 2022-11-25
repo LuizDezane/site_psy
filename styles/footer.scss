@@ -1,66 +1,77 @@
 @import '/styles/globals';
 
+.container_footer {
+    display: flex;
+    width: 100%;
+
+    .column_1 {
+        background: $gradient;
+        height: 100%;
+        padding: $small $xtra_large;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        border: 1px solid $line_60;
+    }
+
+    .column_1 p {
+        margin: 0;
+    }
+
+    .column_2 {
+        padding: $small $xtra_large;
+        display: flex;
+        flex-direction: column;
+        gap: $none $xxtra_small;
+        border-top: 1px solid $line_60;
+        display: flex;
+        justify-content: space-between;
+
+        .footer_menu {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: $xxtra_small $none;
+        }
+
+        .footer_bottom {
+            display: flex;
+            justify-content: space-between;
+            align-content: flex-end;
+            justify-items: flex-end;
+            align-items: flex-end;
+
+            .footer_bottom_left {
+                display: flex;
+            }
+
+            .icon {
+                margin-right: $xxtra_small;
+                display: flex;
+                align-items: flex-end;
+            }
+
+            .logo {
+                display: flex;
+                align-items: flex-end;
+            }
+        }
+    }
+}
+
 // ------------------------------ Desktop ------------------------------
 @media screen and (min-width: 1024px) {
     .container_footer {
         display: flex;
-        width: 100%;
+        flex-direction: row;
 
         .column_1 {
-            background: $gradient;
             width: 50%;
-            height: 100%;
-            padding: $small $xtra_large;
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-            justify-content: center;
-            border: 1px solid $line_60;
-        }
-
-        .column_1 p {
-            margin: 0;
         }
 
         .column_2 {
             width: 50%;
-            padding: $small $xtra_large;
-            display: flex;
-            flex-direction: column;
-            gap: $none $xxtra_small;
-            border-top: 1px solid $line_60;
-            display: flex;
-            justify-content: space-between;
-
-            .footer_menu {
-                display: flex;
-                flex-direction: column;
-                align-items: flex-start;
-                gap: $xxtra_small $none;
-            }
-
-            .footer_bottom {
-                display: flex;
-                justify-content: space-between;
-                align-content: flex-end;
-                justify-items: flex-end;
-                align-items: flex-end;
-
-                .footer_bottom_left {
-                    display: flex;
-                }
-
-                .icon {
-                    margin-right: $xxtra_small;
-                    display: flex;
-                    align-items: flex-end;
-                }
-
-                .logo {
-                    display: flex;
-                    align-items: flex-end;
-                }
-            }
         }
     }
 }
@@ -69,4 +80,19 @@
 @media screen and (min-width: 768) and (max-width: 1023px) {}
 
 // ------------------------------ Smartphone ------------------------------
-@media screen and (max-width: 767px) {}
+@media screen and (max-width: 767px) {
+    .container_footer {
+        display: flex;
+        flex-direction: column;
+
+        .column_1 {
+            width: 100%;
+            padding: $small $medium;
+        }
+
+        .column_2 {
+            width: 100%;
+            padding: $small $medium;
+        }
+    }
+}

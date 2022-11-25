@@ -5,7 +5,7 @@
     .grid_container {
         display: grid;
         grid-template-columns: repeat(12, 1fr);
-        gap: 24px;
+        gap: $none $xxtra_small;
 
         .header_konsultacje {
             grid-area: 1 / 1 / 2 / 6;
@@ -13,7 +13,7 @@
         }
 
         .image_konsultacje {
-            grid-area: 2 / 3 / 7 x / 6;
+            grid-area: 2 / 3 / 7 / 6;
             background-image: url("../public/10.jpeg");
             background-position: top;
             background-size: cover;
@@ -28,7 +28,7 @@
         .horizontal_line {
             grid-area: 3 / 6 / 4 / 13;
             border-bottom: 1px solid $header;
-            margin: 48px 0;
+            margin: $small $none;
         }
 
         .kosnultacje_2 {
@@ -41,4 +41,39 @@
 @media screen and (min-width: 768) and (max-width: 1023px) {}
 
 // ------------------------------ Smartphone ------------------------------
-@media screen and (max-width: 767px) {}
+@media screen and (max-width: 767px) {
+    .grid_container {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        gap: $none $small;
+
+        .header_konsultacje {
+            grid-area: 1 / 1 / 2 / 7;
+            margin: $xtra_large $none $medium;
+        }
+
+        .image_konsultacje {
+            grid-area: 2 / 1 / 6 / 3;
+            background-image: url("../public/10.jpeg");
+            background-position: top;
+            background-size: cover;
+            background-repeat: no-repeat;
+            min-height: 250px;
+            border: 1px solid $line_60;
+        }
+
+        .kosnultacje_1 {
+            grid-area: 2 / 3 / 3 / 7;
+        }
+
+        .horizontal_line {
+            grid-area: 3 / 3 / 4 / 7;
+            border-bottom: 1px solid $header;
+            margin: $small $none;
+        }
+
+        .kosnultacje_2 {
+            grid-area: 5 / 3 / 6 / 7;
+        }
+    }
+}

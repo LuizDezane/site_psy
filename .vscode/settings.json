@@ -1,7 +1,3 @@
 {
-    "cSpell.language": "en,lorem,en-US,en-GB",
-    "cSpell.enableFiletypes": [
-        "!javascriptreact",
-        "!scss"
-    ]
+    "cSpell.language": "en,en-US,en-GB"
 }

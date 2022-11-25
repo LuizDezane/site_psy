@@ -2,7 +2,6 @@
 
 // ------------------------------ Desktop ------------------------------
 @media screen and (min-width: 1024px) {
-
     #navbar {
         position: fixed;
         top: 0;
@@ -21,7 +20,7 @@
                 align-content: center;
                 border-bottom: 1px solid $line_50;
 
-                .div1 {
+                .phone {
                     grid-area: 1 / 1 / 2 / 5;
                     gap: $xxtra_small;
                     display: flex;
@@ -29,14 +28,14 @@
                     align-items: center;
                 }
 
-                .div2 {
+                .logo_menu {
                     grid-area: 1 / 5 / 2 / 9;
                     display: flex;
                     justify-content: center;
                     align-items: center;
                 }
 
-                .div3 {
+                .socials {
                     grid-area: 1 / 9 / 2 / 13;
                     gap: $xxtra_small;
                     display: flex;
@@ -57,19 +56,26 @@
                 align-content: center;
                 border-bottom: 1px solid $line_60;
 
-                .div4 {
-                    grid-area: 2 / 2 / 3 / 9;
+                .menu {
+                    grid-area: 2 / 2 / 3 / 12;
                     display: flex;
                     align-items: center;
                     justify-content: space-between;
                 }
 
-                .div5 {
-                    grid-area: 2 / 10 / 3 / 12;
-                    display: flex;
-                    justify-content: flex-end;
-                    align-items: center;
+                .links {
+                    a {
+                        padding-right: $xxtra_small;
+                    }
                 }
+
+                .hamburger {
+                    display: none;
+                }
+            }
+
+            .button_small_screeen {
+                display: none;
             }
         }
     }
@@ -80,4 +86,51 @@
 @media screen and (min-width: 768) and (max-width: 1023px) {}
 
 // ------------------------------ Smartphone ------------------------------
-@media screen and (max-width: 767px) {}
+@media screen and (max-width: 767px) {
+    #navbar {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 100;
+
+        .container {
+
+            .upper_header {
+                padding: $none $xtra_small;
+                background: $gradient;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+
+            .lower_header {
+                padding: $none $medium;
+                background: rgba(255, 255, 255, 0.5);
+                backdrop-filter: blur(15px);
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+
+            .upper_header, .lower_header {
+                height: 40px;
+                border-bottom: 1px solid $line_50;
+
+                .phone {
+                    gap: $xxtra_small;
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+                }
+
+                .socials, .links {
+                    display: none;
+                }
+            }
+
+            .button_large_screeen {
+                display: none;
+            }
+        }
+    }
+}

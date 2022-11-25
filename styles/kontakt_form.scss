@@ -56,4 +56,53 @@
 @media screen and (min-width: 768) and (max-width: 1023px) {}
 
 // ------------------------------ Smartphone ------------------------------
-@media screen and (max-width: 767px) {}
+@media screen and (max-width: 767px) {
+    .kontakt_form_container {
+        margin-bottom: $none;
+    }
+
+    .grid_container {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+
+        .header_kontakt_form {
+            grid-area: 1 / 1 / 2 / 7;
+            margin: $xtra_large $none $medium;
+        }
+
+        .kontakt_form {
+            grid-area: 2 / 1 / 3 / 5;
+            display: flex;
+            flex-direction: column;
+            gap: $xtra_small;
+
+            .general_info {
+                display: flex;
+                flex-direction: column;
+                gap: $xtra_small $none;
+
+                input,
+                textarea {
+                    padding: $xxtra_small;
+                }
+            }
+
+            .submit {
+                width: 240px;
+                display: flex;
+                align-self: flex-end;
+                justify-content: flex-end;
+                margin-bottom: $xtra_large;
+            }
+        }
+
+        .image_kontakt_form {
+            grid-area: 2 / 5 / 7 / 7;
+            background-image: url("../public/6.jpeg");
+            background-position: top;
+            background-size: cover;
+            background-repeat: no-repeat;
+            border: 1px solid $line_60;
+        }
+    }
+}

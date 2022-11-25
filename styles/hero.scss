@@ -65,4 +65,63 @@
 @media screen and (min-width: 768) and (max-width: 1023px) {}
 
 // ------------------------------ Smartphone ------------------------------
-@media screen and (max-width: 767px) {}
+@media screen and (max-width: 767px) {
+    .grid_container.hero_container {
+        margin-top: 80px;
+    }
+
+    .grid_container {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        gap: $none $xxtra_small;
+
+        .hero {
+            background-image: url(/background_adjusted.jpg);
+            grid-area: 1 / 1 / 4 / 7;
+        }
+
+        .upper {
+            grid-area: 1 / 1 / 2 / 7;
+            margin: $xtra_small $medium;
+            padding: $xtra_small $medium;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+
+            .ralph {
+                padding-top: $xtra_small;
+            }
+        }
+
+        .lower {
+            grid-area: 2 / 1 / 4 / 7;
+            display: flex;
+            margin: $xtra_small $medium;
+            padding: $xtra_small $medium;
+            min-height: 55vh;
+        }
+
+        .image {
+            grid-area: 2 / 2 / 3 / 6;
+            background-image: url("../public/12.jpeg");
+            background-position: top;
+            background-size: cover;
+            background-repeat: no-repeat;
+            margin: $small $none;
+            padding: $xtra_small $medium;
+            min-height: 250px;
+            border: 1px solid $line_60;
+        }
+
+        .text {
+            grid-area: 3 / 1 / 4 / 7;
+            margin: $xtra_small $medium;
+            padding: $xtra_small $medium;
+            height: calc(100% - 3 * $xtra_small);
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+        }
+    }
+}

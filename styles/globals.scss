@@ -23,8 +23,8 @@ $line_60: rgba(35, 34, 50, 0.6);
 $button_shadow: rgba(11, 16, 19, 0.24) 0 2px 6px;
 $button_shadow_hover: rgba(11, 16, 19, 0.36) 0 4px 12px;
 
-$header_font: meno-display, serif;
-$text_font: meno-display, serif;
+$header_font: garamond-premier-pro-display, serif;
+$text_font: garamond-atf-text, serif;
 
 // ---------- Font sizes ----------
 $links: clamp(0.78rem, calc(0.69rem + 0.45vw), 1.04rem);
@@ -171,8 +171,23 @@ button {
     }
 }
 
-// ------------------------------ Grid ------------------------------
+// ------------------------------ Desktop ------------------------------
+@media screen and (min-width: 1024px) {
+    .grid_container {
+        margin: $none $xtra_large $xtra_large;
+    }
+}
 
-.grid_container {
-    margin: $none $xtra_large $xtra_large;
+// ------------------------------ Tablet ------------------------------
+@media screen and (min-width: 768) and (max-width: 1023px) {
+    .grid_container {
+        margin: $none $medium $medium;
+    }
+}
+
+// ------------------------------ Smartphone ------------------------------
+@media screen and (max-width: 767px) {
+    .grid_container {
+        margin: $none $xtra_small $xtra_small;
+    }
 }

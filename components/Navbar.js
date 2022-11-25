@@ -8,31 +8,36 @@ return (
 <div id='navbar'>
     <div className="container">
         <div className="upper_header">
-            <div className='div1'>
+            <div className='phone'>
                 <Image className='icon' src="/phone.svg" alt="phone" width={35} height={35} />
                 <a>0212 123 45 67</a>
             </div>
-            <div className='div2'>
+            <div className='logo_menu'>
                 <Link href="/">
                 <Image className='logo' src={logo} alt="logo" width={120} height={60} />
                 </Link>
             </div>
-            <div className='div3'>
+            <div className='socials'>
                 <Link href="https://www.instagram.com/_pomiedzy__slowami_/" target="_blank"><Image className='icon' src="/instagram.svg" alt="instagram" width={35} height={35} /></Link>
                 <Link href="https://www.facebook.com/profile.php?id=100087274075683&sk=services" target="_blank"><Image className='icon' src="/facebook.svg" alt="facebook" width={35} height={35} /></Link>
             </div>
         </div>
         <div className="lower_header">
-            <li className='div4'>
-                <Link href="/">Strona główna</Link>
-                <Link href="/o_mnie">O mnie</Link>
-                <Link href="komu_pomagam">Komu pomagam</Link>
-                <Link href="jak_pomagam">Jak pomagam</Link>
-                <Link href="/cennik">Cennik</Link>
-                <Link href="/blog">Blog</Link>
-                <Link href="/kontakt">Kontakt</Link>
-            </li>
-            <Link href="/umow_wizyte" className='div5'><button>Umów wizytę</button></Link>
+            <div className="menu">
+                <li className='links'>
+                    <Link href="/">Strona główna</Link>
+                    <Link href="/o_mnie">O mnie</Link>
+                    <Link href="komu_pomagam">Komu pomagam</Link>
+                    <Link href="jak_pomagam">Jak pomagam</Link>
+                    <Link href="/cennik">Cennik</Link>
+                    <Link href="/blog">Blog</Link>
+                    <Link href="/kontakt">Kontakt</Link>
+                </li>
+
+                <div className="hamburger">MENU</div>
+                <Link href="/umow_wizyte" className='button_large_screeen'><button>Umów wizytę</button></Link>
+            </div>
+            <Link href="/umow_wizyte" className='button_small_screeen'><button>Umów wizytę</button></Link>
         </div>
     </div>
 </div>

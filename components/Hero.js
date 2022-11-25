@@ -24,7 +24,7 @@ useEffect(() => {
             <div className="text">
                 <h3>Paulina Janik</h3>
                 <h4>Psycholog, psychoterapeuta</h4>
-                <p className='paragraph'>W swojej pacy kieruje się przede wszystkim dobrem drugiej osoby.
+                <p className='paragraph'>W swojej pracy kieruję się przede wszystkim dobrem drugiej osoby.
                     Zależy mi na tym, byś czuł się bezpiecznie
                     i swobodnie, dzieląc się ze mną swoimi historiami i doświadczeniami.
                     Gwarantuję zachowanie poufności.</p>
