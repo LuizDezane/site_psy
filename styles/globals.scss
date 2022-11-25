@@ -23,8 +23,8 @@ $line_60: rgba(35, 34, 50, 0.6);
 $button_shadow: rgba(11, 16, 19, 0.24) 0 2px 6px;
 $button_shadow_hover: rgba(11, 16, 19, 0.36) 0 4px 12px;
 
-$header_font: classico-urw, sans-serif;
-$text_font: classico-urw, sans-serif;
+$header_font: orpheuspro, serif;
+$text_font: orpheuspro, serif;
 
 // ---------- Font sizes ----------
 $links: clamp(0.78rem, calc(0.69rem + 0.45vw), 1.04rem);
@@ -60,7 +60,7 @@ body {
     font-family: $text_font;
     font-size: $paragraph;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 400;
     margin: auto;
     overflow-x: hidden;
 }
@@ -102,7 +102,7 @@ h4 {
 
 p {
     font-family: $text_font;
-    font-weight: 500;
+    font-weight: 400;
     font-style: normal;
     color: $text;
     line-height: 1.2;
