@@ -24,7 +24,7 @@ $button_shadow: rgba(11, 16, 19, 0.24) 0 2px 6px;
 $button_shadow_hover: rgba(11, 16, 19, 0.36) 0 4px 12px;
 
 $header_font: garamond-premier-pro-display, serif;
-$text_font: garamond-atf-text, serif;
+$text_font: garamond-premier-pro-display, serif;
 
 // ---------- Font sizes ----------
 $links: clamp(0.78rem, calc(0.69rem + 0.45vw), 1.04rem);
@@ -73,7 +73,7 @@ h3,
 h4 {
     color: $header;
     font-family: $header_font;
-    font-weight: 400;
+    font-weight: 500;
     font-style: italic;
     line-height: 1;
     margin: $none;
