@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import Map from '../components/Mapa'
+import Map from './Mapa'
 
 const Kontakt_Form = () => {
     return (

@@ -17,7 +17,7 @@ const Konsultacje = () => {
             <div className="kosnultacje_2">
                 <h4>Psychoterapia indywidualna osób dorosłych</h4>
                 <p>Psychoterapia to przede wszystkim spotkanie dwóch osób, które polega na swobodnej  rozmowie toczącej się między pacjentem a terapeutą.</p>
-                <Link href="/komu_pomagam" className='konsultacje_button'><button className='dark'>Dowiedz się więcej</button></Link>
+                <Link href="/komu_pomagam"><button className='dark'>Dowiedz się więcej</button></Link>
             </div>
         </div>
     )

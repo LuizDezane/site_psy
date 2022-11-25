@@ -4,7 +4,7 @@ import { motion as m } from 'framer-motion'
 import Hero from '../components/Hero'
 import Konsultacje from '../components/Konsultacje'
 import Pomagam from '../components/Pomagam'
-import Kontakt_Form from '../components/Kontakt_Form'
+import Kontakt_Form from '../components/KontaktForm'
 
 export default function Home() {
     return (
