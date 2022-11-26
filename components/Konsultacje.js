@@ -5,7 +5,9 @@ const Konsultacje = () => {
         <div className='grid_container'>
 
             <h1 className="header_konsultacje">Konsultacje</h1>
+            
             <div className="image_konsultacje"></div>
+            
             <div className="kosnultacje_1">
                 <h4>Konsultacje psychologiczne</h4>
                 <p>Proces psychoterapeutyczny poprzedzony jest konsultacjami psychologicznymi. Zazwyczaj cztery spotkania mają charakter konsultacji diagnostycznych. Jest to czas na dokładne zrozumienie problemu, a także osoby, która go doświadcza. Na tej podstawie ustalimy dalszą współpracę.</p>

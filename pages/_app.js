@@ -4,6 +4,7 @@ import { AnimatePresence } from 'framer-motion'
 import '../styles/globals.scss'
 import '../styles/navbar.scss'
 import '../styles/footer.scss'
+
 import '../styles/hero.scss'
 import '../styles/konsultacje.scss'
 import '../styles/pomagam.scss'
