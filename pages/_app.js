@@ -10,6 +10,7 @@ import '../styles/konsultacje.scss'
 import '../styles/pomagam.scss'
 import '../styles/o_mnie.scss'
 import '../styles/kontakt_form.scss'
+import '../styles/grid_system.scss'
 
 import Layout from '../components/Layout'
 
