@@ -3,9 +3,10 @@
 // ------------------------------ Desktop ------------------------------
 @media screen and (min-width: 1024px) {
     .large {
-        grid-area: 1 / 1 / 2 / 13;
+        grid-column: 1 / 13;
         display: flex;
         justify-content: center;
+        text-align: center;
         border: 1px solid $line_50;
     }
 

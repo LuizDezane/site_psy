@@ -23,16 +23,18 @@ $line_60: rgba(35, 34, 50, 0.6);
 $button_shadow: rgba(11, 16, 19, 0.24) 0 2px 6px;
 $button_shadow_hover: rgba(11, 16, 19, 0.36) 0 4px 12px;
 
-$header_font: maiola, serif;
-$text_font: minion-pro, serif;
+$header_font: maiola,
+serif;
+$text_font: minion-pro,
+serif;
 
 // ---------- Font sizes ----------
-$links: clamp(0.78rem, calc(0.69rem + 0.45vw), 1.04rem);
-$paragraph: clamp(1.13rem, calc(0.95rem + 0.87vw), 1.63rem);
-$header_4: clamp(1.35rem, calc(1.11rem + 1.18vw), 2.03rem);
-$header_3: clamp(1.62rem, calc(1.30rem + 1.60vw), 2.54rem);
-$header_2: clamp(1.94rem, calc(1.52rem + 2.14vw), 3.17rem);
-$header_1: clamp(2.33rem, calc(1.76rem + 2.84vw), 3.97rem);
+$links: clamp(0.94rem, calc(0.87rem + 0.36vw), 1.15rem);
+$paragraph: clamp(1.13rem, calc(1.04rem + 0.43vw), 1.38rem);
+$header_4: clamp(1.35rem, calc(1.25rem + 0.52vw), 1.65rem);
+$header_3: clamp(1.62rem, calc(1.49rem + 0.63vw), 1.98rem);
+$header_2: clamp(1.94rem, calc(1.79rem + 0.75vw), 2.38rem);
+$header_1: clamp(2.33rem, calc(2.15rem + 0.90vw), 2.85rem);
 
 // ---------- Margins and paddings ----------
 $none: 0;
@@ -78,10 +80,6 @@ h4 {
     line-height: 1;
     margin: $none;
     padding: $none;
-}
-
-h1 {
-    text-transform: uppercase;
 }
 
 h1 {
@@ -156,11 +154,11 @@ button {
 
 section {
     gap: $xtra_small;
-        padding: $xtra_small $xtra_large;
-        justify-content: center;
-        align-content: center;
-        grid-auto-flow: column;
-        width: 100%;
+    padding: $xtra_small $xtra_large;
+    justify-content: center;
+    align-content: center;
+    // grid-auto-flow: column;
+    width: 100%;
 }
 
 // ------------------------------ Blur ------------------------------
@@ -184,16 +182,10 @@ section {
 
 // ------------------------------ Desktop ------------------------------
 @media screen and (min-width: 1024px) {
-    section {
-        display: grid;
-        grid-template-columns: repeat(12, 1fr);
-        margin-top: 120px;
-    }
-    
     .gradient {
         background: $gradient;
     }
-    
+
     .grid {
         display: flex;
         flex-direction: column;

@@ -1,61 +1,50 @@
 @import '/styles/globals';
 
+.hero_background {
+    background-image: url("../public/background_adjusted.jpg");
+    height: calc(100vh - 120px);
+    margin-top: 120px;
+}
+
 // ------------------------------ Desktop ------------------------------
 @media screen and (min-width: 1024px) {
-    .grid_container.hero_container {
-        margin-top: 120px;
-    }
-
-    .grid_container {
+    section {
         display: grid;
         grid-template-columns: repeat(12, 1fr);
-        gap: $none $xxtra_small;
-
-        .hero {
-            background-image: url(/background_adjusted.jpg);
-            grid-area: 1 / 1 / 3 / 13;
-        }
+        grid-template-rows: repeat(4, 1fr);
 
         .upper {
             grid-area: 1 / 2 / 2 / 12;
-            margin: $xtra_small $none;
-            padding: $xtra_small $none;
             display: flex;
             flex-direction: column;
+            justify-content: center;
+            align-content: center;
             text-align: center;
-
-            .ralph {
-                padding-top: $xtra_small;
-            }
+            padding: $xtra_small $xtra_large;
         }
 
         .lower {
-            grid-area: 2 / 2 / 3 / 12;
+            grid-area: 2 / 2 / 5 / 12;
             display: flex;
-            flex-direction: row;
-            margin-bottom: $xtra_small;
-            min-height: 55vh;
-        }
-
-        .image {
-            grid-area: 2 / 3 / 3 / 6;
-            background-image: url("../public/12.jpeg");
-            background-position: center;
-            background-size: cover;
-            background-repeat: no-repeat;
-            margin: $xtra_small $none;
-            height: calc(100% - 3 * $xtra_small);
-            border: 1px solid $line_60;
-        }
-
-        .text {
-            grid-area: 2 / 7 / 3 / 11;
-            margin: $xtra_small $none;
-            height: calc(100% - 3 * $xtra_small);
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
             justify-content: center;
+            align-content: center;
+            padding: $xtra_small $xtra_large;
+
+            .image {
+                background-image: url("../public/10.jpeg");
+                background-position: top;
+                background-size:cover;
+                background-repeat: no-repeat;
+                border: 1px solid $line_60;
+                min-width: 325px;
+            }
+
+            .text {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                margin-left: $xtra_small;
+            }
         }
     }
 }
@@ -65,63 +54,4 @@
 @media screen and (min-width: 768) and (max-width: 1023px) {}
 
 // ------------------------------ Smartphone ------------------------------
-@media screen and (max-width: 767px) {
-    .grid_container.hero_container {
-        margin-top: 80px;
-    }
-
-    .grid_container {
-        display: grid;
-        grid-template-columns: repeat(6, 1fr);
-        gap: $none $xxtra_small;
-
-        .hero {
-            background-image: url(/background_adjusted.jpg);
-            grid-area: 1 / 1 / 4 / 7;
-        }
-
-        .upper {
-            grid-area: 1 / 1 / 2 / 7;
-            margin: $xtra_small $medium;
-            padding: $xtra_small $medium;
-            display: flex;
-            flex-direction: column;
-            text-align: center;
-
-            .ralph {
-                padding-top: $xtra_small;
-            }
-        }
-
-        .lower {
-            grid-area: 2 / 1 / 4 / 7;
-            display: flex;
-            margin: $xtra_small $medium;
-            padding: $xtra_small $medium;
-            min-height: 55vh;
-        }
-
-        .image {
-            grid-area: 2 / 2 / 3 / 6;
-            background-image: url("../public/12.jpeg");
-            background-position: top;
-            background-size: cover;
-            background-repeat: no-repeat;
-            margin: $small $none;
-            padding: $xtra_small $medium;
-            min-height: 40vh;
-            border: 1px solid $line_60;
-        }
-
-        .text {
-            grid-area: 3 / 1 / 4 / 7;
-            margin: $xtra_small $medium;
-            padding: $xtra_small $medium;
-            height: calc(100% - 3 * $xtra_small);
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-            justify-content: center;
-        }
-    }
-}
+@media screen and (max-width: 767px) {}
