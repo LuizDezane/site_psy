@@ -1,9 +1,13 @@
 /* ------------------------------ Fonts import ------------------------------ */
-@import url("https://use.typekit.net/ndg1myv.css");
+// @import url("https://use.typekit.net/ndg1myv.css");
 
 @font-face {
-    font-family: 'EBGaramond-Regular';
-    src: url(/public/fonts/EBGaramond-Regular.ttf);
+    font-family: 'Alegreya Italic';
+    src: url(../public/fonts/Alegreya-Italic.ttf);
+}
+@font-face {
+    font-family: 'Alegreya Sans Regular';
+    src: url(../public/fonts/AlegreyaSans-Regular.ttf);
 }
 
 /* ------------------------------ Variables ------------------------------ */
@@ -28,8 +32,8 @@ $line_60: rgba(35, 34, 50, 0.6);
 $button_shadow: rgba(11, 16, 19, 0.24) 0 2px 6px;
 $button_shadow_hover: rgba(11, 16, 19, 0.36) 0 4px 12px;
 
-$header_font: 'EBGaramond-Regular';
-$text_font: 'EBGaramond-Regular';
+$header_font: 'Alegreya Italic';
+$text_font: 'Alegreya Sans Regular';
 
 // ---------- Font sizes ----------
 $links: clamp(0.94rem, calc(0.87rem + 0.36vw), 1.15rem);
