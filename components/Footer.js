@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import logo from '../public/logo.svg'
+import logo from '../public/images/logo.svg'
 
 const Footer = () => {
     return (
@@ -31,9 +31,9 @@ const Footer = () => {
 
                 <div className="footer_bottom">
                     <div className='footer_bottom_left'>
-                        <Image className='icon' src="/phone.svg" alt="phone" width={35} height={35} />
-                        <Link href="https://www.instagram.com/_pomiedzy__slowami_/" target="_blank"><Image className='icon' src="/instagram.svg" alt="instagram" width={35} height={35} /></Link>
-                        <Link href="https://www.facebook.com/profile.php?id=100087274075683&sk=services" target="_blank"><Image className='icon' src="/facebook.svg" alt="facebook" width={35} height={35} /></Link>
+                        <Image className='icon' src="/images/phone.svg" alt="phone" width={35} height={35} />
+                        <Link href="https://www.instagram.com/_pomiedzy__slowami_/" target="_blank"><Image className='icon' src="/images/instagram.svg" alt="instagram" width={35} height={35} /></Link>
+                        <Link href="https://www.facebook.com/profile.php?id=100087274075683&sk=services" target="_blank"><Image className='icon' src="/images/facebook.svg" alt="facebook" width={35} height={35} /></Link>
                     </div>
 
                     <div>

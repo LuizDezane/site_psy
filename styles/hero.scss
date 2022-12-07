@@ -1,7 +1,7 @@
 @import '/styles/globals';
 
 .hero_background {
-    background-image: url("../public/background_adjusted.jpg");
+    background-image: url("../public/images/background_adjusted.jpg");
     height: calc(100vh - 120px);
     margin-top: 120px;
 }
@@ -31,7 +31,7 @@
             padding: $xtra_small $xtra_large;
 
             .image {
-                background-image: url("../public/10.jpeg");
+                background-image: url("../public/images/10.jpeg");
                 background-position: top;
                 background-size:cover;
                 background-repeat: no-repeat;
