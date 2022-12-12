@@ -12,19 +12,21 @@
 
 /* ------------------------------ Variables ------------------------------ */
 $primary: #B74A52;
-$primary_50: rgba(183, 74, 82, 0.5);
-$primary_60: rgba(183, 74, 82, 0.6);
-
+$primary_faded: rgba(183, 74, 82, 0.85);
 $secondary: #DBA4A7;
 $secondary_light: #EFD8D9;
 $grey_light: #CAC8DA;
-
+$white: #FFFFFF;
+$white_faded: rgba(255, 255, 255, 0.85);
 $gradient: linear-gradient(90deg, $grey_light 0%, $secondary_light 100%);
 
 $header: #232232;
 $text: rgba(35, 34, 50, 0.6);
+$text_faded: rgba(35, 34, 50, 0.4);
 $text_hover: rgba(35, 34, 50, 0.8);
-$white: #FFFFFF;
+
+$border_25: rgba(35, 34, 50, 0.25);
+$border_50: rgba(35, 34, 50, 0.5);
 
 $line_50: rgba(35, 34, 50, 0.5);
 $line_60: rgba(35, 34, 50, 0.6);
@@ -32,8 +34,8 @@ $line_60: rgba(35, 34, 50, 0.6);
 $shadow_section: rgba(35, 34, 50, 0.24) 0 0 128px;
 $shadow_div: rgba(35, 34, 50, 0.06) 0 0 64px;
 $shadow_div_hover: rgba(35, 34, 50, 0.12) 0 0 64px;
-$shadow_button: rgba(35, 34, 50, 0.12) 0 6 24px;
-$shadow_button_hover: rgba(35, 34, 50, 0.24) 0 6 24px;
+$shadow_button: rgba(35, 34, 50, 0.12) 0 0 24px;
+$shadow_button_hover: rgba(35, 34, 50, 0.24) 0 0 24px;
 
 $header_font: 'Alegreya Italic';
 $text_font: 'Alegreya Sans Regular';
@@ -85,7 +87,7 @@ h3,
 h4 {
     color: $header;
     font-family: $header_font;
-    font-weight: 400;
+    font-weight: 700;
     font-style: italic;
     line-height: 1;
     margin: $none;
@@ -118,7 +120,7 @@ p {
 
 a {
     text-decoration: none;
-    text-transform: uppercase;
+    text-transform: capitalize;
     font-size: $links;
     font-family: $text_font;
     color: $text;
@@ -139,24 +141,37 @@ a {
 
 button {
     font-family: $text_font;
-    color: $white;
-    background: $primary_50;
     font-size: $links;
     font-weight: 400;
     font-style: normal;
-    text-transform: uppercase;
-    border: 1px solid $line_50;
-    border-radius: 50px;
+    border: none;
+    border-radius: 4px;
     box-shadow: $shadow_button;
     padding: $xxtra_small $xtra_small;
     transition: all 0.3s ease-in-out;
 
     &:hover {
-        background: $primary_60;
-        color: $header;
-        border: 1px solid $line_60;
         box-shadow: $shadow_button_hover;
         cursor: pointer;
+    }
+}
+
+.light {
+    color: $header;
+    background: $white;
+    border: 1px solid $border_25;
+
+    &:hover {
+        border: 1px solid $border_50;
+    }
+}
+
+.dark {
+    color: $white;
+    background: $primary_faded;
+
+    &:hover {
+        background: $primary;
     }
 }
 
@@ -215,5 +230,38 @@ section {
 @media screen and (max-width: 767px) {
     .grid_container {
         margin: $none $xtra_small $xtra_small;
+    }
+}
+
+
+
+
+.konsultacje {
+    background: linear-gradient(45deg, $grey_light 0%, $white_faded 49%, $white 82%);
+    background-size: 200%;
+    animation: aurora 10s infinite;
+}
+
+.aurora_inner {
+    background: radial-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.15));
+    background-size: 200%;
+    animation: aurora 7s infinite;
+}
+
+@keyframes aurora {
+    0% {
+        background-position: left top;
+    }
+    25% {
+        background-position: right top;
+    }
+    50% {
+        background-position: right bottom;
+    }
+    75% {
+        background-position: left bottom;
+    }
+    100% {
+        background-position: left top;
     }
 }

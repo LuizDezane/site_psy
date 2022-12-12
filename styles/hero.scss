@@ -2,13 +2,13 @@
 
 .hero_background {
     background-image: url("../public/images/background_adjusted.jpg");
-    height: calc(100vh - 120px);
-    margin-top: 120px;
+    height: calc(100vh - 80px);
+    margin-top: 80px;
 }
 
 // ------------------------------ Desktop ------------------------------
 @media screen and (min-width: 1024px) {
-    section {
+    section.hero_background {
         display: grid;
         grid-template-columns: repeat(12, 1fr);
         grid-template-rows: repeat(4, 1fr);

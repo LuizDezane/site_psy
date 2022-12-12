@@ -1,6 +1,6 @@
 import Head from 'next/head'
-
 import { motion as m } from 'framer-motion'
+import Blog_Element from '../components/Blog_Element'
 
 export default function Blog() {
     return (
@@ -18,11 +18,7 @@ export default function Blog() {
             </Head>
 
             <main>
-                <section>
-                    <div className="container_o_mnie">
-                        <h2>Blog</h2>
-                    </div>
-                </section>
+                <Blog_Element />
             </main>
 
             <footer>

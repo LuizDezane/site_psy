@@ -2,37 +2,46 @@
 
 // ------------------------------ Desktop ------------------------------
 @media screen and (min-width: 1024px) {
-    .grid_container {
+    section.konsultacje {
         display: grid;
         grid-template-columns: repeat(12, 1fr);
-        gap: $none $xxtra_small;
+        text-align: center;
+        padding: $xtra_large;
 
-        .header_konsultacje {
-            grid-area: 1 / 1 / 2 / 6;
+        .kosnultacje_1 {
+            grid-area: 1 / 4 / 2 / 10;
             margin-bottom: $medium;
         }
 
-        .image_konsultacje {
-            grid-area: 2 / 3 / 7 / 6;
-            background-image: url("../public/images/10.jpeg");
-            background-position: top;
-            background-size: cover;
-            background-repeat: no-repeat;
-            border: 1px solid $line_60;
-        }
-
-        .kosnultacje_1 {
-            grid-area: 1 / 7 / 3 / 13;
-        }
-
-        .horizontal_line {
-            grid-area: 3 / 6 / 4 / 13;
-            border-bottom: 1px solid $header;
-            margin: $small $none;
-        }
-
         .kosnultacje_2 {
-            grid-area: 4 / 7 / 6 / 13;
+            grid-area: 2 / 4 / 3 / 10;
+        }
+
+        .circle {
+            background: $white;
+            width: 120px;
+            height: 120px;
+            border-radius: 100%;
+            margin: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: $shadow_div_hover;
+            margin-bottom: $xtra_small;
+
+            .icon {
+                width: 50px;
+                height: 50px;
+                background-repeat: no-repeat;
+            }
+
+            .icon_1 {
+                background-image: url(../public/icons/9.svg);
+            }
+
+            .icon_2 {
+                background-image: url(../public/icons/10.svg);
+            }
         }
     }
 }
