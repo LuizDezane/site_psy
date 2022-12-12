@@ -29,8 +29,11 @@ $white: #FFFFFF;
 $line_50: rgba(35, 34, 50, 0.5);
 $line_60: rgba(35, 34, 50, 0.6);
 
-$button_shadow: rgba(11, 16, 19, 0.24) 0 2px 6px;
-$button_shadow_hover: rgba(11, 16, 19, 0.36) 0 4px 12px;
+$shadow_section: rgba(35, 34, 50, 0.24) 0 0 128px;
+$shadow_div: rgba(35, 34, 50, 0.06) 0 0 64px;
+$shadow_div_hover: rgba(35, 34, 50, 0.12) 0 0 64px;
+$shadow_button: rgba(35, 34, 50, 0.12) 0 6 24px;
+$shadow_button_hover: rgba(35, 34, 50, 0.24) 0 6 24px;
 
 $header_font: 'Alegreya Italic';
 $text_font: 'Alegreya Sans Regular';
@@ -144,7 +147,7 @@ button {
     text-transform: uppercase;
     border: 1px solid $line_50;
     border-radius: 50px;
-    box-shadow: $button_shadow;
+    box-shadow: $shadow_button;
     padding: $xxtra_small $xtra_small;
     transition: all 0.3s ease-in-out;
 
@@ -152,7 +155,7 @@ button {
         background: $primary_60;
         color: $header;
         border: 1px solid $line_60;
-        box-shadow: $button_shadow_hover;
+        box-shadow: $shadow_button_hover;
         cursor: pointer;
     }
 }
@@ -166,6 +169,7 @@ section {
     align-content: center;
     // grid-auto-flow: column;
     width: 100%;
+    box-shadow: $shadow_section;
 }
 
 // ------------------------------ Blur ------------------------------
