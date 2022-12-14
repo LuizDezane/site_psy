@@ -2,7 +2,7 @@ import Link from 'next/link'
 
 const Konsultacje = () => {
     return (
-        <section className='konsultacje'>
+        <section className='konsultacje aurora'>
 
             <div className="kosnultacje_1">
                 <div className="circle">
