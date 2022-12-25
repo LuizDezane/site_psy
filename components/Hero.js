@@ -13,7 +13,6 @@ useEffect(() => {
 
     return (
             <section className='hero_background'>
-                {/* <div className="grid large"></div> */}
                 <div className='blur upper'>
                     <h1>Gdy słucham co mówisz,<br /> słyszę kim jesteś</h1>
                     <h4 className='ralph'><i>Ralph Waldo Emerson</i></h4>
@@ -27,7 +26,7 @@ useEffect(() => {
                         Zależy mi na tym, byś czuł się bezpiecznie
                         i swobodnie, dzieląc się ze mną swoimi historiami i doświadczeniami.
                         Gwarantuję zachowanie poufności.</p>
-                        <Link href="/o_mnie" className='button'><button className='light'>Więcej o mnie...</button></Link>
+                        <Link href="/o_mnie" className='button'><button className='dark'>Więcej o mnie...</button></Link>
                     </div>
                 </div>
             </section>

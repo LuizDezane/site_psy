@@ -1,0 +1,73 @@
+@import '/styles/globals';
+
+// ------------------------------ Desktop ------------------------------
+@media screen and (min-width: 1024px) {
+    section.blog_element {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        text-align: center;
+        padding: $xtra_large;
+
+        .header_blog {
+            grid-area: 1 / 4 / 2 / 10;
+            margin-bottom: $small;
+        }
+
+        .blog_element_div {
+            grid-area: 2 / 2 / 3 / 12;
+            gap: $medium;
+            display: flex;
+
+            h4,
+            p {
+                margin: $xtra_small;
+                text-align: left;
+            }
+
+            .button {
+                margin: $xtra_small;
+                display: flex;
+                justify-content: end;
+            }
+
+            .blog_element_1 {
+                .post_image_1 {
+                    background-image: url("../public/images/posts/post_1.jpg");
+                    background-position: center;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    border-radius: 12px;
+                    height: 200px;
+                }
+            }
+
+            .blog_element_2 {
+                .post_image_2 {
+                    background-image: url("../public/images/posts/post_2.jpg");
+                    background-position: center;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    border-radius: 12px;
+                    height: 200px;
+                }
+            }
+
+            .blog_element_3 {
+                .post_image_3 {
+                    background-image: url("../public/images/posts/post_3.jpg");
+                    background-position: center;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    border-radius: 12px;
+                    height: 200px;
+                }
+            }
+        }
+    }
+}
+
+// ------------------------------ Tablet ------------------------------
+@media screen and (min-width: 768) and (max-width: 1023px) {}
+
+// ------------------------------ Smartphone ------------------------------
+@media screen and (max-width: 767px) {}

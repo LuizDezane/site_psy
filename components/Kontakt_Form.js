@@ -3,7 +3,8 @@ import Map from './Mapa'
 
 const Kontakt_Form = () => {
     return (
-        <div className="grid_container kontakt_form_container">
+        <section className="kontakt_form">
+
             <h1 className='header_kontakt_form'>Skontaktuj sie ze mną</h1>
 
             <form className='kontakt_form' action="#" method="POST">
@@ -18,12 +19,12 @@ const Kontakt_Form = () => {
                 </div>
 
                 <div className="submit">
-                    <button type="submit" value="Send">Wyślij wiadomość</button>
+                    <button className='dark' type="submit" value="Send">Wyślij wiadomość</button>
                 </div>
             </form>
 
             <div className="image_kontakt_form"></div>
-        </div>
+        </section>
     )
 }
 
