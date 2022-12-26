@@ -40,7 +40,7 @@
         .pomagam_div {
             background: $white;
             box-shadow: $shadow_div;
-            border-radius: 12px;
+            border-radius: $radius_medium;
             border: 1px solid transparent;
             padding: $medium $small $small;
             transition: all 0.3s ease-in-out;
