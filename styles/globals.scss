@@ -191,7 +191,6 @@ section {
     align-content: center;
     width: 100%;
     box-shadow: $shadow_section;
-    // border-bottom: 1px solid $border_25;
 }
 
 // ------------------------------ Blur ------------------------------
@@ -203,15 +202,15 @@ section {
 
 // ------------------------------ Icons ------------------------------
 
-.icon {
-    opacity: 0.6;
-    transition: all 0.3s ease-in-out;
+// .icon {
+//     opacity: 0.6;
+//     transition: all 0.3s ease-in-out;
 
-    &:hover {
-        opacity: 0.8;
-        cursor: pointer;
-    }
-}
+//     &:hover {
+//         opacity: 0.8;
+//         cursor: pointer;
+//     }
+// }
 
 // ------------------------------ Desktop ------------------------------
 @media screen and (min-width: 1024px) {

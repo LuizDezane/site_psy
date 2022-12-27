@@ -3,6 +3,7 @@
 // ------------------------------ Desktop ------------------------------
 @media screen and (min-width: 1024px) {
     section.kontakt_form {
+        background-image: url("../public/images/background_adjusted.jpg");
         display: grid;
         grid-template-columns: repeat(12, 1fr);
         text-align: center;
@@ -29,10 +30,14 @@
                 input,
                 textarea {
                     border-radius: $radius_medium;
-                    border: 1px solid $border_25;
+                    border: none;
                     font-family: $text_font;
                     font-size: $links;
                     padding: $xxtra_small $xtra_small;
+
+                    &::placeholder {
+                        color: $header;
+                    }
                 }
             }
 
