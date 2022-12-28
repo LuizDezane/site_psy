@@ -1,0 +1,81 @@
+@import '/styles/globals';
+
+// ------------------------------ Desktop ------------------------------
+@media screen and (min-width: 1024px) {
+    section.jak_pomagam {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        padding: $space_160;
+        row-gap: $space_40;
+        text-align: left;
+        align-content: flex-start;
+
+        .header_jak_pomagam {
+            grid-area: 1 / 2 / 2 / 7;
+        }
+
+        .circle {
+            background: $white;
+            width: 120px;
+            height: 120px;
+            border-radius: 100%;
+            margin: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: $shadow_div_hover;
+            margin-bottom: $space_20;
+        }
+
+        h4 {
+            text-align: center;
+        }
+
+        .icon {
+            width: 50px;
+            height: 50px;
+            background-repeat: no-repeat;
+        }
+
+        .icon_1 {
+            background-image: url(../public/icons/9.svg);
+        }
+
+        .jak_pomagam_1 {
+            grid-area: 2 / 3 / 3 / 11;
+            padding-bottom: $space_40;
+        }
+
+        .icon_2 {
+            background-image: url(../public/icons/10.svg);
+        }
+
+        .jak_pomagam_2 {
+            grid-area: 3 / 3 / 4 / 11;
+            padding-bottom: $space_40;
+        }
+
+        .icon_3 {
+            background-image: url(../public/icons/11.svg);
+        }
+
+        .jak_pomagam_3 {
+            grid-area: 4 / 3 / 5 / 11;
+            padding-bottom: $space_40;
+        }
+
+        .icon_4 {
+            background-image: url(../public/icons/12.svg);
+        }
+
+        .jak_pomagam_4 {
+            grid-area: 5 / 3 / 6 / 11;
+        }
+    }
+}
+
+// ------------------------------ Tablet ------------------------------
+@media screen and (min-width: 768) and (max-width: 1023px) {}
+
+// ------------------------------ Smartphone ------------------------------
+@media screen and (max-width: 767px) {}

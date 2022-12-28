@@ -12,6 +12,7 @@ import '../styles/o_mnie.scss'
 import '../styles/kontakt_form.scss'
 import '../styles/blog_element.scss'
 import '../styles/komu_pomagam.scss'
+import '../styles/jak_pomagam.scss'
 
 import Layout from '../components/Layout'
 
