@@ -10,7 +10,7 @@
 
         .header_pomagam {
             grid-area: 1 / 4 / 2 / 10;
-            margin-bottom: $small;
+            margin-bottom: $space_20;
         }
 
         .pomagam_1 {
@@ -42,7 +42,7 @@
             box-shadow: $shadow_div;
             border-radius: $radius_medium;
             border: 1px solid transparent;
-            padding: $medium $small $small;
+            padding: $space_40 $space_60;
             transition: all 0.3s ease-in-out;
 
             &:hover {

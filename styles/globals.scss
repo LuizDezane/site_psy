@@ -59,6 +59,16 @@ $medium: clamp(1.13rem, calc(-0.05rem + 5.87vw), 4.50rem);
 $large: clamp(1.50rem, calc(-0.07rem + 7.83vw), 6.00rem);
 $xtra_large: clamp(2.25rem, calc(-0.10rem + 11.74vw), 9.00rem);
 
+$space_10: 10px;
+$space_20: 20px;
+$space_40: 40px;
+$space_60: 60px;
+$space_80: 80px;
+$space_100: 100px;
+$space_120: 120px;
+$space_140: 140px;
+$space_160: 160px;
+
 // ---------- Font sizes ----------
 $radius_large: 12px;
 $radius_medium: 8px;
@@ -186,10 +196,8 @@ button {
 
 section {
     gap: $xtra_small;
-    padding: $xtra_small $xtra_large;
     justify-content: center;
     align-content: center;
-    width: 100%;
     box-shadow: $shadow_section;
 }
 
@@ -214,6 +222,10 @@ section {
 
 // ------------------------------ Desktop ------------------------------
 @media screen and (min-width: 1024px) {
+    section {
+        padding: $space_40 $space_140;
+    }
+
     .gradient {
         background: $gradient;
     }
@@ -227,6 +239,10 @@ section {
 
 // ------------------------------ Tablet ------------------------------
 @media screen and (min-width: 768) and (max-width: 1023px) {
+    section {
+        padding: $space_20 $space_40;
+    }
+
     .grid_container {
         margin: $none $medium $medium;
     }
@@ -234,6 +250,10 @@ section {
 
 // ------------------------------ Smartphone ------------------------------
 @media screen and (max-width: 767px) {
+    section {
+        padding: $space_10 $space_20;
+    }
+
     .grid_container {
         margin: $none $xtra_small $xtra_small;
     }

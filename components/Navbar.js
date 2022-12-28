@@ -23,8 +23,7 @@ const Navbar = () => {
                         <Link href="/blog">Blog</Link>
                         <Link href="/kontakt">Kontakt</Link>
                     </li>
-                    {/* <div className="hamburger">MENU</div>
-                    <Link href="/umow_wizyte" className='button_large_screeen'><button>Umów wizytę</button></Link> */}
+                    <div className="hamburger">MENU</div>
                 </div>
 
                 <div className="menu_button">                

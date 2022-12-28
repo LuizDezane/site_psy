@@ -2,8 +2,8 @@
 
 .hero_background {
     background-image: url("../public/images/background_adjusted.jpg");
-    height: calc(100vh - 80px);
-    margin-top: 80px;
+    height: calc(100vh - 90px);
+    margin-top: 90px;
 }
 
 // ------------------------------ Desktop ------------------------------
@@ -14,15 +14,15 @@
         grid-template-rows: repeat(4, 1fr);
 
         .upper {
-            grid-area: 1 / 2 / 2 / 12;
+            grid-area: 1 / 1 / 2 / 13;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-content: center;
             text-align: center;
-            gap: $xxtra_small;
+            gap: $space_20;
             border-radius: $radius_large;
-            padding: $xtra_small $xtra_large;
+            padding: $space_20 $space_80;
         }
 
         .lower {
@@ -30,8 +30,9 @@
             display: flex;
             justify-content: center;
             align-content: center;
+            gap: $space_80;
             border-radius: $radius_large;
-            padding: $xtra_small $xtra_large;
+            padding: $space_20 $space_80;
 
             .image {
                 background-image: url("../public/images/10.jpeg");
@@ -39,14 +40,15 @@
                 background-size: cover;
                 background-repeat: no-repeat;
                 border-radius: $radius_medium;
-                min-width: 50%;
+                width: 100%;
+                min-width: 350px;
             }
 
             .text {
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
-                margin-left: $small;
+                // margin-left: $space_80;
             }
         }
     }
@@ -57,4 +59,56 @@
 @media screen and (min-width: 768) and (max-width: 1023px) {}
 
 // ------------------------------ Smartphone ------------------------------
-@media screen and (max-width: 767px) {}
+@media screen and (max-width: 767px) {
+    .hero_background {
+        background-image: url("../public/images/background_adjusted.jpg");
+        height: calc(100vh - 60px);
+        margin-top: 60px;
+    }
+
+    section.hero_background {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+
+        .upper {
+            grid-area: 1 / 1 / 2 / 7;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-content: center;
+            text-align: center;
+            gap: $space_10;
+            border-radius: $radius_large;
+            padding: $space_10 $space_20;
+        }
+
+        .lower {
+            grid-area: 2 / 1 / 5 / 7;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-content: center;
+            gap: $space_80;
+            border-radius: $radius_large;
+            padding: $space_20 $space_80;
+
+            .image {
+                background-image: url("../public/images/10.jpeg");
+                background-position: top;
+                background-size: cover;
+                background-repeat: no-repeat;
+                border-radius: $radius_medium;
+                width: 100%;
+                min-width: 350px;
+            }
+
+            .text {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                // margin-left: $space_80;
+            }
+        }
+    }
+}

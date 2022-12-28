@@ -16,7 +16,7 @@
         padding: $none $medium;
         background: rgba(255, 255, 255, 0.5);
         backdrop-filter: blur(15px);
-        height: 80px;
+        height: 90px;
     }
 
     .logo_menu {
@@ -39,6 +39,15 @@
         display: flex;
         align-items: center;
     }
+
+    .menu,
+    .menu_button {
+        visibility: visible;
+    }
+
+    .hamburger {
+        visibility: hidden;
+    }
 }
 
 
@@ -52,47 +61,25 @@
         top: 0;
         width: 100%;
         z-index: 100;
+    }
 
-        .container {
+    .header {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        gap: $space_10;
+        padding: $space_10;
+        background: rgba(255, 255, 255, 0.5);
+        backdrop-filter: blur(15px);
+        height: 60px;
+    }
 
-            .upper_header {
-                padding: $none $xtra_small;
-                background: $gradient;
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
-            }
+    .links {
+        display: none;
+    }
 
-            .lower_header {
-                padding: $none $medium;
-                background: rgba(255, 255, 255, 0.5);
-                backdrop-filter: blur(15px);
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
-            }
-
-            .upper_header,
-            .lower_header {
-                height: 40px;
-                border-bottom: 1px solid $line_50;
-
-                .phone {
-                    gap: $xxtra_small;
-                    display: flex;
-                    justify-content: flex-start;
-                    align-items: center;
-                }
-
-                .socials,
-                .links {
-                    display: none;
-                }
-            }
-
-            .button_large_screeen {
-                display: none;
-            }
-        }
+    .hamburger {
+        visibility: visible;
     }
 }
