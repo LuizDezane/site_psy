@@ -1,12 +1,10 @@
 import React from 'react'
 
-export const OMnie = () => {
+export const O_Mnie = () => {
     return (
-        <div className='grid_container'>
+        <section className='o_mnie'>
 
             <h1 className="header_o_mnie">O mnie</h1>
-
-            <div className="horizontal_line_o_mnie_1"></div>
 
             <div className="o_mnie_1">
                 <h3>Dzień dobry Państwu, nazywam się Paulina Janik - psycholog, socjoterapeuta, psychoterapeuta
@@ -18,8 +16,6 @@ export const OMnie = () => {
 
             <div className="image_o_mnie_1"></div>
 
-            <div className="image_o_mnie_2"></div>
-
             <div className='o_mnie_2'>
                 <h4>Kwalifikacje</h4>
                 <p>Kwalifikacje psychoterapeutyczne zdobywam podczas specjalistycznego czteroletniego szkolenia w Szkole
@@ -27,8 +23,6 @@ export const OMnie = () => {
                     Towarzystwo Psychologiczne oraz Polskie Towarzystwo Psychoterapii Psychodynamicznej, gdzie ukończyłam
                     również dwuletnie Studium Socjoterapii.</p>
             </div>
-
-            <div className="horizontal_line_o_mnie_2"></div>
 
             <div className='o_mnie_3'>
                 <h4>Doświadczenie </h4>
@@ -43,14 +37,14 @@ export const OMnie = () => {
                 </p>
             </div>
 
-            <div className="o_mnie_background">
+            <div className="o_mnie_4">
                 <p>
                     Prowadzę konsultacje psychologiczne, psychoterapię indywidualną osób dorosłych w nurcie psychodynamicznym,
                     która stanowi wsparcie dla osób doświadczających trudności, cierpienia lub dyskomfortu w życiu codziennym.
                 </p>
             </div>
 
-            <div className='o_mnie_4'>
+            <div className='o_mnie_5'>
                 <p>
                     Pracuję w oparciu o standardy i zasady Kodeksu Etyki psychoterapeuty Polskiego Towarzystwa Psychoterapii
                     Psychodynamicznej oraz Polskiego Towarzystwa Psychologicznego.
@@ -61,6 +55,6 @@ export const OMnie = () => {
                     Jestem członkiem Polskiego Towarzystwa Psychoterapii Psychodynamicznej.
                 </p>
             </div>
-        </div>
+        </section>
     )
 }

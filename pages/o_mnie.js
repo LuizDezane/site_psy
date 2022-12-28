@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import { motion as m } from 'framer-motion'
 
-import { OMnie } from '../components/OMnie'
+import { O_Mnie } from '../components/O_Mnie'
 
 export default function O_mnie() {
     return (
@@ -19,11 +19,7 @@ export default function O_mnie() {
             </Head>
 
             <main>
-                <section>
-                    <div className="container">
-                        <OMnie />
-                    </div>
-                </section>
+                <O_Mnie />
             </main>
 
             <footer>

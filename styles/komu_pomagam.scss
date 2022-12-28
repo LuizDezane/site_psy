@@ -1,0 +1,34 @@
+@import '/styles/globals';
+
+// ------------------------------ Desktop ------------------------------
+@media screen and (min-width: 1024px) {
+    section.komu_pomagam {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        padding: $space_160;
+        text-align: left;
+        row-gap: $space_40;
+
+        .header_komu_pomagam {
+            grid-area: 1 / 2 / 2 / 7;
+        }
+
+        .komu_pomagam_1 {
+            grid-area: 2 / 3 / 3 / 11;
+        }
+
+        .komu_pomagam_2 {
+            grid-area: 3 / 4 / 4 / 10;
+        }
+
+        .komu_pomagam_3 {
+            grid-area: 4 / 3 / 5 / 11;
+        }
+    }
+}
+
+// ------------------------------ Tablet ------------------------------
+@media screen and (min-width: 768) and (max-width: 1023px) {}
+
+// ------------------------------ Smartphone ------------------------------
+@media screen and (max-width: 767px) {}
