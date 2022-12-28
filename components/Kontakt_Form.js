@@ -4,7 +4,7 @@ import Map from './Mapa'
 const Kontakt_Form = () => {
     return (
         <section className="kontakt_form">
-
+            
             <h1 className='header_kontakt_form'>Skontaktuj sie ze mną</h1>
 
             <form className='kontakt_form' action="#" method="POST">

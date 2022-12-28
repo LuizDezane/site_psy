@@ -3,7 +3,10 @@
 // ------------------------------ Desktop ------------------------------
 @media screen and (min-width: 1024px) {
     section.kontakt_form {
-        background-image: url("../public/images/background_adjusted.jpg");
+        background-image: url("../public/images/background_faded.jpg");
+        background-position: top;
+        background-size: cover;
+        background-repeat: no-repeat;
         display: grid;
         grid-template-columns: repeat(12, 1fr);
         text-align: center;
@@ -43,7 +46,7 @@
 
             .submit {
                 display: flex;
-                justify-content: end;
+                justify-content: flex-end;
             }
         }
 
