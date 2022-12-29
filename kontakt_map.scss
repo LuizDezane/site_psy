@@ -1,0 +1,27 @@
+@import '/styles/globals';
+
+// ------------------------------ Desktop ------------------------------
+@media screen and (min-width: 1024px) {
+    section.jak_pomagam {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        padding: $space_160;
+        row-gap: $space_40;
+        text-align: left;
+        align-content: flex-start;
+
+        .header_jak_pomagam {
+            grid-area: 1 / 2 / 2 / 7;
+        }
+
+        .jak_pomagam_1 {
+            grid-area: 2 / 3 / 3 / 11;
+        }
+    }
+}
+
+// ------------------------------ Tablet ------------------------------
+@media screen and (min-width: 768) and (max-width: 1023px) {}
+
+// ------------------------------ Smartphone ------------------------------
+@media screen and (max-width: 767px) {}

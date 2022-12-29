@@ -1,7 +1,6 @@
 import Head from 'next/head'
-
 import { motion as m } from 'framer-motion'
-import Map from '../components/Mapa'
+import Kontakt_Map from '../components/Kontakt_Map'
 
 export default function Kontakt() {
     return (
@@ -19,26 +18,7 @@ export default function Kontakt() {
             </Head>
 
             <main>
-                <section>
-                    <div className="container_o_mnie">
-                        <div>
-                        <h2>Kontakt</h2>
-                        <h3>Informacje kontaktowe</h3>
-                        <h4>Centrum Psyche</h4>
-                        <p>mgr Paulina Janik</p>
-
-                        <h3>Adres</h3>
-                        <p>ul. Białowieska 3a/5d (4 piętro), Wrocław</p>
-                        <p>Budynek Pixel House, naprzeciwko Centrum Handlowego Magnolia Park i siłowni McFit (róg Legnickiej i Białowieskiej)</p>
-
-                        <h3>Dane kontaktowe</h3>
-                        <p>tel: 530 023 204</p>
-                        <p>email: paulina.janik.gabinet@gmail.com</p>
-
-                        <Map/>
-                        </div>                        
-                    </div>                    
-                </section>
+                <Kontakt_Map />
             </main>
 
             <footer>
