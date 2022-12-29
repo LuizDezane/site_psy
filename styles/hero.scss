@@ -23,6 +23,7 @@
             gap: $space_20;
             border-radius: $radius_large;
             padding: $space_20 $space_80;
+            box-shadow: $shadow_div_hover;
         }
 
         .lower {
@@ -33,6 +34,7 @@
             gap: $space_80;
             border-radius: $radius_large;
             padding: $space_20 $space_80;
+            box-shadow: $shadow_div_hover;
 
             .image {
                 background-image: url("../public/images/10.jpeg");
@@ -42,6 +44,7 @@
                 border-radius: $radius_medium;
                 width: 100%;
                 min-width: 350px;
+                box-shadow: $shadow_div;
             }
 
             .text {

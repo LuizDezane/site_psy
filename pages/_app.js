@@ -13,6 +13,8 @@ import '../styles/kontakt_form.scss'
 import '../styles/blog_element.scss'
 import '../styles/komu_pomagam.scss'
 import '../styles/jak_pomagam.scss'
+import '../styles/kontakt_map.scss'
+import '../styles/map.scss'
 
 import Layout from '../components/Layout'
 
