@@ -1,0 +1,68 @@
+@import '/styles/globals';
+
+// ------------------------------ Desktop ------------------------------
+@media screen and (min-width: 1024px) {
+    section.umow_wizyte {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        padding: $xtra_large;
+
+        .header_umow_wizyte {
+            grid-area: 1 / 2 / 2 / 7;
+        }
+
+        .umow_wizyte_1 {
+            grid-area: 2 / 3 / 3 / 8;
+        }
+
+        .umow_wizyte_2 {
+            grid-area: 3 / 3 / 4 / 6;
+        }
+
+        .umow_wizyte_3 {
+            grid-area: 3 / 6 / 4 / 12;
+
+            h3 {
+                padding-bottom: $space_20;
+            }
+
+            .kontakt_form {
+                grid-area: 2 / 2 / 3 / 8;
+                gap: $xxtra_small;
+                display: flex;
+                flex-direction: column;
+    
+                .general_info {
+                    gap: $xxtra_small;
+                    display: flex;
+                    flex-direction: column;
+    
+                    input,
+                    textarea {
+                        border-radius: $radius_medium;
+                        border: none;
+                        font-family: $text_font;
+                        font-size: $links;
+                        padding: $xxtra_small $xtra_small;
+                        box-shadow: $shadow_div_hover;
+    
+                        &::placeholder {
+                            color: $header;
+                        }
+                    }
+                }
+    
+                .submit {
+                    display: flex;
+                    justify-content: flex-end;
+                }
+            }
+        }
+    }
+}
+
+// ------------------------------ Tablet ------------------------------
+@media screen and (min-width: 768) and (max-width: 1023px) {}
+
+// ------------------------------ Smartphone ------------------------------
+@media screen and (max-width: 767px) {}

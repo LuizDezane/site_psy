@@ -15,6 +15,8 @@ import '../styles/komu_pomagam.scss'
 import '../styles/jak_pomagam.scss'
 import '../styles/kontakt_map.scss'
 import '../styles/map.scss'
+import '../styles/cennik_element.scss'
+import '../styles/umow_wizyte.scss'
 
 import Layout from '../components/Layout'
 
