@@ -15,7 +15,7 @@ const Footer = () => {
                 <p>ul. Białowieska 3a/5d (4 piętro), Wrocław</p>
                 <p>Budynek Pixel House, naprzeciwko Centrum Handlowego Magnolia Park i siłowni McFit (róg Legnickiej i Białowieskiej</p>
                 <br />
-                <Link href="/umow_wizyte" className='div5'><button>Umów wizytę</button></Link>
+                <Link href="/umow_wizyte" className='div5'><button className='dark'>Umów wizytę</button></Link>
             </div>
 
             <div className="column_2">

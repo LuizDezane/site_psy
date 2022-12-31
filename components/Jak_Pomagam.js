@@ -11,7 +11,7 @@ const Jak_Pomagam = () => {
                     <div className="icon icon_1"></div>
                 </div>
 
-                <h4>Konsultacja psychologiczna</h4>
+                <h3>Konsultacja psychologiczna</h3>
                     
                 <p>Proces psychoterapeutyczny poprzedzony jest konsultacjami psychologicznymi. Zazwyczaj cztery spotkania
                 mają charakter konsultacji diagnostycznych. Jest to czas na dokładne zrozumienie problemu, a także
@@ -44,7 +44,7 @@ const Jak_Pomagam = () => {
                     <div className="icon icon_2"></div>
                 </div>
 
-                <h4>Psychoterapia indywidualna</h4>
+                <h3>Psychoterapia indywidualna</h3>
 
                 <p>Psychoterapia to przede wszystkim spotkanie dwóch osób, które polega na swobodnej rozmowie toczącej się
                 między pacjentem a terapeutą.</p>
@@ -64,7 +64,7 @@ const Jak_Pomagam = () => {
                     <div className="icon icon_3"></div>
                 </div>
 
-                <h4>Ile trwa psychoterapia?</h4>
+                <h3>Ile trwa psychoterapia?</h3>
             
                 <p>Standardowa sesja trwa 50 minut. Zazwyczaj sesja odbywa się raz w tygodniu.</p>
                 
@@ -80,7 +80,7 @@ const Jak_Pomagam = () => {
                     <div className="icon icon_4"></div>
                 </div>
 
-                <h4>Poufność</h4>
+                <h3>Poufność</h3>
 
                 <p>Proces psychoterapeutyczny, treści wnoszone do gabinetu objęte są tajemnicą zawodową. Bardzo poważnie traktuje prywatność i poufność każdego pacjenta. Oznacza to, że nikt postronny nie dowie się, że korzystasz z mojej pomocy, ani o czym rozmawiamy podczas spotkań. Zasada ta jest ważna i leży u podstaw zaufania do terapeuty.</p>
             </div>

@@ -8,7 +8,7 @@ const Konsultacje = () => {
                 <div className="circle">
                     <div className="icon icon_1"></div>
                 </div>
-                <h4>Konsultacje psychologiczne</h4>
+                <h3>Konsultacje psychologiczne</h3>
                 <p>Proces psychoterapeutyczny poprzedzony jest konsultacjami psychologicznymi. Zazwyczaj cztery spotkania mają
                     charakter konsultacji diagnostycznych. Jest to czas na dokładne zrozumienie problemu, a także osoby, która
                     go doświadcza. Na tej podstawie ustalimy dalszą współpracę.</p>
@@ -20,7 +20,7 @@ const Konsultacje = () => {
                 <div className="circle">
                     <div className="icon icon_2"></div>
                 </div>
-                <h4>Psychoterapia indywidualna osób dorosłych</h4>
+                <h3>Psychoterapia indywidualna osób dorosłych</h3>
                 <p>Psychoterapia to przede wszystkim spotkanie dwóch osób, które polega na swobodnej rozmowie toczącej się
                     między pacjentem a terapeutą.</p>
                 <Link href="/komu_pomagam"><button className='light'>Dowiedz się więcej</button></Link>

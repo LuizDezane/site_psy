@@ -39,15 +39,21 @@
 
         .pomagam_div {
             background: $white;
-            box-shadow: $shadow_div;
+            // box-shadow: $shadow_div;
+            box-shadow: rgb(25 30 41 / 10%) 0px 3px 16px;
             border-radius: $radius_medium;
             border: 1px solid transparent;
             padding: $space_40 $space_60;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            min-height: 260px;
             transition: all 0.3s ease-in-out;
 
             &:hover {
-                box-shadow: $shadow_div_hover;
-                border: 1px solid $border_25;
+                // box-shadow: $shadow_div_hover;
+                // border: 1px solid $border_25;
+                transform: translateY(-5px);
             }
         }
     }
