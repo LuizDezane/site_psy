@@ -1,7 +1,8 @@
 @import '/styles/globals';
 
 .hero_background {
-    background-image: url("../public/images/background_adjusted.jpg");
+    // background-image: url("../public/images/background_adjusted.jpg");
+    background: $gradient;
     height: calc(100vh - 90px);
     margin-top: 90px;
 }
@@ -33,7 +34,7 @@
             align-content: center;
             gap: $space_40;
             border-radius: $radius_large;
-            padding: $space_20 $space_40;
+            padding: $space_20 $space_80;
             box-shadow: $shadow_div_hover;
 
             .image {

@@ -15,10 +15,16 @@
 
         .komu_pomagam_1 {
             grid-area: 2 / 3 / 3 / 11;
+            font-family: Alegreya-Regular;
         }
 
         .komu_pomagam_2 {
             grid-area: 3 / 4 / 4 / 10;
+
+            li {
+                line-height: 2;
+                font-weight: 300;
+            }
         }
 
         .komu_pomagam_3 {

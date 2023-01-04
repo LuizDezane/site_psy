@@ -7,6 +7,11 @@
 }
 
 @font-face {
+    font-family: 'Alegreya-Regular';
+    src: url(../public/fonts/Alegreya-Regular.otf);
+}
+
+@font-face {
     font-family: 'Alegreya Sans Regular';
     src: url(../public/fonts/AlegreyaSans-Regular.ttf);
 }
@@ -15,14 +20,14 @@
 $primary: #B74A52;
 $primary_faded: #C67075;
 $secondary: #DBA4A7;
-$secondary_light: #EFD8D9;
-$grey_light: #CAC8DA;
+$secondary_light: #F5E5E6;
+$grey_light: #F4F3F7;
 $white: #FFFFFF;
 $white_faded: rgba(255, 255, 255, 0.85);
-$gradient: linear-gradient(90deg, $secondary_light 0%, $grey_light 100%);
+$gradient: linear-gradient(90deg, $secondary_light 0%, #FAF2F2 100%);
 
 $header: #232232;
-$text: rgba(35, 34, 50, 0.6);
+$text: rgba(35, 34, 50, 0.8);
 $text_faded: rgba(35, 34, 50, 0.4);
 $text_hover: rgba(35, 34, 50, 0.8);
 
@@ -42,11 +47,13 @@ $shadow_button_hover: rgba(35, 34, 50, 0.24) 0 0 24px;
 $header_font: 'Alegreya Italic';
 // $text_font: 'Alegreya Sans Regular';
 // $header_font: poppins, sans-serif;
-$text_font: poppins, sans-serif;
+$text_font: Alegreya-Regular, sans-serif;
 
 // ---------- Font sizes ----------
-$links: clamp(1rem, 0vw + 1rem, 1rem);
-$paragraph: clamp(1.13rem, 0.23vw + 1.07rem, 1.25rem);
+$links: 1.3rem;
+// $links: clamp(1rem, 0vw + 1rem, 1rem);
+$paragraph: 1.5rem;
+// $paragraph: clamp(1.13rem, 0.23vw + 1.07rem, 1.5rem);
 $header_4: clamp(1.27rem, 0.54vw + 1.13rem, 1.56rem);
 $header_3: clamp(1.42rem, 0.96vw + 1.18rem, 1.95rem);
 $header_2: clamp(1.6rem, 1.53vw + 1.22rem, 2.44rem);
@@ -113,8 +120,8 @@ h4 {
     color: $header;
     font-family: $header_font;
     font-weight: 400;
-    // font-style: italic;
-    line-height: 1;
+    font-style: normal;
+    line-height: 1.4;
     margin: $none;
     padding: $none;
 }
@@ -140,7 +147,7 @@ p {
     font-weight: 300;
     font-style: normal;
     color: $text;
-    line-height: 1.2;
+    line-height: 1.6;
 }
 
 a {
@@ -213,7 +220,7 @@ section {
 // ------------------------------ Blur ------------------------------
 
 .blur {
-    background: rgba(255, 255, 255, 0.5);
+    background: rgba(255, 255, 255, 0.75);
     backdrop-filter: blur(15px);
 }
 

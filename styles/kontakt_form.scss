@@ -4,6 +4,7 @@
 @media screen and (min-width: 1024px) {
     section.kontakt_form {
         // background-image: url("../public/images/background_faded.jpg");
+        background: $white;
         background-position: top;
         background-size: cover;
         background-repeat: no-repeat;
@@ -11,7 +12,7 @@
         grid-template-columns: repeat(12, 1fr);
         text-align: center;
         padding: $xtra_large;
-        margin-bottom: $xxtra_small;
+        // margin-bottom: $xxtra_small;
 
         .header_kontakt_form {
             grid-area: 1 / 2 / 2 / 7;
@@ -34,7 +35,7 @@
                 input,
                 textarea {
                     border-radius: $radius_medium;
-                    border: none;
+                    border: 1px solid $secondary;
                     font-family: $text_font;
                     font-size: $links;
                     padding: $xxtra_small $xtra_small;
