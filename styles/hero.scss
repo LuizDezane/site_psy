@@ -31,19 +31,20 @@
             display: flex;
             justify-content: center;
             align-content: center;
-            gap: $space_80;
+            gap: $space_40;
             border-radius: $radius_large;
-            padding: $space_20 $space_80;
+            padding: $space_20 $space_40;
             box-shadow: $shadow_div_hover;
 
             .image {
-                background-image: url("../public/images/10.jpeg");
+                background-image: url("../public/images/12.jpeg");
                 background-position: top;
                 background-size: cover;
                 background-repeat: no-repeat;
                 border-radius: $radius_medium;
                 width: 100%;
                 min-width: 350px;
+                margin: 40px;
                 box-shadow: $shadow_div;
             }
 
