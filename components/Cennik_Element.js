@@ -18,14 +18,14 @@ const Cennik_Element = () => {
                         <div className="icon icon_1"></div>
                     </div>
                     <p>Konsultacja psychologiczna</p>
-                    <h2>150zł / 50 minut</h2>                    
+                    <h2>170zł / 50 minut</h2>                    
                 </div>
                 <div>
                     <div className="circle">
                         <div className="icon icon_2"></div>
                     </div>
                     <p>Psychoterapia indywidualna </p>
-                    <h2>150zł / 50 minut</h2>
+                    <h2>170zł / 50 minut</h2>
                 </div>
             </div>
 

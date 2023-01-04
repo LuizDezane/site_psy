@@ -69,8 +69,7 @@ const Jak_Pomagam = () => {
                 <p>Standardowa sesja trwa 50 minut. Zazwyczaj sesja odbywa się raz w tygodniu.</p>
                 
                 <p>Wiele trudności pacjentów narastało przez wiele lat. Aby dokonać różnych zmian w życiu pacjenta, także
-                potrzebny jest dłuższy czas. Długość trwania terapii jest indywidualna dla każdego pacjenta.
-                Psychoterapia może być krótkoterminowa (do 15 spotkań) lub długoterminowa (do kilku lat).</p>
+                potrzebny jest dłuższy czas. Długość trwania terapii jest indywidualna dla każdego pacjenta.</p>
 
                 <p>Terapia jest procesem – wymaga więc cierpliwości, utrwalenia i czasu, aby zmiana była stała.</p>
             </div>

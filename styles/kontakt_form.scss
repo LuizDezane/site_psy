@@ -3,7 +3,7 @@
 // ------------------------------ Desktop ------------------------------
 @media screen and (min-width: 1024px) {
     section.kontakt_form {
-        background-image: url("../public/images/background_faded.jpg");
+        // background-image: url("../public/images/background_faded.jpg");
         background-position: top;
         background-size: cover;
         background-repeat: no-repeat;
@@ -11,7 +11,7 @@
         grid-template-columns: repeat(12, 1fr);
         text-align: center;
         padding: $xtra_large;
-        padding-bottom: 0;
+        margin-bottom: $xxtra_small;
 
         .header_kontakt_form {
             grid-area: 1 / 2 / 2 / 7;
@@ -53,11 +53,11 @@
         }
 
         .image_kontakt_form {
-            grid-area: 1 / 8 / 10 / 12;
-            border-radius: 16px 16px 0 0;
-            background-image: url("../public/images/10.jpeg");
+            grid-area: 1 / 8 / 8 / 12;
+            border-radius: 16px;
+            background-image: url("../public/images/6.jpeg");
             background-position: top;
-            background-size:cover;
+            background-size: cover;
             background-repeat: no-repeat;
             min-width: 50%;
             box-shadow: $shadow_div;

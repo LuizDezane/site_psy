@@ -19,7 +19,7 @@ $secondary_light: #EFD8D9;
 $grey_light: #CAC8DA;
 $white: #FFFFFF;
 $white_faded: rgba(255, 255, 255, 0.85);
-$gradient: linear-gradient(90deg, $grey_light 0%, $secondary_light 100%);
+$gradient: linear-gradient(90deg, $secondary_light 0%, $grey_light 100%);
 
 $header: #232232;
 $text: rgba(35, 34, 50, 0.6);
@@ -207,7 +207,7 @@ section {
     gap: $xtra_small;
     justify-content: center;
     align-content: center;
-    box-shadow: $shadow_section;
+    // box-shadow: $shadow_section;
 }
 
 // ------------------------------ Blur ------------------------------
