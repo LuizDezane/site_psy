@@ -16,6 +16,12 @@
     src: url(../public/fonts/AlegreyaSans-Regular.ttf);
 }
 
+@font-face {
+    font-family: 'Playfair Display Italic';
+    src: url(../public/fonts/PlayfairDisplay-Italic.ttf);
+}
+
+
 /* ------------------------------ Variables ------------------------------ */
 $primary: #B74A52;
 $primary_faded: #C67075;
@@ -44,7 +50,7 @@ $shadow_button: rgba(35, 34, 50, 0.12) 0 0 24px;
 $shadow_button_hover: rgba(35, 34, 50, 0.24) 0 0 24px;
 
 // ---------- Fonts ----------
-$header_font: 'Alegreya Italic';
+$header_font: 'Playfair Display Italic';
 // $text_font: 'Alegreya Sans Regular';
 // $header_font: poppins, sans-serif;
 $text_font: Alegreya-Regular, sans-serif;
