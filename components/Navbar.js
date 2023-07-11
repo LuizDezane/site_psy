@@ -8,9 +8,7 @@ const Navbar = () => {
             <div className="header">
 
                 <div className='logo_menu'>
-                    <Link href="/">
-                    <Image className='logo' src={logo} alt="logo" width={120} height={60} />
-                    </Link>
+                    <Link href="/"><h4>Paulina J.</h4></Link>
                 </div>
 
                 <div className="menu">

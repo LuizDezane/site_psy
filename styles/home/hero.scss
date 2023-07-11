@@ -1,0 +1,100 @@
+@import '/styles/globals';
+
+.hero_background {
+    background: $gradient;
+    height: 100vh;
+    padding-top: calc($large * 2.5);
+
+    .upper {
+        grid-area: 1 / 1 / 2 / 13;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        text-align: center;
+        height: 25vh;
+        gap: $small;
+        border-radius: $radius_large;
+        padding: $small $space_80;
+        box-shadow: $shadow_div_hover;
+    }
+
+    .lower {
+        grid-area: 2 / 2 / 5 / 12;
+        display: flex;
+        gap: $small;
+        height: 58vh;
+        border-radius: $radius_large;
+        padding: $space_20 $space_80;
+        box-shadow: $shadow_div_hover;
+
+        .image_1 {
+            background-image: url("/images/12.jpeg");
+        }
+
+        .text {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            // margin-left: $space_80;
+        }
+    }
+
+    @media screen and (min-width: 768) and (max-width: 1023px) {
+
+    }
+
+    @media screen and (max-width: 767px) {
+        .hero_background {
+            background-image: url("/images/background_adjusted.jpg");
+            height: calc(100vh - 60px);
+            margin-top: 60px;
+        }
+
+        section.hero_background {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            grid-template-rows: repeat(4, 1fr);
+
+            .upper {
+                grid-area: 1 / 1 / 2 / 7;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-content: center;
+                text-align: center;
+                gap: $space_10;
+                border-radius: $radius_large;
+                padding: $space_10 $space_20;
+            }
+
+            .lower {
+                grid-area: 2 / 1 / 5 / 7;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-content: center;
+                gap: $space_80;
+                border-radius: $radius_large;
+                padding: $space_20 $space_80;
+
+                .image {
+                    background-image: url("/images/10.jpeg");
+                    background-position: top;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    border-radius: $radius_medium;
+                    width: 100%;
+                    min-width: 350px;
+                }
+
+                .text {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    // margin-left: $space_80;
+                }
+            }
+        }
+    }
+}

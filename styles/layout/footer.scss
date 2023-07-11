@@ -7,7 +7,7 @@
 
     .column_1 {
         height: 100%;
-        padding: $small $xtra_large;
+        padding: $small $large;
         display: flex;
         flex-direction: column;
         align-items: flex-start;
@@ -20,10 +20,10 @@
 
     .column_2 {
         background: #F4F3F7;
-        padding: $small $xtra_large;
+        padding: $small $large;
         display: flex;
         flex-direction: column;
-        gap: $none $xxtra_small;
+        gap: 0 $small;
         display: flex;
         justify-content: space-between;
 
@@ -31,7 +31,7 @@
             display: flex;
             flex-direction: column;
             align-items: flex-start;
-            gap: $xxtra_small $none;
+            gap: $small 0;
         }
 
         .footer_bottom {
@@ -46,7 +46,7 @@
             }
 
             .icon {
-                margin-right: $xxtra_small;
+                margin-right: $small;
                 display: flex;
                 align-items: flex-end;
             }

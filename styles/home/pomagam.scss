@@ -6,7 +6,7 @@
         display: grid;
         grid-template-columns: repeat(12, 1fr);
         text-align: center;
-        padding: $xtra_large;
+        padding: $large;
         background: $gradient;
 
         .header_pomagam {
@@ -40,8 +40,8 @@
 
         .pomagam_div {
             background: $white;
-            // box-shadow: $shadow_div;
-            box-shadow: rgb(25 30 41 / 10%) 0px 3px 16px;
+            box-shadow: $shadow_div;
+            // box-shadow: rgb(25 30 41 / 10%) 0px 3px 16px;
             border-radius: $radius_medium;
             border: 1px solid transparent;
             padding: $space_40 $space_60;
@@ -52,7 +52,7 @@
             transition: all 0.3s ease-in-out;
 
             &:hover {
-                // box-shadow: $shadow_div_hover;
+                box-shadow: $shadow_div_hover;
                 // border: 1px solid $border_25;
                 transform: translateY(-5px);
             }

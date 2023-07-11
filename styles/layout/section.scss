@@ -1,0 +1,55 @@
+@import '/styles/globals';
+
+section {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    padding: $small $large;
+    gap: $small;
+    justify-content: center;
+    align-content: center;
+    box-shadow: $shadow_section;
+
+    .image {
+        flex-grow: 1;
+        width: 100%;
+        min-width: 300px;
+        height: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: top;
+        border-radius: $radius_medium;
+        box-shadow: $shadow_div;
+    }
+
+    .heading {
+        grid-area: 1 / 2 / 2 / 7;
+    }
+
+    .gradient {
+        background: $gradient;
+    }
+
+    .grid {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1023px) {
+        grid-template-columns: repeat(8, 1fr);
+        padding: $space_20 $space_40;
+
+        .heading {
+            grid-area: 1 / 2 / 2 / 6;
+        }
+    }
+
+    @media screen and (max-width: 767px) {
+        grid-template-columns: repeat(6, 1fr);
+        padding: $space_10 $space_20;
+
+        .heading {
+            grid-area: 1 / 1 / 2 / 6;
+        }
+    }
+}

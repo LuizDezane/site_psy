@@ -12,8 +12,8 @@
     .header {
         display: flex;
         justify-content: space-between;
-        gap: $none $xxtra_small;
-        padding: $none $medium;
+        gap: 0 $small;
+        padding: 0 $medium;
         background: rgba(255, 255, 255, 0.5);
         box-shadow: $shadow_section;
         backdrop-filter: blur(15px);

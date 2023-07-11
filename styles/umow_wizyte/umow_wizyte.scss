@@ -5,7 +5,7 @@
     section.umow_wizyte {
         display: grid;
         grid-template-columns: repeat(12, 1fr);
-        padding: $xtra_large;
+        padding: $large;
 
         .header_umow_wizyte {
             grid-area: 1 / 2 / 2 / 7;
@@ -27,12 +27,12 @@
             }
 
             .kontakt_form {
-                gap: $xxtra_small;
+                gap: $small;
                 display: flex;
                 flex-direction: column;
     
                 .general_info {
-                    gap: $xxtra_small;
+                    gap: $small;
                     display: flex;
                     flex-direction: column;
     
@@ -42,7 +42,7 @@
                         border: none;
                         font-family: $text_font;
                         font-size: $links;
-                        padding: $xxtra_small $xtra_small;
+                        padding: $small;
                         box-shadow: $shadow_div_hover;
     
                         &::placeholder {

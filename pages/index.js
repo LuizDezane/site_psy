@@ -13,7 +13,7 @@ export default function Home() {
             initial={{opacity: 0}}
             animate={{opacity: 1}}
             exit={{opacity: 0}}
-            transition={{duration: 1.25, ease: 'easeOut', delay: 0.75}}
+            transition={{duration: 1, ease: 'easeOut', delay: 0.25}}
         >
             <Head>
                 <title>Paulina Janik | Psycholog, Psychoterapeuta</title>

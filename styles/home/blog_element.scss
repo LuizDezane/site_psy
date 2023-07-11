@@ -6,7 +6,7 @@
         display: grid;
         grid-template-columns: repeat(12, 1fr);
         text-align: center;
-        padding: $xtra_large;
+        padding: $large;
 
         .header_blog {
             grid-area: 1 / 4 / 2 / 10;
@@ -20,19 +20,19 @@
 
             h4,
             p {
-                margin: $xtra_small;
+                margin: $small;
                 text-align: left;
             }
 
             .button {
-                margin: $xtra_small;
+                margin: $small;
                 display: flex;
                 justify-content: flex-end;
             }
 
             .blog_element_1 {
                 .post_image_1 {
-                    background-image: url("../public/images/posts/post_1.jpg");
+                    background-image: url("/images/posts/post_1.jpg");
                     background-position: center;
                     background-size: cover;
                     background-repeat: no-repeat;
@@ -44,7 +44,7 @@
 
             .blog_element_2 {
                 .post_image_2 {
-                    background-image: url("../public/images/posts/post_2.jpg");
+                    background-image: url("/images/posts/post_2.jpg");
                     background-position: center;
                     background-size: cover;
                     background-repeat: no-repeat;
@@ -56,7 +56,7 @@
 
             .blog_element_3 {
                 .post_image_3 {
-                    background-image: url("../public/images/posts/post_3.jpg");
+                    background-image: url("/images/posts/post_3.jpg");
                     background-position: center;
                     background-size: cover;
                     background-repeat: no-repeat;
