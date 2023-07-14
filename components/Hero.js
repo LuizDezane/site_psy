@@ -18,7 +18,8 @@ useEffect(() => {
                     <h4 className='ralph'><i>Ralph Waldo Emerson</i></h4>
                 </div>
                 <div className='blur lower'>
-                    <div className="image image_1"></div>
+                    <div className="import '../styles/layout/section.scss'
+ image_1"></div>
                     <div className="text">
                         <h2>Paulina Janik</h2>
                         <h3>Psycholog, psychoterapeuta</h3>
