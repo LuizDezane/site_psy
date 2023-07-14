@@ -12,7 +12,7 @@ useEffect(() => {
 })
 
     return (
-            <section className='hero_background'>
+            <section id='hero'>
                 <div className='blur upper'>
                     <h1>Gdy słucham co mówisz,<br /> słyszę kim jesteś</h1>
                     <h4 className='ralph'><i>Ralph Waldo Emerson</i></h4>
