@@ -1,12 +1,11 @@
 @import '/styles/globals';
 
-section.kontakt_form {
+#kontakt_form {
     background: $white;
     background-position: top;
     background-size: cover;
     background-repeat: no-repeat;
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
+
     text-align: center;
     padding: $large;
 
@@ -60,7 +59,21 @@ section.kontakt_form {
         box-shadow: $shadow_div;
     }
 
-    @media screen and (min-width: 768) and (max-width: 1023px) {}
+    @media screen and (min-width: 768) and (max-width: 1023px) {
 
-    @media screen and (max-width: 767px) {}
+    }
+
+    @media screen and (max-width: 767px) {
+        .header_kontakt_form {
+            grid-area: 1 / 1 / 2 / 7;
+        }
+
+        .kontakt_form {
+            grid-area: 2 / 1 / 3 / 7;
+        }
+
+        .image_kontakt_form {
+            grid-area: 3 / 1 / 4 / 7;
+        }
+    }
 }
