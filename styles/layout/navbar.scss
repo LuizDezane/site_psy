@@ -7,6 +7,7 @@
     height: 10vh;
     background: rgba(255, 255, 255, 0.5);
     backdrop-filter: blur(15px);
+    padding: $small $large;
     z-index: 100;
 
     .logo_menu {
@@ -41,6 +42,7 @@
     }
 
     @media screen and (min-width: 768px) and (max-width: 1023px) {
+        padding: $small $medium;
         .logo_menu {
             grid-area: 1 / 1 / 2 / 3;
         }
@@ -55,11 +57,13 @@
         }
 
         .menu {
+            display: none;
             visibility: hidden;
         }
     }
 
     @media screen and (max-width: 767px) {
+        padding: $small $medium;
         .logo_menu {
             grid-area: 1 / 1 / 2 / 4;
         }
@@ -72,11 +76,8 @@
 
         .menu,
         .menu_button {
+            display: none;
             visibility: hidden;
-        }
-
-        .hamburger {
-            visibility: visible;
         }
     }
 }

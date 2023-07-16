@@ -25,7 +25,7 @@ section {
 
     @media screen and (min-width: 768px) and (max-width: 1023px) {
         grid-template-columns: repeat(8, 1fr);
-        padding: $space_20 $space_40;
+        padding: $small $medium;
 
         .heading {
             grid-area: 1 / 2 / 2 / 6;
@@ -34,7 +34,7 @@ section {
 
     @media screen and (max-width: 767px) {
         grid-template-columns: repeat(6, 1fr);
-        padding: $space_10 $space_20;
+        padding: $small;
 
         .heading {
             grid-area: 1 / 1 / 2 / 6;

@@ -17,6 +17,7 @@ useEffect(() => {
                     <h1>Gdy słucham co mówisz,<br /> słyszę kim jesteś</h1>
                     <h4 className='ralph'><i>Ralph Waldo Emerson</i></h4>
                 </div>
+                
                 <div className='blur lower'>
                     <div className="image_1"></div>
                     <div className="text">
