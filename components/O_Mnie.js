@@ -4,7 +4,7 @@ export const O_Mnie = () => {
     return (
         <section id='o_mnie'>
 
-            <h1 className="header_o_mnie">O mnie</h1>
+            <h1 className="heading">O mnie</h1>
 
             <div className="o_mnie_1">
                 <h3>Dzień dobry Państwu, nazywam się Paulina Janik - psycholog, socjoterapeuta, psychoterapeuta

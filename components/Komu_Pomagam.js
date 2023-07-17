@@ -2,9 +2,9 @@ import React from 'react'
 
 const Komu_Pomagam = () => {
     return (
-        <section className='komu_pomagam'>
+        <section id='komu_pomagam'>
 
-            <h1 className="header_komu_pomagam">Komu Pomagam</h1>
+            <h1 className="heading">Komu Pomagam</h1>
 
             <h3 className='komu_pomagam_1'>Dzień dobry, nazywam się Paulina Janik bardzo się cieszę, że tu jesteś. Domyślam się jak dużo masz
                 wątpliwości, z jakimi trudnościami musisz mierzyć się na co dzień, a także jakich problemów doświadczasz.

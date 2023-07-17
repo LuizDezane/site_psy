@@ -2,9 +2,9 @@ import React from 'react'
 
 const Jak_Pomagam = () => {
     return (
-        <section className='jak_pomagam'>
+        <section id='jak_pomagam'>
 
-            <h1 className="header_jak_pomagam">Jak Pomagam</h1>
+            <h1 className="heading">Jak Pomagam</h1>
 
             <div className="jak_pomagam_1">
                 <div className="circle">

@@ -3,9 +3,9 @@ import Link from 'next/link'
 
 const Cennik_Element = () => {
     return (
-        <section className='cennik_element'>
+        <section id='cennik_element'>
 
-            <h1 className="header_cennik">Cennik</h1>
+            <h1 className="heading">Cennik</h1>
 
             <div className="cennik_element_1">
                 <h3>Płatność możliwa gotówką lub kartą.</h3>

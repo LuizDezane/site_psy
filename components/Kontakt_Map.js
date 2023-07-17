@@ -1,11 +1,11 @@
 import React from 'react'
-import Map from './Mapa'
+import Map from './Map'
 
 const Kontakt = () => {
     return (
-        <section className='kontakt_map'>
+        <section id='kontakt_map'>
 
-            <h1 className="header_kontakt_map">Kontakt</h1>
+            <h1 className="heading">Kontakt</h1>
             
             <div className="background blur">
                 <div className='kontakt_map_1'>
