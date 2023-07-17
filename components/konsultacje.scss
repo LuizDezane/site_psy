@@ -1,16 +1,23 @@
 @import '/styles/globals';
 
-section.konsultacje {
+#konsultacje {
     text-align: center;
-    padding: $space_160 0;
+    margin-top: $small;
+    padding: $large auto;
 
     .kosnultacje_1 {
         grid-area: 1 / 4 / 2 / 10;
-        margin-bottom: $medium;
+        margin: $large auto;
     }
 
     .kosnultacje_2 {
         grid-area: 2 / 4 / 3 / 10;
+        margin: $large auto;
+
+        h3,
+        p {
+            margin: $small;
+        }
     }
 
     .circle {
@@ -22,8 +29,7 @@ section.konsultacje {
         display: flex;
         justify-content: center;
         align-items: center;
-        box-shadow: $shadow_div_hover;
-        margin-bottom: $space_20;
+        margin-bottom: $small;
 
         .icon {
             width: 50px;
@@ -40,13 +46,27 @@ section.konsultacje {
         }
     }
 
-    @media screen and (min-width: 768) and (max-width: 1023px) {}
+    @media screen and (min-width: 768px) and (max-width: 1023px) {
+        .kosnultacje {
+            padding: $medium auto;
+        }
+
+        .kosnultacje_1 {
+            grid-area: 1 / 2 / 2 / 8;
+
+        }
+
+        .kosnultacje_2 {
+            grid-area: 2 / 2 / 3 / 8;
+        }
+    }
 
 
     @media screen and (max-width: 767px) {
         .kosnultacje {
-            padding: $space_40;
+            padding: $small auto;
         }
+
         .kosnultacje_1 {
             grid-area: 1 / 1 / 2 / 7;
         }

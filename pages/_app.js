@@ -2,27 +2,26 @@ import React, { useEffect } from 'react'
 import { AnimatePresence } from 'framer-motion'
 
 import '../styles/globals.scss'
-import '../styles/layout/section.scss'
-import '../styles/layout/navbar.scss'
-import '../styles/layout/footer.scss'
+import '../components/layout/section.scss'
+import '../components/layout/navbar.scss'
+import '../components/layout/footer.scss'
 
-import '../styles/home/hero.scss'
-import '../styles/home/konsultacje.scss'
-import '../styles/home/pomagam.scss'
-import '../styles/home/blog_element.scss'
-import '../styles/home/kontakt_form.scss'
+import '../components/hero.scss'
+import '../components/konsultacje.scss'
+import '../components/pomagam.scss'
+import '../components/blog_element.scss'
+import '../components/kontakt_form.scss'
 
-import '../styles/o_mnie/o_mnie.scss'
+import '../components/o_mnie.scss'
+import '../components/komu_pomagam.scss'
+import '../components/jak_pomagam.scss'
+import '../components/cennik.scss'
+import '../components/umow_wizyte.scss'
 
-import '../styles/komu_pomagam/komu_pomagam.scss'
-import '../styles/jak_pomagam/jak_pomagam.scss'
-import '../styles/cennik/cennik.scss'
-import '../styles/umow_wizyte/umow_wizyte.scss'
+import '../components/kontakt_map.scss'
+import '../components/map.scss'
 
-import '../styles/kontakt/kontakt_map.scss'
-import '../styles/kontakt/map.scss'
-
-import Layout from '../components/Layout'
+import Layout from '../components/layout/Layout'
 
 function MyApp({ Component, pageProps, router }) {  
     return (

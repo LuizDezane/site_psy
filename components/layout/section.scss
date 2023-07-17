@@ -13,6 +13,14 @@
     text-align: right;
 }
 
+.off_white {
+    background: $off_white;
+}
+
+.white {
+    background: $white;
+}
+
 section {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
@@ -20,14 +28,10 @@ section {
     gap: $small;
     justify-content: center;
     align-content: center;
-    box-shadow: $shadow_section;
 
     .heading {
-        grid-area: 1 / 2 / 2 / 7;
-    }
-
-    .gradient {
-        background: $gradient;
+        grid-area: 1 / 1 / 2 / 13;
+        margin: $large 0;
     }
 
     .grid {
@@ -41,7 +45,7 @@ section {
         padding: $small $medium;
 
         .heading {
-            grid-area: 1 / 2 / 2 / 6;
+            grid-area: 1 / 1 / 2 / 9;
         }
     }
 
@@ -50,7 +54,7 @@ section {
         padding: $small;
 
         .heading {
-            grid-area: 1 / 1 / 2 / 6;
+            grid-area: 1 / 1 / 2 / 7;
         }
     }
 }

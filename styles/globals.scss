@@ -1,27 +1,25 @@
 /* ------------------------------ Fonts import ------------------------------ */
 @font-face {
-    font-family: 'Playfair Display Italic';
-    src: url(../public/fonts/Playfair_Display_Italic.ttf);
+    font-family: 'Lora';
+    src: url(../public/fonts/Lora-Italic.otf);
 }
 
 @font-face {
-    font-family: 'Noto Sans Regular';
-    src: url(../public/fonts/Noto_Sans_Regular.ttf);
+    font-family: 'Open Sans';
+    src: url(../public/fonts/OpenSans-Light.ttf);
 }
 
 /* ------------------------------ Variables ------------------------------ */
-$primary: #B74A52;
-$primary_faded: #C67075;
-$secondary: #DBA4A7;
-$secondary_light: #F5E5E6;
-$grey_light: #F4F3F7;
+$primary: #C05358;
+$primary_faded: #DFA9AC;
+$secondary: #1F487E;
+$secondary_light: #86ADE2;
+$off_white: #F6F9FD;
 $white: #FFFFFF;
-$white_faded: rgba(255, 255, 255, 0.85);
-$gradient: linear-gradient(90deg, $secondary_light 0%, #FAF2F2 100%);
 
 $header: #333333;
 $text: rgba(35, 34, 50, 0.8);
-$text_faded: rgba(35, 34, 50, 0.4);
+$text_faded: rgba(35, 34, 50, 0.6);
 $text_hover: rgba(35, 34, 50, 0.8);
 
 $border_25: rgba(35, 34, 50, 0.25);
@@ -30,15 +28,11 @@ $border_50: rgba(35, 34, 50, 0.5);
 $line_50: rgba(35, 34, 50, 0.5);
 $line_60: rgba(35, 34, 50, 0.6);
 
-$shadow_section: rgba(35, 34, 50, 0.06) 0 60px 128px;
-$shadow_div: rgba(35, 34, 50, 0.06) 0 0 64px;
-$shadow_div_hover: rgba(35, 34, 50, 0.12) 0 0 64px;
-$shadow_button: rgba(35, 34, 50, 0.12) 0 0 24px;
-$shadow_button_hover: rgba(35, 34, 50, 0.24) 0 0 24px;
-
 // ---------- Fonts ----------
-$header_font: 'Playfair Display Italic', serif;
-$text_font: 'Noto Sans Regular', sans-serif;
+$header_font: 'Lora',
+serif;
+$text_font: 'Open Sans',
+sans-serif;
 
 // ---------- Font sizes ----------
 $links: clamp(0.8rem, 0.18vw + 0.76rem, 0.92rem);
@@ -54,17 +48,11 @@ $small: clamp(0.63rem, calc(0.47rem + 0.78vw), 1.25rem);
 $medium: clamp(1.25rem, calc(0.94rem + 1.56vw), 2.50rem);
 $large: clamp(1.88rem, calc(1.41rem + 2.34vw), 3.75rem);
 
-$space_10: 10px;
-$space_20: 20px;
-$space_40: 40px;
-$space_60: 60px;
-$space_80: 80px;
-$space_100: 100px;
-$space_120: 120px;
-$space_140: 140px;
-$space_160: 160px;
+// div {
+//     border: 2px dotted hotpink;
+// }
 
-// ---------- Font sizes ----------
+// ---------- Radius sizes ----------
 $radius_large: 12px;
 $radius_medium: 8px;
 $radius_small: 4px;
@@ -81,18 +69,15 @@ html {
 }
 
 body {
-    background: $white;
+    background: $off_white;
     color: $text;
     font-family: $text_font;
     font-size: $paragraph;
-    font-style: normal;
-    font-weight: 400;
     margin: auto;
     overflow-x: hidden;
 }
 
 // ------------------------------ Fonts ------------------------------
-
 h1,
 h2,
 h3,
@@ -100,7 +85,7 @@ h4 {
     color: $header;
     font-family: $header_font;
     font-weight: 400;
-    font-style: normal;
+    font-style: italic;
     line-height: 1.1;
     margin: 0;
     padding: 0;
@@ -147,12 +132,10 @@ a {
 }
 
 // ------------------------------ Buttons ------------------------------
-
 button {
     font-family: $text_font;
     font-size: $links;
     text-transform: uppercase;
-    font-style: normal;
     border: none;
     border-radius: $radius_small;
     box-shadow: rgb(0 0 0 / 20%) 0px 0px 5px 0px;

@@ -13,12 +13,12 @@ useEffect(() => {
 
     return (
             <section id='hero'>
-                <div className='blur upper'>
+                <div className='upper'>
                     <h1 className='center'>Gdy słucham co mówisz,<br /> słyszę kim jesteś</h1>
                     <h4 className='ralph center'><i>Ralph Waldo Emerson</i></h4>
                 </div>
                 
-                <div className='blur lower'>
+                <div className='lower'>
                     <div className="image_1"></div>
                     <div className="text left">
                         <h2>Paulina Janik</h2>

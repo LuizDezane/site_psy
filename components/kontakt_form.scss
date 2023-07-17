@@ -29,12 +29,12 @@
 
             input,
             textarea {
+                background: $off_white;
                 border-radius: $radius_medium;
                 border: 1px solid $secondary;
                 font-family: $text_font;
                 font-size: $links;
                 padding: $small;
-                box-shadow: $shadow_div_hover;
 
                 &::placeholder {
                     color: $header;
@@ -49,18 +49,22 @@
     }
 
     .image_kontakt_form {
-        grid-area: 1 / 8 / 8 / 12;
+        grid-area: 2 / 9 / 3 / 12;
         border-radius: 16px;
         background-image: url("/images/6.jpeg");
         background-position: top;
         background-size: cover;
         background-repeat: no-repeat;
-        min-width: 50%;
-        box-shadow: $shadow_div;
     }
 
-    @media screen and (min-width: 768) and (max-width: 1023px) {
+    @media screen and (min-width: 768px) and (max-width: 1023px) {
+        .kontakt_form {
+            grid-area: 2 / 1 / 3 / 6;
+        }
 
+        .image_kontakt_form {
+            grid-area: 2 / 6 / 3 / 9;
+        }
     }
 
     @media screen and (max-width: 767px) {

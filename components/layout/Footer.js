@@ -1,13 +1,12 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import logo from '../public/images/logo.svg'
 
 const Footer = () => {
     return (
-        <div className="container_footer">
+        <div id="footer">
 
             <div className="column_1">
-                <h3>Skontaktuj sie ze mna</h3>
+                <h3>Skontaktuj sie ze mną</h3>
                 <br />
                 <p>Centrum Psyche</p>
                 <p>mgr Paulina Janik</p>
@@ -36,10 +35,8 @@ const Footer = () => {
                         <Link href="https://www.facebook.com/profile.php?id=100087274075683&sk=services" target="_blank"><Image className='icon' src="/images/facebook.svg" alt="facebook" width={35} height={35} /></Link>
                     </div>
 
-                    <div>
-                        <Link href="/">
-                        <Image className='logo' src={logo} alt="logo" width={120} height={60} />
-                        </Link>
+                    <div className='logo_menu'>
+                        <Link href="/"><h4>Paulina J.</h4></Link>
                     </div>
                 </div>                
             </div>

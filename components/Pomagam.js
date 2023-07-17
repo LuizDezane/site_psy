@@ -2,9 +2,9 @@ import Link from 'next/link'
 
 const Pomagam = () => {
     return (
-        <section className="pomagam">
+        <section id="pomagam" className='off_white'>
 
-            <h1 className="header_pomagam">Pomagam</h1>
+            <h1 className="heading">Pomagam</h1>
 
             <div className="pomagam_div pomagam_1">
                 <h3>Radzić sobie z trudnościami natury emocjonalnej</h3>

@@ -1,11 +1,11 @@
 import Link from 'next/link'
-import Map from './Mapa'
+import Map from './Map'
 
 const Kontakt_Form = () => {
     return (
         <section id="kontakt_form">
             
-            <h1 className='header_kontakt_form'>Skontaktuj sie ze mną</h1>
+            <h1 className='heading'>Napisz do mnie</h1>
 
             <form className='kontakt_form' action="#" method="POST">
                 <div className="general_info">

@@ -2,7 +2,7 @@ import React from 'react'
 
 export const O_Mnie = () => {
     return (
-        <section className='o_mnie'>
+        <section id='o_mnie'>
 
             <h1 className="header_o_mnie">O mnie</h1>
 

@@ -1,0 +1,51 @@
+@import '/styles/globals';
+
+#o_mnie {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    padding: $large;
+    text-align: left;
+
+    .header_o_mnie {
+        grid-area: 1 / 2 / 2 / 7;
+    }
+
+    .o_mnie_1 {
+        grid-area: 2 / 3 / 3 / 7;
+    }
+
+    .image_o_mnie_1 {
+        grid-area: 2 / 8 / 5 / 12;
+        background-image: url("/images/15.jpeg");
+        background-position: top;
+        background-size: cover;
+        background-repeat: no-repeat;
+        border-radius: $radius_medium;
+        width: 100%;
+        margin: 10vh 0;
+    }
+
+    .o_mnie_2 {
+        grid-area: 3 / 4 / 4 / 8;
+    }
+
+    .o_mnie_3 {
+        grid-area: 4 / 4 / 5 / 8;
+    }
+
+    .o_mnie_4 {
+        grid-area: 5 / 4 / 6 / 11;
+    }
+
+    .o_mnie_5 {
+        grid-area: 6 / 4 / 7 / 11;
+    }
+
+    @media screen and (min-width: 768) and (max-width: 1023px) {
+        
+    }
+
+    @media screen and (max-width: 767px) {
+
+    }
+}

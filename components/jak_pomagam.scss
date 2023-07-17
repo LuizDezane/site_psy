@@ -2,27 +2,16 @@
 
 // ------------------------------ Desktop ------------------------------
 @media screen and (min-width: 1024px) {
-    section.cennik_element {
+    section.jak_pomagam {
         display: grid;
         grid-template-columns: repeat(12, 1fr);
-        text-align: center;
         padding: $large;
+        row-gap: $medium;
+        text-align: left;
+        align-content: flex-start;
 
-        .header_cennik {
-            grid-area: 1 / 4 / 2 / 10;
-            margin-bottom: $small;
-        }
-
-        .cennik_element_1 {
-            grid-area: 2 / 2 / 3 / 12;
-        }
-
-        .cennik_element_2 {
-            grid-area: 3 / 2 / 4 / 12;
-            gap: $medium;
-            display: flex;
-            justify-content: center;
-            margin-bottom: $space_40;
+        .header_jak_pomagam {
+            grid-area: 1 / 2 / 2 / 7;
         }
 
         .circle {
@@ -34,8 +23,11 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            // box-shadow: $shadow_div_hover;
-            margin-bottom: $space_20;
+            margin-bottom: $small;
+        }
+
+        h3 {
+            text-align: center;
         }
 
         .icon {
@@ -48,14 +40,35 @@
             background-image: url("/icons/9.svg");
         }
 
+        .jak_pomagam_1 {
+            grid-area: 2 / 3 / 3 / 11;
+            padding-bottom: $medium;
+        }
+
         .icon_2 {
             background-image: url("/icons/10.svg");
         }
 
-        .menu_button {
-            grid-area: 4 / 2 / 5 / 12;
-            display: flex;
-            justify-content: center;
+        .jak_pomagam_2 {
+            grid-area: 3 / 3 / 4 / 11;
+            padding-bottom: $medium;
+        }
+
+        .icon_3 {
+            background-image: url("/icons/11.svg");
+        }
+
+        .jak_pomagam_3 {
+            grid-area: 4 / 3 / 5 / 11;
+            padding-bottom: $medium;
+        }
+
+        .icon_4 {
+            background-image: url("/icons/12.svg");
+        }
+
+        .jak_pomagam_4 {
+            grid-area: 5 / 3 / 6 / 11;
         }
     }
 }

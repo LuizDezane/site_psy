@@ -23,7 +23,7 @@
             grid-area: 3 / 6 / 4 / 12;
 
             h3 {
-                padding-bottom: $space_20;
+                padding-bottom: $small;
             }
 
             .kontakt_form {
@@ -43,7 +43,6 @@
                         font-family: $text_font;
                         font-size: $links;
                         padding: $small;
-                        box-shadow: $shadow_div_hover;
     
                         &::placeholder {
                             color: $header;

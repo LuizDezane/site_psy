@@ -1,37 +1,41 @@
 @import '/styles/globals';
 
-.container_footer {
+#footer {
     display: flex;
+    flex-direction: row;
     width: 100%;
-    background: $gradient;
+    background: $white;
 
     .column_1 {
         height: 100%;
-        padding: $small $large;
+        width: 50%;
+        background: $off_white;
+        padding: $large;
         display: flex;
         flex-direction: column;
         align-items: flex-start;
         justify-content: center;
-    }
 
-    .column_1 p {
-        margin: 0;
+        p {
+            margin: 0;
+        }
     }
 
     .column_2 {
-        background: #F4F3F7;
-        padding: $small $large;
+        height: 100%;
+        width: 50%;
+        gap: $large $small;
+        padding: $large;
         display: flex;
         flex-direction: column;
-        gap: 0 $small;
-        display: flex;
         justify-content: space-between;
+        align-self: flex-end;
 
         .footer_menu {
             display: flex;
             flex-direction: column;
             align-items: flex-start;
-            gap: $small 0;
+            gap: $small;
         }
 
         .footer_bottom {
@@ -57,41 +61,28 @@
             }
         }
     }
-}
 
-// ------------------------------ Desktop ------------------------------
-@media screen and (min-width: 1024px) {
-    .container_footer {
-        display: flex;
-        flex-direction: row;
+    @media screen and (min-width: 768) and (max-width: 1023px) {
+        .footer_bottom {
+            .column_1 {
+                width: 50%;
+            }
 
-        .column_1 {
-            width: 50%;
-        }
-
-        .column_2 {
-            width: 50%;
+            .column_2 {
+                width: 50%;
+            }
         }
     }
-}
 
-// ------------------------------ Tablet ------------------------------
-@media screen and (min-width: 768) and (max-width: 1023px) {}
-
-// ------------------------------ Smartphone ------------------------------
-@media screen and (max-width: 767px) {
-    .container_footer {
-        display: flex;
+    @media screen and (max-width: 767px) {
         flex-direction: column;
 
         .column_1 {
             width: 100%;
-            padding: $small $medium;
         }
 
         .column_2 {
             width: 100%;
-            padding: $small $medium;
         }
     }
 }

@@ -2,33 +2,27 @@
 
 // ------------------------------ Desktop ------------------------------
 @media screen and (min-width: 1024px) {
-    section.komu_pomagam {
+    section.kontakt_map {
         display: grid;
         grid-template-columns: repeat(12, 1fr);
-        padding: $space_160;
+        padding: $large;
+        row-gap: $medium;
         text-align: left;
-        row-gap: $space_40;
+        align-content: flex-start;
 
-        .header_komu_pomagam {
+        .header_kontakt_map {
             grid-area: 1 / 2 / 2 / 7;
         }
 
-        .komu_pomagam_1 {
-            grid-area: 2 / 3 / 3 / 11;
-            font-family: Alegreya-Regular;
+        .background {
+            grid-area: 2 / 3 / 3 / 8;
+            padding: $small $medium;
+            border-radius: $radius_large;
         }
 
-        .komu_pomagam_2 {
-            grid-area: 3 / 4 / 4 / 10;
-
-            li {
-                line-height: 2;
-                font-weight: 300;
-            }
-        }
-
-        .komu_pomagam_3 {
-            grid-area: 4 / 3 / 5 / 11;
+        .mapa {
+            grid-area: 1 / 8 / 4 / 13;
+            padding: $small 0;
         }
     }
 }

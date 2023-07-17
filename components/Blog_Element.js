@@ -2,9 +2,9 @@ import Link from 'next/link'
 
 const Blog_Element = () => {
     return (
-        <section className='blog_element'>
+        <section id='blog_element'>
 
-            <h1 className="header_blog">Ostatnio na Blogu</h1>
+            <h1 className="heading">Ostatnio na Blogu</h1>
 
             <div className="blog_element_div">
                 <div className="blog_element_1">
