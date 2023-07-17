@@ -53,6 +53,10 @@
                 margin-right: $small;
                 display: flex;
                 align-items: flex-end;
+
+                &:hover {
+                    cursor: pointer;
+                }
             }
 
             .logo {

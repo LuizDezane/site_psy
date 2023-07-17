@@ -2,6 +2,11 @@ import Image from 'next/image'
 import Link from 'next/link'
 
 const Footer = () => {
+
+    const dialNumber = () => {
+        window.location.href = "tel:+44530023204"
+    }
+    
     return (
         <div id="footer">
 
@@ -30,7 +35,7 @@ const Footer = () => {
 
                 <div className="footer_bottom">
                     <div className='footer_bottom_left'>
-                        <Image className='icon' src="/images/phone.svg" alt="phone" width={35} height={35} />
+                        <Image onClick={dialNumber} className='icon' src="/images/phone.svg" alt="phone" width={35} height={35} />
                         <Link href="https://www.instagram.com/_pomiedzy__slowami_/" target="_blank"><Image className='icon' src="/images/instagram.svg" alt="instagram" width={35} height={35} /></Link>
                         <Link href="https://www.facebook.com/profile.php?id=100087274075683&sk=services" target="_blank"><Image className='icon' src="/images/facebook.svg" alt="facebook" width={35} height={35} /></Link>
                     </div>
