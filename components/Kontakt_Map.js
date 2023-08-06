@@ -30,7 +30,7 @@ const Kontakt = () => {
                     <h4>Telefon:</h4>
                     <p onClick={dialNumber}>0530 023 204</p>
                     <h4>email:</h4>
-                    <p><Link href="mailto:paulina.janik.gabinet@gmail.com">paulina.janik.gabinet@gmail.com</Link></p>
+                    <Link href="mailto:paulina.janik.gabinet@gmail.com">paulina.janik.gabinet@gmail.com</Link>
                 </div>
             </div>
 
