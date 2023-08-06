@@ -17,7 +17,7 @@
         justify-content: flex-start;
     }
 
-    .menu,
+    .menu_desktop,
     .hamburger {
         grid-area: 1 / 3 / 2 / 11;
         display: flex;
@@ -43,6 +43,7 @@
 
     @media screen and (min-width: 768px) and (max-width: 1023px) {
         padding: $small $medium;
+
         .logo_menu {
             grid-area: 1 / 1 / 2 / 3;
         }
@@ -64,6 +65,7 @@
 
     @media screen and (max-width: 767px) {
         padding: $small $medium;
+
         .logo_menu {
             grid-area: 1 / 1 / 2 / 4;
         }

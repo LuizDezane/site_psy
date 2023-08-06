@@ -37,14 +37,14 @@ const Pomagam = () => {
             <div className="pomagam_div pomagam_5">
                 <h3>Skuteczniej funkcjonować</h3>
                 <div className="line_pomagam"></div>
-                <p>Zaburzenia nastroju, lęk, niepokój, wycofanie, stres, smutek, złość i agresja</p>
+                <p>Niskie poczucie własnej wartości, krytyczne postrzeganie siebie, nieśmiałość</p>
                 <Link href="/jak_pomagam" className='pomagam_button'><button className='dark'>Dowiedź sie wiecej</button></Link>
             </div>
 
             <div className="pomagam_div pomagam_6">
                 <h3>Pokonać kryzysy osobiste</h3>
                 <div className="line_pomagam"></div>
-                <p>Niskie poczucie własnej wartości, krytyczne postrzeganie siebie, nieśmiałość</p>
+                <p>Wyzwania, zmiany, ważne decyzje w życiu prywatnym lub zawodowym</p>
                 <Link href="/jak_pomagam" className='pomagam_button'><button className='dark'>Dowiedź sie wiecej</button></Link>
             </div>
         </section>

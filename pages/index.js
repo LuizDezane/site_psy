@@ -25,7 +25,7 @@ export default function Home() {
                 <Hero />
                 <Konsultacje />
                 <Pomagam />
-                <Blog_Element />
+                {/* <Blog_Element /> */}
                 <Kontakt_Form />
             </main>
         </m.div>

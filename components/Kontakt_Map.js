@@ -1,7 +1,13 @@
 import React from 'react'
 import Map from './Map'
+import Link from 'next/link'
 
 const Kontakt = () => {
+
+    const dialNumber = () => {
+        window.location.href = "tel:+48530023204"
+    }
+    
     return (
         <section id='kontakt_map'>
 
@@ -22,9 +28,9 @@ const Kontakt = () => {
 
                 <div className='kontakt_map_3'>
                     <h4>Telefon:</h4>
-                    <p>0530 023 204</p>
+                    <p onClick={dialNumber}>0530 023 204</p>
                     <h4>email:</h4>
-                    <p>paulina.janik.gabinet@gmail.com</p>
+                    <p><Link href="mailto:paulina.janik.gabinet@gmail.com">paulina.janik.gabinet@gmail.com</Link></p>
                 </div>
             </div>
 

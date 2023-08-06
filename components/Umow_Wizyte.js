@@ -2,10 +2,15 @@ import React from 'react'
 import Link from 'next/link'
 
 const Umow_Wizyte = () => {
-    return (
-        <section className='umow_wizyte'>
 
-            <h1 className="header_umow_wizyte">Umów wizytę</h1>
+    const dialNumber = () => {
+        window.location.href = "tel:+48530023204"
+    }
+
+    return (
+        <section id='umow_wizyte'>
+
+            <h1 className="heading">Umów wizytę</h1>
 
             <div className="umow_wizyte_1">
                 <h3>Jeśli masz jakiekolwiek pytania czy wątpliwości, po prostu zadzwoń lub napisz do mnie.</h3>
@@ -14,9 +19,9 @@ const Umow_Wizyte = () => {
 
             <div className="umow_wizyte_2">
                 <h3>email:</h3>
-                <p>paulina.janik.gabinet@gmail.com</p><br />
+                <p><Link href="mailto:paulina.janik.gabinet@gmail.com">paulina.janik.gabinet@gmail.com</Link></p><br />
                 <h3>Telefon:</h3>
-                <p>0530 023 204</p>
+                <p onClick={dialNumber}>0530 023 204</p>
             </div>
 
             <div className="umow_wizyte_3">

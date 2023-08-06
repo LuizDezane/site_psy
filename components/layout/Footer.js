@@ -4,7 +4,7 @@ import Link from 'next/link'
 const Footer = () => {
 
     const dialNumber = () => {
-        window.location.href = "tel:+44530023204"
+        window.location.href = "tel:+48530023204"
     }
     
     return (
@@ -29,7 +29,7 @@ const Footer = () => {
                     <Link href="komu_pomagam">Komu pomagam</Link>
                     <Link href="jak_pomagam">Jak pomagam</Link>
                     <Link href="/cennik">Cennik</Link>
-                    <Link href="/blog">Blog</Link>
+                    {/* <Link href="/blog">Blog</Link> */}
                     <Link href="/kontakt">Kontakt</Link>
                 </li>
 
