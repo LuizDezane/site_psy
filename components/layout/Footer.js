@@ -16,8 +16,8 @@ const Footer = () => {
                 <p>Centrum Psyche</p>
                 <p>mgr Paulina Janik</p>
                 <br />
-                <p>ul. Białowieska 3c/4a (3 piętro), Wrocław</p>
-                <p>Budynek Pixel House, naprzeciwko Centrum Handlowego Magnolia Park i siłowni McFit (róg Legnickiej i Białowieskiej</p>
+                <p>ul. Białowieska 3a/5d, Wrocław</p>
+                <p>Budynek Pixel House, naprzeciwko Centrum Handlowego Magnolia Park i siłowni McFit (róg Legnickiej i Białowieskiej)</p>
                 <br />
                 <Link href="/umow_wizyte" className='div5'><button className='dark'>Umów wizytę</button></Link>
             </div>

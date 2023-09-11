@@ -21,7 +21,7 @@ const Kontakt = () => {
 
                 <div className='kontakt_map_2'>
                     <h4>Adres</h4>
-                    <p>ul. Białowieska 3c/4a (3 piętro), Wrocław <br />
+                    <p>ul. Białowieska 3a/5d, Wrocław <br />
                     Budynek Pixel House, naprzeciwko Centrum Handlowego Magnolia Park i siłowni McFit (róg Legnickiej i
                     Białowieskiej)</p>
                 </div>
