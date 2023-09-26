@@ -25,19 +25,6 @@ const Umow_Wizyte = () => {
         })
     }
 
-    const handleSubmit = async (e) => {
-        e.preventDefault()
-        
-        const data = new FormData(e.target)
-        
-        await fetch('https://formsubmit.co/twopercentoff@gmail.com', {
-            method: 'POST',
-            body: data,
-            })
-            
-        window.location.href = '/'
-    }
-
     return (
         <section id='umow_wizyte'>
 
