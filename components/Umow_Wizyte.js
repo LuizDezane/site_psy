@@ -1,10 +1,41 @@
-import React from 'react'
+import React, {useState} from 'react'
 import Link from 'next/link'
 
 const Umow_Wizyte = () => {
 
     const dialNumber = () => {
         window.location.href = "tel:+48530023204"
+    }
+
+    const [formData, setFormData] = useState({
+        name: '',
+        phoneNumber: '',
+        email: '',
+        service: '',
+        description: '',
+        budget: '',
+        timeHorizon: '',
+        payment: '',
+    })
+
+    const handleInputChange = async (e) => {
+        setFormData({
+            ...formData,
+            [e.target.name]: e.target.value,
+        })
+    }
+
+    const handleSubmit = async (e) => {
+        e.preventDefault()
+        
+        const data = new FormData(e.target)
+        
+        await fetch('https://formsubmit.co/twopercentoff@gmail.com', {
+            method: 'POST',
+            body: data,
+            })
+            
+        window.location.href = '/'
     }
 
     return (
@@ -26,15 +57,15 @@ const Umow_Wizyte = () => {
 
             <div className="umow_wizyte_3">
                 <h3>Formularz zgłoszeniowy</h3>
-                <form className='kontakt_form' action="#" method="POST">
+                <form className='kontakt_form' method="POST" action="https://formsubmit.co/paulina.janik.gabinet@gmail.com">
                     <div className="general_info">
-                        <input className='blur' type="text" id='imie' name="imie" placeholder="Twoje imię i nazwisko" required />
+                        <input className='blur' type="text" id='imie' name="name" placeholder="Twoje imię i nazwisko" onChange={handleInputChange} required />
 
-                        <input className='blur' type="email" id="email" name="email" placeholder="Email" required></input>
+                        <input className='blur' type="email" id="email" name="email" placeholder="Email" onChange={handleInputChange} required />
 
-                        <input className='blur' type="tel" id="tel" name="tel" placeholder="Numer telefonu"></input>
+                        <input className='blur' type="tel" id="tel" name="phoneNumber" placeholder="Numer telefonu" onChange={handleInputChange} required />
 
-                        <textarea className='blur' id="temat" name="text" placeholder="Treść wiadomości" cols="30" rows="8"></textarea>
+                        <textarea className='blur' id="temat" name="description" placeholder="Treść wiadomości" cols="30" rows="8"onChange={handleInputChange} required />
                     </div>
 
                     <div className="submit">
