@@ -38,7 +38,7 @@ const Marque_Consulta = () => {
                 <h3>Email:</h3>
                 <p className="phone-number-link">simonedezanepsi@gmail.com</p>
                 <h3>Whatsapp:</h3><br />
-                <a href={whatsappLink} className="phone-number-link" target="_blank">(19) 99503-6789</a>
+                <a href={whatsappLink} className="phone-number-link" target="_blank" rel="noopener noreferrer">(19) 99503-6789</a>
             </div>
 
             <div className="marque_consulta_3">
