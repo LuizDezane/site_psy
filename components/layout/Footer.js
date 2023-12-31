@@ -3,9 +3,9 @@ import Link from 'next/link'
 
 const Footer = () => {
 
-    const dialNumber = () => {
-        window.location.href = "tel:+19995036789"
-    }
+
+    const whatsappTexto = "19995036789?text=Tenho%20interesse%20em%20seus%20serviços"
+    const whatsappLink = `https://wa.me/${whatsappTexto}`;
     
     return (
         <div id="footer">
@@ -15,30 +15,20 @@ const Footer = () => {
                 <br />
                 <p>Psicóloga</p>
                 <p>Simone Dezane</p>
-                <br />
-                <p>Rua Eliana de Castro 136</p>
+                <p>CRP 06/195851</p>
                 <br />
                 <Link href="/marque_consulta" className='div5'><button className='dark'>Agende uma Consulta</button></Link>
             </div>
 
 
             <div className="column_2">
-                <li className='footer_menu'>
-                    <Link href="/">Página inicial</Link>
-                    <Link href="/sobre_mim">Sobre mim</Link>
-                    <Link href="quem_ajudo">Quem ajudo</Link>
-                    <Link href="como_ajudo">Como ajudo</Link>
-                   {/* <Link href="/valores">Valores</Link>
-                     <Link href="/blog">Blog</Link> */}
-                    <Link href="/contato">Contato</Link>
-                </li>
 
                 <div className="footer_bottom">
                     <div className='footer_bottom_left'>
-                        <Image onClick={dialNumber} className='icon' src="/images/phone.svg" alt="phone" width={35} height={35} />
+                        <Link href={whatsappLink} target="_blank"><Image className='icon' src="/images/whatsapp.svg" alt="whats" width={35} height={35} /></Link>
                         <Link href="https://www.linkedin.com/in/simone-cesario-592488139/" target="_blank"><Image className='icon' src="/images/linkedin.svg" alt="linkedin" width={35} height={35} /></Link>
-                        <Link href="" target="_blank"><Image className='icon' src="/images/facebook.svg" alt="facebook" width={35} height={35} /></Link>
-                        <Link href="" target="_blank"><Image className='icon' src="/images/twoj_psycholog.svg" alt="twoj_psycholog" width={35} height={35} /></Link>
+                         <Link href="https://www.instagram.com/psi_simonedezane/" target="_blank"><Image className='icon' src="/images/instagram.svg" alt="instagram" width={35} height={35} /></Link>
+                        {/*<Link href="" target="_blank"><Image className='icon' src="/images/twoj_psycholog.svg" alt="twoj_psycholog" width={35} height={35} /></Link>*/}
                     </div>
 
                     <div className='logo_menu'>

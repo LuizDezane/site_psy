@@ -29,7 +29,7 @@ const Contato = () => {
                     <h4>Telefone:</h4>
                     <p onClick={dialNumber}>(19)99503-6789</p>
                     <h4>email:</h4>
-                    <Link href="mailto:luizdezane@gmail.com">luizdezane@gmail.com</Link>
+                    <Link href="mailto:simonedezanepsi@gmail.com">simonedezanepsi@gmail.com</Link>
                 </div>
             </div>
 

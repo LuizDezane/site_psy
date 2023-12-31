@@ -6,7 +6,7 @@ const Quem_Ajudo = () => {
 
             <h1 className="heading">A Quem Ajudo</h1>
 
-            <h3 className='quem_ajudo_1'>Bom dia, meu nome é Simone Dezane e estou muito feliz por você estar aqui. Imagino quantas dúvidas você pode ter, com quais dificuldades você deve se deparar no dia a dia e que tipos de problemas você está enfrentando. 
+            <h3 className='quem_ajudo_1'>Olá, meu nome é Simone Dezane e estou muito feliz por você estar aqui. Imagino quantas dúvidas você pode ter, com quais dificuldades você deve se deparar no dia a dia e que tipos de problemas você está enfrentando. 
                 Talvez você tenha chegado aqui porque:
             </h3>
 

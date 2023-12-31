@@ -25,7 +25,7 @@ const Contato_Form = () => {
             
             <h1 className='heading'>Envie-me uma mensagem</h1>
 
-            <form className='contato_form' method="POST" action="https://formsubmit.co/luizdezane@gmail.com">
+            <form className='contato_form' method="POST" action="https://formsubmit.co/simonedezanepsi@gmail.com">
                 <div className="general_info">
                     <input className='blur' type="text" id='imie' name="name" placeholder="Nome e sobrenome" onChange={handleInputChange} required />
 

@@ -3,9 +3,8 @@ import Link from 'next/link'
 
 const Marque_Consulta = () => {
 
-    const dialNumber = () => {
-        window.location.href = "tel:+19995036789"
-    }
+    const whatsappTexto = "19995036789?text=Tenho%20interesse%20em%20seus%20serviços"
+    const whatsappLink = `https://wa.me/${whatsappTexto}`;
 
     const [formData, setFormData] = useState({
         name: '',
@@ -27,7 +26,7 @@ const Marque_Consulta = () => {
 
     return (
         <section id='marque_consulta'>
-
+            
             <h1 className="heading">Marque uma consulta</h1>
 
             <div className="marque_consulta_1">
@@ -36,15 +35,15 @@ const Marque_Consulta = () => {
             </div>
 
             <div className="marque_consulta_2">
-                <h3>email:</h3>
-                <p><Link href="mailto:luizdezane@gmail.com">luizdezane@gmail.com</Link></p><br />
-                <h3>Telefon:</h3>
-                <p onClick={dialNumber}>(19)99503-6789</p>
+                <h3>Email:</h3>
+                <p className="phone-number-link">simonedezanepsi@gmail.com</p>
+                <h3>Whatsapp:</h3><br />
+                <a href={whatsappLink} className="phone-number-link" target="_blank">(19) 99503-6789</a>
             </div>
 
             <div className="marque_consulta_3">
-                <h3>Formulário</h3>
-                <form className='contato_form' method="POST" action="https://formsubmit.co/luizdezane@gmail.com">
+                <h3>Envie-me uma mensagem</h3>
+                <form className='contato_form' method="POST" action="https://formsubmit.co/simonedezanepsi@gmail.com">
                     <div className="general_info">
                         <input className='blur' type="text" id='imie' name="name" placeholder="Nome e sobrenome" onChange={handleInputChange} required />
 
