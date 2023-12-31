@@ -1,8 +1,8 @@
 import Head from 'next/head'
 import { motion as m } from 'framer-motion'
-import Kontakt_Map from '../components/Kontakt_Map'
+import Contato_Map from '../components/Contato_Map'
 
-export default function Kontakt() {
+export default function Contato() {
     return (
         <m.div
     initial={{opacity: 0}}
@@ -12,13 +12,13 @@ export default function Kontakt() {
     >
 
             <Head>
-                <title>Paulina Janik | Psycholog, Psychoterapeuta</title>
-                <meta name="description" content="Paulina Janik | Psycholog, Psychoterapeuta" />
+                <title>Simone Dezane | Psicóloga, Psicoterapeuta</title>
+                <meta name="description" content="Simone Dezane | Psicóloga, Psicoterapeuta" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
 
             <main>
-                <Kontakt_Map />
+                <Contato_Map />
             </main>
 
             <footer>

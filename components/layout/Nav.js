@@ -28,20 +28,20 @@ const Nav = () => {
     return (
         <section id='nav'>
             <div className='logo_menu'>
-                <Link href="/"><h4>Paulina J.</h4></Link>
+                <Link href="/"><h4>Simone Dezane</h4></Link>
             </div>
 
             <div className="menu_desktop">
-                <Link href="/o_mnie">O mnie</Link>
-                <Link href="komu_pomagam">Komu pomagam</Link>
-                <Link href="jak_pomagam">Jak pomagam</Link>
-                <Link href="/cennik">Cennik</Link>
-                {/* <Link href="/blog">Blog</Link> */}
-                <Link href="/kontakt">Kontakt</Link>
+                <Link href="/sobre_mim">Sobre mim</Link>
+                <Link href="quem_ajudo">quem ajudo</Link>
+                <Link href="como_ajudo">Como ajudo</Link>
+               {/* <Link href="/valores">Valores</Link>
+                 <Link href="/blog">Blog</Link> */}
+                <Link href="/contato">Contato</Link>
             </div>
 
             <div className="menu_button">                
-                <Link href="/umow_wizyte" className='button_small_screen'><button className='dark'>Umów wizytę</button></Link>
+                <Link href="/marque_consulta" className='button_small_screen'><button className='dark'>Marque uma consulta</button></Link>
             </div>
 
             <nav className={`menu ${isOpen ? 'open' : 'closed'}`} onClick={() => setIsOpen(!isOpen)} >
@@ -58,14 +58,14 @@ const Nav = () => {
                     variants={variants}
                     transition={{duration: 0.75, ease: 'easeOut', delay: 0.5}}
                     >
-                    <Link className='link' href="/o_mnie"><h4>O mnie</h4></Link>
-                    <Link className='link' href="/komu_pomagam"><h4>Komu pomagam</h4></Link>
-                    <Link className='link' href="/jak_pomagam"><h4>Jak pomagam</h4></Link>
-                    <Link className='link' href="/cennik"><h4>Cennik</h4></Link>
+                    <Link className='link' href="/sobre_mim"><h4>Sobre mim</h4></Link>
+                    <Link className='link' href="/quem_ajudo"><h4>quem ajudo</h4></Link>
+                    <Link className='link' href="/como_ajudo"><h4>Como ajudo</h4></Link>
+                    <Link className='link' href="/valores"><h4>Valores</h4></Link>
                     {/* <Link className='link' href="/blog"><h4>Blog</h4></Link> */}
-                    <Link className='link' href="/kontakt"><h4>Kontakt</h4></Link>
-                    <Link className='link button_small_screen' href="/umow_wizyte">
-                        <button className='dark'>Umów wizytę</button>
+                    <Link className='link' href="/contato"><h4>Contato</h4></Link>
+                    <Link className='link button_small_screen' href="/marque_consulta">
+                        <button className='dark'>Marque uma consulta</button>
                     </Link>
                 </m.div>
             </m.li>

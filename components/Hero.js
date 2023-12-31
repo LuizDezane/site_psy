@@ -14,20 +14,20 @@ useEffect(() => {
     return (
             <section id='hero'>
                 <div className='upper'>
-                    <h1 className='center'>Gdy słucham co mówisz,<br /> słyszę kim jesteś</h1>
+                    <h1 className='center'>Quando eu ouço o que você diz,<br />eu ouço quem você é</h1>
                     <h4 className='ralph center'><i>Ralph Waldo Emerson</i></h4>
                 </div>
                 
                 <div className='lower'>
                     <div className="image_1"></div>
                     <div className="text left">
-                        <h2>Paulina Janik</h2>
-                        <h3>Psycholog, psychoterapeuta</h3>
-                        <p className='paragraph'>W swojej pracy kieruję się przede wszystkim dobrem drugiej osoby.
-                        Zależy mi na tym, byś czuł się bezpiecznie
-                        i swobodnie, dzieląc się ze mną swoimi historiami i doświadczeniami.
-                        Gwarantuję zachowanie poufności.</p>
-                        <Link href="/o_mnie" className='button'><button className='dark'>Więcej o mnie...</button></Link>
+                        <h2>Simone Dezane</h2>
+                        <h3>Psicóloga, psicoterapeuta</h3>
+                        <p className='paragraph'>No meu trabalho, sou guiada principalmente pelo bem das outras pessoas.
+                        Eu quero que você se sinta seguro
+                        e compartilhe livremente suas histórias e experiências comigo.
+                        Garanto confidencialidade.</p>
+                        <Link href="/sobre_mim" className='button'><button className='dark'>Mais sobre mim...</button></Link>
                     </div>
                 </div>
             </section>

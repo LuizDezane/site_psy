@@ -1,10 +1,8 @@
 import Head from 'next/head'
-
 import { motion as m } from 'framer-motion'
+import Valores_Element from '../components/Valores_Element'
 
-import Jak_Pomagam from '../components/Jak_Pomagam'
-
-export default function Jak_pomagam() {
+export default function Valores() {
     return (
         <m.div
     initial={{opacity: 0}}
@@ -14,13 +12,13 @@ export default function Jak_pomagam() {
     >
 
             <Head>
-                <title>Paulina Janik | Psycholog, Psychoterapeuta</title>
-                <meta name="description" content="Paulina Janik | Psycholog, Psychoterapeuta" />
+                <title>Simone Dezane | Psicóloga, Psicoterapeuta</title>
+                <meta name="description" content="Simone Dezane | Psicóloga, Psicoterapeuta" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
 
             <main>
-                <Jak_Pomagam />
+                <Valores_Element />
             </main>
 
             <footer>

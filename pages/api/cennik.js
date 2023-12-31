@@ -1,9 +1,9 @@
 import React from 'react'
 
-const cennik = () => {
+const valores = () => {
   return (
-    <div>cennik</div>
+    <div>valores</div>
   )
 }
 
-export default cennik
+export default valores

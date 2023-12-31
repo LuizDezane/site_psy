@@ -1,8 +1,10 @@
 import Head from 'next/head'
-import { motion as m } from 'framer-motion'
-import Umow_Wizyte from '../components/Umow_Wizyte'
 
-export default function Umow_wizyte() {
+import { motion as m } from 'framer-motion'
+
+import Quem_Ajudo from '../components/Quem_Ajudo'
+
+export default function Quem_ajudo() {
     return (
         <m.div
     initial={{opacity: 0}}
@@ -12,13 +14,13 @@ export default function Umow_wizyte() {
     >
 
             <Head>
-                <title>Paulina Janik | Psycholog, Psychoterapeuta</title>
-                <meta name="description" content="Paulina Janik | Psycholog, Psychoterapeuta" />
+                <title>Simone Dezane | Psicóloga, Psicoterapeuta</title>
+                <meta name="description" content="Simone Dezane | Psicóloga, Psicoterapeuta" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
 
             <main>
-                <Umow_Wizyte />
+                <Quem_Ajudo />
             </main>
 
             <footer>

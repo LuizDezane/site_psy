@@ -2,10 +2,10 @@ import Head from 'next/head'
 import { motion as m } from 'framer-motion'
 
 import Hero from '../components/Hero'
-import Konsultacje from '../components/Konsultacje'
+import Consulta from '../components/Consulta'
 import Pomagam from '../components/Pomagam'
 import Blog_Element from '../components/Blog_Element'
-import Kontakt_Form from '../components/Kontakt_Form'
+import Contato_Form from '../components/Contato_Form'
 
 export default function Home() {
     return (
@@ -16,17 +16,17 @@ export default function Home() {
             transition={{duration: 1, ease: 'easeOut', delay: 0.25}}
         >
             <Head>
-                <title>Paulina Janik | Psycholog, Psychoterapeuta</title>
-                <meta name="description" content="Paulina Janik | Psycholog, Psychoterapeuta" />
+                <title>Simone Dezane | Psicóloga, Psicoterapeuta</title>
+                <meta name="description" content="Simone Dezane | Psicóloga, Psicoterapeuta" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
 
             <main>
                 <Hero />
-                <Konsultacje />
+                <Consulta />
                 <Pomagam />
                 {/* <Blog_Element /> */}
-                <Kontakt_Form />
+                <Contato_Form />
             </main>
         </m.div>
     )

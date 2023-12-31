@@ -1,10 +1,8 @@
 import Head from 'next/head'
-
 import { motion as m } from 'framer-motion'
+import Marque_Consulta from '../components/Marque_Consulta'
 
-import Komu_Pomagam from '../components/Komu_Pomagam'
-
-export default function Komu_pomagam() {
+export default function Marque_consulta() {
     return (
         <m.div
     initial={{opacity: 0}}
@@ -14,13 +12,13 @@ export default function Komu_pomagam() {
     >
 
             <Head>
-                <title>Paulina Janik | Psycholog, Psychoterapeuta</title>
-                <meta name="description" content="Paulina Janik | Psycholog, Psychoterapeuta" />
+                <title>Simone Dezane | Psicóloga, Psicoterapeuta</title>
+                <meta name="description" content="Simone Dezane | Psicóloga, Psicoterapeuta" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
 
             <main>
-                <Komu_Pomagam />
+                <Marque_Consulta />
             </main>
 
             <footer>

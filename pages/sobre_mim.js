@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import { motion as m } from 'framer-motion'
-import { O_Mnie } from '../components/O_Mnie'
+import { Sobre_Mim } from '../components/Sobre_mim'
 
 export default function O_mnie() {
     return (
@@ -12,13 +12,13 @@ export default function O_mnie() {
         >
 
             <Head>
-                <title>Paulina Janik | Psycholog, Psychoterapeuta</title>
-                <meta name="description" content="Paulina Janik | Psycholog, Psychoterapeuta" />
+                <title>Simone Dezane | Psicóloga, Psicoterapeuta</title>
+                <meta name="description" content="Simone Dezane | Psicóloga, Psicoterapeuta" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
 
             <main>
-                <O_Mnie />
+                <Sobre_Mim />
             </main>
 
             <footer>

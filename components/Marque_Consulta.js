@@ -1,10 +1,10 @@
 import React, {useState} from 'react'
 import Link from 'next/link'
 
-const Umow_Wizyte = () => {
+const Marque_Consulta = () => {
 
     const dialNumber = () => {
-        window.location.href = "tel:+48530023204"
+        window.location.href = "tel:+19995036789"
     }
 
     const [formData, setFormData] = useState({
@@ -26,25 +26,25 @@ const Umow_Wizyte = () => {
     }
 
     return (
-        <section id='umow_wizyte'>
+        <section id='marque_consulta'>
 
-            <h1 className="heading">Umów wizytę</h1>
+            <h1 className="heading">Marque uma consulta</h1>
 
-            <div className="umow_wizyte_1">
-                <h3>Jeśli masz jakiekolwiek pytania czy wątpliwości, po prostu zadzwoń lub napisz do mnie.</h3>
-                <p>Wizytę możesz umówić telefonicznie lub przez Internet w kalendarzu poniżej.</p>
+            <div className="marque_consulta_1">
+                <h3>Se você tiver quaisquer perguntas ou dúvidas, simplesmente ligue ou escreva para mim.</h3>
+                <p>Você pode agendar sua consulta por telefone ou pela internet, usando o Formulário abaixo.</p>
             </div>
 
-            <div className="umow_wizyte_2">
+            <div className="marque_consulta_2">
                 <h3>email:</h3>
-                <p><Link href="mailto:paulina.janik.gabinet@gmail.com">paulina.janik.gabinet@gmail.com</Link></p><br />
+                <p><Link href="mailto:luizdezane@gmail.com">luizdezane@gmail.com</Link></p><br />
                 <h3>Telefon:</h3>
-                <p onClick={dialNumber}>0530 023 204</p>
+                <p onClick={dialNumber}>(19)99503-6789</p>
             </div>
 
-            <div className="umow_wizyte_3">
-                <h3>Formularz zgłoszeniowy</h3>
-                <form className='kontakt_form' method="POST" action="https://formsubmit.co/paulina.janik.gabinet@gmail.com">
+            <div className="marque_consulta_3">
+                <h3>Formulário</h3>
+                <form className='contato_form' method="POST" action="https://formsubmit.co/luizdezane@gmail.com">
                     <div className="general_info">
                         <input className='blur' type="text" id='imie' name="name" placeholder="Twoje imię i nazwisko" onChange={handleInputChange} required />
 
@@ -56,7 +56,7 @@ const Umow_Wizyte = () => {
                     </div>
 
                     <div className="submit">
-                        <button className='dark' type="submit" value="Send">Wyślij wiadomość</button>
+                        <button className='dark' type="submit" value="Send">Envie uma mensagem</button>
                     </div>
                 </form>
             </div>
@@ -64,4 +64,4 @@ const Umow_Wizyte = () => {
     )
 }
 
-export default Umow_Wizyte
+export default Marque_Consulta

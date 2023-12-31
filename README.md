@@ -1,6 +1,6 @@
-# 🧠 Paulina Janik Psychologist Website
+# 🧠 Simone Dezane Psychologist Website
 
-This repository contains the code for the website of Paulina Janik, a psychologist. The website provides information about her services, publications, and contact details.
+This repository contains the code for the website of Simone Dezane, a psychologist. The website provides information about her services, publications, and contact details.
 
 ## 🛠️ Technologies Used
 - HTML

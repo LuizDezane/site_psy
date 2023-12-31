@@ -1,8 +1,10 @@
 import Head from 'next/head'
-import { motion as m } from 'framer-motion'
-import Cennik_Element from '../components/Cennik_Element'
 
-export default function Cennik() {
+import { motion as m } from 'framer-motion'
+
+import Como_Ajudo from '../components/Como_Ajudo'
+
+export default function Como_ajudo() {
     return (
         <m.div
     initial={{opacity: 0}}
@@ -12,13 +14,13 @@ export default function Cennik() {
     >
 
             <Head>
-                <title>Paulina Janik | Psycholog, Psychoterapeuta</title>
-                <meta name="description" content="Paulina Janik | Psycholog, Psychoterapeuta" />
+                <title>Simone Dezane | Psicóloga, Psicoterapeuta</title>
+                <meta name="description" content="Simone Dezane | Psicóloga, Psicoterapeuta" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
 
             <main>
-                <Cennik_Element />
+                <Como_Ajudo />
             </main>
 
             <footer>

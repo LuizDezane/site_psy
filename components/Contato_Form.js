@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
 
-const Kontakt_Form = () => {
+const Contato_Form = () => {
 
     const [formData, setFormData] = useState({
         name: '',
@@ -21,11 +21,11 @@ const Kontakt_Form = () => {
     }
 
     return (
-        <section id="kontakt_form">
+        <section id="contato_form">
             
-            <h1 className='heading'>Napisz do mnie</h1>
+            <h1 className='heading'>Envie-me uma mensagem</h1>
 
-            <form className='kontakt_form' method="POST" action="https://formsubmit.co/paulina.janik.gabinet@gmail.com">
+            <form className='contato_form' method="POST" action="https://formsubmit.co/luizdezane@gmail.com">
                 <div className="general_info">
                     <input className='blur' type="text" id='imie' name="name" placeholder="Twoje imię i nazwisko" onChange={handleInputChange} required />
 
@@ -37,13 +37,13 @@ const Kontakt_Form = () => {
                 </div>
 
                 <div className="submit">
-                    <button className='dark' type="submit" value="Send">Wyślij wiadomość</button>
+                    <button className='dark' type="submit" value="Send">Envie uma mensagem</button>
                 </div>
             </form>
 
-            <div className="image_kontakt_form"></div>
+            <div className="image_contato_form"></div>
         </section>
     )
 }
 
-export default Kontakt_Form
+export default Contato_Form
