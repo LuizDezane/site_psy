@@ -3,7 +3,7 @@ import { motion as m } from 'framer-motion'
 
 import Hero from '../components/Hero'
 import Consulta from '../components/Consulta'
-import Pomagam from '../components/Pomagam'
+import Ajudando from '../components/Ajudando'
 import Blog_Element from '../components/Blog_Element'
 import Contato_Form from '../components/Contato_Form'
 
@@ -24,7 +24,7 @@ export default function Home() {
             <main>
                 <Hero />
                 <Consulta />
-                <Pomagam />
+                <Ajudando />
                 {/* <Blog_Element /> */}
                 <Contato_Form />
             </main>

@@ -9,7 +9,7 @@ import '../components/layout/footer.scss'
 
 import '../components/hero.scss'
 import '../components/consulta.scss'
-import '../components/pomagam.scss'
+import '../components/ajudando.scss'
 import '../components/blog_element.scss'
 import '../components/contato_form.scss'
 

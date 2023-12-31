@@ -4,7 +4,7 @@ export const Sobre_Mim = () => {
     return (
         <section id='sobre_mim'>
 
-            <h1 className="heading">Sobre Mim</h1>
+            <h1 className="heading">Sobre mim</h1>
 
             <div className="sobre_mim_1">
                 <h3>Olá, meu nome é Simone Dezane - psicóloga.</h3>
