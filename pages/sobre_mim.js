@@ -2,7 +2,7 @@ import Head from 'next/head'
 import { motion as m } from 'framer-motion'
 import { Sobre_Mim } from '../components/Sobre_mim'
 
-export default function O_mnie() {
+export default function Sobre_mim() {
     return (
         <m.div
         initial={{opacity: 0}}
