@@ -14,8 +14,8 @@ export default function Como_ajudo() {
     >
 
             <Head>
-                <title>Simone Dezane | Psicóloga, Psicoterapeuta</title>
-                <meta name="description" content="Simone Dezane | Psicóloga, Psicoterapeuta" />
+                <title>Simone Dezane | Psicóloga e Psicanalista</title>
+                <meta name="description" content="Simone Dezane | Psicóloga e Psicanalista" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
 

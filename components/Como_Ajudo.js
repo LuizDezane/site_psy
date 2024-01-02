@@ -13,18 +13,13 @@ const Como_Ajudo = () => {
 
                 <h3>Consulta Psicológica</h3>
                     
-                <p>O processo psicoterapêutico é precedido por consultas psicológicas. Geralmente, quatro encontros têm o caráter de consultas diagnósticas. Este é o momento para entender profundamente o problema, assim como a pessoa que o vivencia.</p>
+                <p>O processo psicoterapêutico inicia a partir da procura do paciente com uma queixa inicial, através dessa queixa vamos destrinchar e analisar tudo que é trazido para sessão afim de trazer clareza, bem estar na vida do paciente.</p>
 
-                <p>A consulta psicológica não é psicoterapia, nem obriga a iniciá-la. No entanto, oferece a oportunidade de examinar suas dificuldades e tomar a decisão correta. Portanto, seu principal objetivo é discutir o problema e determinar a forma de ajuda mais benéfica para o paciente.</p>
+                <p>No processo terapêutico trabalhamos com o chamado contrato terapêutico que estabelece os valores, datas, horários, frequência, pagamento, cancelamento de consultas afim de definir o papel de paciente e psicólogo.</p>
 
-                <p>A primeira consulta envolve a apresentação dos motivos de procura pelo paciente e a discussão sobre a motivação para mudança. É também um momento para conhecer a abordagem do especialista.</p>
+                <p>Esse contrato é realizado na primeira sessão juntamente com o paciente</p>
                 
-                <p>Durante as consultas subsequentes, é realizado um histórico relacionado ao funcionamento do paciente em áreas específicas. Esta fase permite a escolha da abordagem terapêutica adequada. Se o paciente decide iniciar o processo terapêutico, um contrato terapêutico é estabelecido.</p>
-                
-                <p>O contrato terapêutico inclui as regras do processo terapêutico. Envolve o estabelecimento de objetivos da psicoterapia, ou seja, as mudanças esperadas, bem como a definição das datas das sessões, frequência, pagamento, discussão sobre confidencialidade, responsabilidades do terapeuta e do paciente. O processo de psicoterapia só começa após ambas as partes terem certeza de que os termos da cooperação são claros e aceitos.</p>
-
-                <p>Nem todas as consultas psicológicas resultam em psicoterapia. Alguns pacientes precisam apenas de apoio pontual ou de compreender suas dificuldades atuais. A decisão de iniciar a psicoterapia depende tanto do paciente, que tem a motivação para trabalhar, quanto do terapeuta, que expressa a disposição para ajudar a longo prazo.</p>
-            </div>
+                </div>
 
             <div className="como_ajudo_2">
                 <div className="circle">

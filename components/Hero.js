@@ -14,19 +14,15 @@ useEffect(() => {
     return (
             <section id='hero'>
                 <div className='upper'>
-                    <h1 className='center'>Quando eu ouço o que você diz,<br />eu ouço quem você é</h1>
-                    <h4 className='ralph center'><i>Ralph Waldo Emerson</i></h4>
+                    <h2 className='center'>"Emoções não expressadas nunca morrem.<br />São enterradas vivas e depois saem de formas piores"</h2>
+                    <h4 className='ralph center'><i>-Sigmund Freud-</i></h4>
                 </div>
                 
                 <div className='lower'>
                     <div className="image_1"></div>
                     <div className="text left">
-                        <h2>Simone Dezane</h2>
-                        <h3>Psicóloga, psicoterapeuta</h3>
-                        <p className='paragraph'>No meu trabalho, sou guiada principalmente pelo bem das outras pessoas.
-                        Eu quero que você se sinta seguro
-                        e compartilhe livremente suas histórias e experiências comigo.
-                        Garanto confidencialidade.</p>
+                        <h3>Seja bem-vindo(a)!</h3>
+                        <p className='paragraph'>Sou Simone Dezane, psicóloga comprometida em oferecer um espaço acolhedor e confidencial para que você possa explorar e superar os desafios da vida. </p>
                         <Link href="/sobre_mim" className='button'><button className='dark'>Mais sobre mim...</button></Link>
                     </div>
                 </div>

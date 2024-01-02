@@ -19,7 +19,6 @@ const Nav = () => {
 
         router.events.on('routeChangeStart', handleRouteChange)
 
-        // Clean up the event listener on unmount
         return () => {
             router.events.off('routeChangeStart', handleRouteChange)
         }
@@ -61,8 +60,8 @@ const Nav = () => {
                     <Link className='link' href="/sobre_mim"><h4>Sobre mim</h4></Link>
                     <Link className='link' href="/quem_ajudo"><h4>quem ajudo</h4></Link>
                     <Link className='link' href="/como_ajudo"><h4>Como ajudo</h4></Link>
-                    <Link className='link' href="/valores"><h4>Valores</h4></Link>
-                    {/* <Link className='link' href="/blog"><h4>Blog</h4></Link> */}
+                   {/*  <Link className='link' href="/valores"><h4>Valores</h4></Link>
+                    <Link className='link' href="/blog"><h4>Blog</h4></Link> */}
                     <Link className='link' href="/contato"><h4>Contato</h4></Link>
                     <Link className='link button_small_screen' href="/marque_consulta">
                         <button className='dark'>Marque uma consulta</button>
